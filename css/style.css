@@ -48,8 +48,11 @@ ul.nav li {
 	margin-right: 60px
 }
 
-#me_pic {
+#about_me_pic img{
+	border: 8px solid #2a2a2a;
+}
+
+#about_me_img div {
 	padding-top: 25px;
-	border: 6px solid ;
 }
 
