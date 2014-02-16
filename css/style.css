@@ -1,0 +1,55 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color: #d7d7d7;
+	background: #383838 url('img/bg-texture.jpg') repeat;
+}
+
+a {
+	color: #729fcf;
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	padding: 25px 0 15px 0;
+	font-size: 3.0em;
+	color: #d7d7d7;
+}
+
+h2 {
+	font-size: 1.5000em;
+	color: #d7d7d7;
+}
+
+.btn {
+	color: #d7d7d7;
+	background: #729fcf;
+	padding: 15px 30px;
+	margin: 40px 0px;
+	border-radius: 10px;	
+}
+
+.btn:hover {
+	background-color: #accae8;
+}
+
+ul.nav {
+	list-style: none;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	padding-left: 150px;
+	width: 1000px;
+}
+
+ul.nav li {
+	float: left;
+	margin-right: 60px
+}
+
+#me_pic {
+	padding-top: 25px;
+	border: 6px solid ;
+}
+
