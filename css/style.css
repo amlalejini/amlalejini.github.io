@@ -56,6 +56,10 @@ ul.nav li {
 	padding-top: 25px;
 }
 
+#about_me_txt {
+	
+}
+
 .pdf_viewer_btn {
 	color: #d7d7d7;
 	background: #ad7673;
@@ -76,4 +80,12 @@ ul.nav li {
 #cv_toggle {
 	padding-bottom: 50px;
 	margin: 20px;
+}
+
+#contact_me_pic img{
+	border: 8px solid #2a2a2a;
+}
+
+#contact_me_img div {
+	padding-top: 25px;
 }
