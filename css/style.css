@@ -100,3 +100,13 @@ ul.nav li {
 p.text_content {
 	text-indent: 2em;
 }
+
+div.weblink_box {
+	background-color: #2a2a2a;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#weblink_header {
+	text-align: center;
+}
