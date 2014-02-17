@@ -56,3 +56,24 @@ ul.nav li {
 	padding-top: 25px;
 }
 
+.pdf_viewer_btn {
+	color: #d7d7d7;
+	background: #ad7673;
+	padding: 15px 30px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.pdf_viewer_btn:hover {
+	background-color: #3f2321;
+}
+
+#resume_toggle {
+	padding-bottom: 50px;
+	margin: 20px;
+}
+
+#cv_toggle {
+	padding-bottom: 50px;
+	margin: 20px;
+}
