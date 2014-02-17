@@ -96,3 +96,7 @@ ul.nav li {
 #contact_me_img div {
 	padding-top: 25px;
 }
+
+p.text_content {
+	text-indent: 2em;
+}
