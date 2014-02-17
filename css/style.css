@@ -21,6 +21,13 @@ h2 {
 	color: #d7d7d7;
 }
 
+h3 {
+	font-size: 1.10em;
+	color: #797d79;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
 .btn {
 	color: #d7d7d7;
 	background: #729fcf;
