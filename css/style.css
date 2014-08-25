@@ -73,10 +73,12 @@ ul.nav li {
 	padding: 15px 30px;
 	border-radius: 10px;
 	text-align: center;
+	cursor:default;
 }
 
 .pdf_viewer_btn:hover {
 	background-color: #3f2321;
+	cursor:default;
 }
 
 #resume_toggle {
