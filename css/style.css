@@ -81,7 +81,7 @@ ul.nav li {
 	background-color: #2a2a2a;
 	border-radius: 5px;
 	padding: 0.5em;
-	margin: 1.1em;
+	margin: 0.5em;
 }
 
 .about_desc {
@@ -117,9 +117,14 @@ ul.nav li {
 	border-radius: 5px;
 }
 
-#web_link_box {
+.web_link_box {
 	background: #2a2a2a;
 	border-radius: 5px;
+	margin: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
 }
 
 #weblink_header {
