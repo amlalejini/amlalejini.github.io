@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8"/>
-		<title>Alexander Lalejini</title>
-		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-		<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
 
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<body>
-		<div class = "container clearfix">
+        <title>Alexander Lalejini</title>
 
-			<div id="banner" class = "grid_12 alpha omega">
-				<h1> Alexander Michael Lalejini </h1>
-			</div>
-			
-			<div class = "grid_12  alpha omega">
-				<ul class = "nav">
-					<li><a href="index.html" class="btn">Home</a></li>
-					<li><a href="resume_cv.html" class = "btn">Resume/CV</a></li>
-					<li><a href="contact.html" class = "btn">Contact Me</a></li>
-					<li><a href="web_links.html" class = "btn">Web Links</a></li>
-				</ul>
-			</div>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-			<div id = "about_me_img">
-				<div class = "grid_5" id = "about_me_pic">
-					<img src="img/about_me.png" alt="Alex Lalejini"/>
-				</div>
-			</div>
+        <!-- Google font -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
-			<div id = "about_me_txt" class = "grid_7 omega">
-				<h2> About Me </h2>
-				<p>
-					<p class = "text_content">
-					My name is Alexander (Alex) Lalejini, and I am a fourth year computer science student at Mississippi State University. I have a 4.0 GPA and plan to graduate in the Spring of 2015. I am particularly interested in robotics and artificial intelligence; more specifically, I am interested in the application of biomimetics as applied to robotics and artificial intelligence. My interests have led me to become involved in the <a href="http://www.stars.msstate.edu/">Social, Therapeutic, and Robotics Systems (STaRS) Lab</a> at Mississippi State University where I work as an undergraduate research assistant.  Through the Naval Research Enterprise Internship Program, I worked in the <a href="http://www.nrl.navy.mil/lasr/">Laboratory for Autonomous Systems Research</a> (LASR) at the Naval Research Laboratory in Washington D.C. during the summer of 2014. In the past, I have interned at the Naval Research Laboratory at John C. Stennis Space Center, Mississippi and the Jet Propulsion Laboratory in Pasadena, California; I have also worked as an undergraduate research assistant in the physics department at Mississippi State University.
-					</p>
-					<p class = "text_content">
-					Recently, my work has primarily involved programming with ROS Python – the Python implementation of the Robot Operating System (ROS).  I have experience with applications development in Java, C++, and Python as well as web development using HTML/CSS, PHP, MySQL, and Java.
-					</p>
-					<p class = "text_content">
-					In my spare time, I enjoy tabletop gaming with friends, playing soccer with my intramural soccer team, and traveling.  Tabletop gaming is always a great way to spend an evening; some of my favorite games include Betrayal at House on the Hill, Magic: The Gathering, and Battlestar Galactica: The Board Game.  During the summer of 2013, I was able to travel to the City of London in the United Kingdom to study abroad where I lived and attended <a href="http://www.richmond.ac.uk/">Richmond University</a> for nine weeks. 
-					</p> 
-				</p>
-			</div>
-	
-		</div>
-	</body>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class = "container">
+            <!-- ================================== -->
+            <!-- Heading -->
+            <div id="banner" class = "jumbotron">
+                <div class="centerfy">
+                <h1> <a href="index.html" class="banner_link">Alexander Michael Lalejini</a> </h1>
+                 <h2 class="text-center"> About </h2>
+                </div>
+            </div>
+            
+
+            <div class = "row">
+                <div class = "col-md-12">
+                    <ul class = "nav nav-pills">
+                        <li><a href="index.html" class="btn-lg nav_btn">About</a></li>
+                        <li><a href="resume_cv.html" class = "btn-lg nav_btn">Experience</a></li>
+                        <li><a href="contact.html" class = "btn-lg nav_btn">Contact</a></li>
+                        <li><a href="web_links.html" class = "btn-lg nav_btn">Web Links</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ================================== -->
+            <div class = "row">
+                <div class = "col-md-5" id = "about_me_img">
+                    <div id = "about_me_pic">
+                        <img src="img/about_me.png" alt="Alex Lalejini" class="img-responsive"/>
+                    </div>
+                </div>
+
+                <div class = "col-md-7">
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <div class="about_me_txt">
+                                <h2> Memberships </h2>
+                                <dl>
+                                    <dt>Social, Therapeutic and Robotic Systems (STaRS) Lab</dt>
+                                    <dd class="about_desc"> The STaRS Lab is a multidisciplinary group performing research on the interaction between robots and humans housed in the Department of Computer Science and Engineering at Mississippi State University.  Advisor: Dr. Cindy Bethel</dd>
+                                <dl>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-6">
+                            <div class="about_me_txt">
+                                <p> Here I talk about me.</p>
+                            </div>
+                        </div>
+                        <div class = "col-md-6">
+                            <div class="about_me_txt">
+                                <p> Here I talk about me.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
 
 </html>

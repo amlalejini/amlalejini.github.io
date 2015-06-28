@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8"/>
-		<title>Resume</title>
-		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-		<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- This script is courtesy of Dexter Duckworth. -->
-		<script> 
-			function showResume() {
-	   			if (document.getElementById('resume').style.display == "none") {
-	   				document.getElementById('resume').style.display = "block";
-	   			} else {
-	   				document.getElementById('resume').style.display = "none";
-	   			}
-			}
+        <title>Resume/Curriculum Vitae</title>
 
-			function showCV() {
-	   			if (document.getElementById('cv').style.display == "none") {
-	   				document.getElementById('cv').style.display = "block";
-	   			} else {
-	   				document.getElementById('cv').style.display = "none";
-	   			}
-			}
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-		</script>
-	</head>
+        <!-- Google font -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
-	<body>
-		<div class = "container clearfix">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-			<div id="banner" class = "grid_12 alpha omega">
-				<h1> Alexander Michael Lalejini </h1>
-			</div>
-			
-			<div class = "grid_12  alpha omega">
-				<ul class = "nav">
-					<li><a href="index.html" class="btn">Home</a></li>
-					<li><a href="resume_cv.html" class = "btn">Resume/CV</a></li>
-					<li><a href="contact.html" class = "btn">Contact Me</a></li>
-					<li><a href="web_links.html" class = "btn">Web Links</a></li>
-				</ul>
-			</div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-			<div class = "doc_viewer"> <!--will hold resume and cv-->
-				<div id = "resume_toggle" class = "grid_12 omega">
-					<a class = "pdf_viewer_btn" id = "resumebutton" onclick = "showResume()">View Resume</a>
-					<div id = "resume" style = "display:none;">
-						<br>
-						<object data = "docs/resume.pdf" type = "application/pdf" width = "850" height = "800">
-							<p> Your browser may not support viewing PDFs.  You can download the file directly by clicking <a href="docs/resume.pdf">here</a>.</p>
-						</object>
-					</div>
-				</div>
-				
-				<!-- THIS CODE IS FOR CV VIEWER (NEED TO WRITE MY CV FIRST) -->
-				<div id = "cv_toggle" class = "grid_12 omega">
-					<a class = "pdf_viewer_btn" id = "cvbutton" onclick = "showCV()">View CV</a>
-					<div id = "cv" style = "display:none;">
-						<br>
-						<object data = "docs/lalejini_cv.pdf" type = "application/pdf" width = "850" height = "800">
-							<p> Your browser may not support viewing PDFs.  You can download the file directly by clicking <a href="docs/lalejini_cv.pdf">here</a>.</p>
-						</object>
-					</div>
-				</div>
-				<!-- -->
-			</div>
+    </head>
 
-		</div>
-	</body>
+    <body>
+        <div class = "container">
+            <!-- ================================== -->
+            <!-- Heading -->
+            <div id="banner" class = "jumbotron">
+                <h1> <a href="index.html" class="banner_link">Alexander Michael Lalejini</a> </h1>
+                <h2 class="text-center"> Experience </h2>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-md-12">
+                    <ul class = "nav nav-pills">
+                        <li><a href="index.html" class="btn-lg nav_btn">About</a></li>
+                        <li><a href="resume_cv.html" class = "btn-lg nav_btn">Experience</a></li>
+                        <li><a href="contact.html" class = "btn-lg nav_btn">Contact</a></li>
+                        <li><a href="web_links.html" class = "btn-lg nav_btn">Web Links</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ================================== -->
 
+            <div class = "row">
+                <div class="col-md-12 panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+
+                    <div class="panel panel-default ">
+                        <div class="panel-heading" role="tab" id="resume">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Resume
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="resume">
+                          <div class="panel-body">
+                            <object data = "docs/resume.pdf" type = "application/pdf" width = "900" height = "1075">
+                                <p> Your browser may not support viewing PDFs.  You can download the file directly by clicking <a href="docs/lalejini_resume.pdf">here</a>.</p>
+                            </object>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="cv">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Curriculum Vitae
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cv">
+                          <div class="panel-body">
+                            <object data = "docs/lalejini_cv.pdf" type = "application/pdf" width = "900" height = "1075">
+                                <p> Your browser may not support viewing PDFs.  You can download the file directly by clicking <a href="docs/lalejini_cv.pdf">here</a>.</p>
+                            </object>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                
+        </div>
+
+        <script>
+            $('#collapseOne').collapse("hide");
+        </script>
+
+    </body>
 </html>

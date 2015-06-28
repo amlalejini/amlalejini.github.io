@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8"/>
-		<title>Contact Me</title>
-		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-		<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Contact Info</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Google font -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
 	</head>
 
 	<body>
-		<div class = "container clearfix">
+		<div class = "container">
+			<!-- ================================== -->
+            <!-- Heading -->
+            <div id="banner" class = "jumbotron">
+                <h1> <a href="index.html" class="banner_link">Alexander Michael Lalejini</a> </h1>
+                <h2 class="text-center"> Contact Information </h2>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-md-12">
+                    <ul class = "nav nav-pills">
+                        <li><a href="index.html" class="btn-lg nav_btn">About</a></li>
+                        <li><a href="resume_cv.html" class = "btn-lg nav_btn">Experience</a></li>
+                        <li><a href="contact.html" class = "btn-lg nav_btn">Contact</a></li>
+                        <li><a href="web_links.html" class = "btn-lg nav_btn">Web Links</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ================================== -->
 
-			<div id="banner" class = "grid_12 alpha omega">
-				<h1> Alexander Michael Lalejini </h1>
-			</div>
-			
-			<div class = "grid_12  alpha omega">
-				<ul class = "nav">
-					<li><a href="index.html" class="btn">Home</a></li>
-					<li><a href="resume_cv.html" class = "btn">Resume/CV</a></li>
-					<li><a href="contact.html" class = "btn">Contact Me</a></li>
-					<li><a href="web_links.html" class = "btn">Web Links</a></li>
-				</ul>
-			</div>
-
-			<div id = "contact_img">
-				<div class = "grid_7" id = "contact_me_pic">
-					<img src="img/me_bb_2_edit.png" alt="Alex Lalejini"/>
+            <div class="row">
+				<div class="col-md-7" id = "contact_img">
+					<a href="https://en.wikipedia.org/wiki/Big_Bend_National_Park"><img class="img-responsive" src="img/me_bb_2_edit.png" alt="Alex Lalejini"/></a>
 				</div>
-			</div>
 
-			<div id = "contact_me_txt" class = "grid_5 omega">
-				<h2> Contact Information </h2>
-				<p>
-					<h3 class = "contact_info_heading">Email: </h3>
-					<a href="mailto:alex@lalejini.com">alex@lalejini.com</a>
-					<h3 class = "contact_info_heading">Phone: </h3>
-					(228) 342-8299
-					<h3 class = "contact_info_heading">Social: </h3>
-					<a href="https://www.facebook.com/alex.lalejini" ><img src = "img/facebook.png" alt = "Facebook"/></a>
-					<a href="https://plus.google.com/u/0/103848819207898701269/posts" ><img src = "img/google+.png" alt = "Google+"/></a>
-					<a href="https://www.linkedin.com/pub/alexander-lalejini/90/765/650/"><img src="img/linkedin.png" alt = "Linkedin"></a>
-				</p>
+				<div id = "contact_txt" class = "col-md-5">
+					<h2> Contact Information </h2>
+					<p>
+						<h3 class = "contact_info_heading">Email: </h3>
+						<a href="mailto:alex@lalejini.com">alex@lalejini.com</a>
+						<h3 class = "contact_info_heading">Phone: </h3>
+						(228) 342-8299
+						<h3 class = "contact_info_heading">Social: </h3>
+						<a href="https://www.facebook.com/alex.lalejini" ><img src = "img/facebook.png" alt = "Facebook"/></a>
+						<a href="https://plus.google.com/u/0/103848819207898701269/posts" ><img src = "img/google+.png" alt = "Google+"/></a>
+						<a href="https://www.linkedin.com/pub/alexander-lalejini/90/765/650/"><img src="img/linkedin.png" alt = "Linkedin"></a>
+						<a href="https://github.com/amlalejini"><img src="img/GitHub-Mark.png" alt = "GitHub" width="32" height="32"></a>
+					</p>
+				</div>
 			</div>
 			
 		</div>
+
 	</body>
 
 </html>
