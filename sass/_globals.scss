@@ -1,0 +1,79 @@
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+	color: $primary-text-color;
+  background: $primary-color;
+}
+
+.jumbotron {
+  background: none;
+  padding-bottom: 0.1em;
+	padding-top: 0.3em;
+	margin: 0 0 0 0;
+
+  .banner_link {
+    color: $primary-text-color;
+    &:hover {
+        color: $primary-text-color;
+        text-decoration: none;
+    }
+  }
+}
+
+
+.nav {
+  width: 100%;
+	text-align: center;
+	padding-bottom: 1.1em;
+  a {
+    color: $primary-text-color;
+    background: $secondary-color;
+    &:hover {
+      color: $secondary-color;
+    	background-color: $primary-text-color;
+    }
+  }
+  li {
+    float: none;
+    display: inline-block;
+    margin-right: 60px;
+  }
+  #active_page {
+    color: $secondary-color;
+    background-color: $primary-text-color;
+  }
+
+}
+
+.panel-default {
+	background-color: darken($primary-color, 7);
+  border-radius: 5px;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+.img-default {
+  img {
+    border: 8px solid darken($primary-color, 7);
+  	border-radius: 5px;
+  }
+}
+
+h1 {
+  text-align: center;
+  padding: 25px 0 15px 0;
+  font-size: 3.0em;
+  color: $primary-text-color;
+}
+
+h2 {
+  font-size: 2.0em;
+	color: $tertiary-color;
+}
+
+h3 {
+  font-size: 1.10em;
+	color: $secondary-color;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
