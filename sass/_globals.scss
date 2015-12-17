@@ -101,7 +101,7 @@ h1 {
 }
 
 h2 {
-	color: $tertiary-color;
+	color: lighten($tertiary-color, 10);
 }
 
 h3 {
