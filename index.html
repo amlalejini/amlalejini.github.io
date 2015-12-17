@@ -30,7 +30,7 @@
             <li><a href="web_links.html" class = "btn-lg nav_btn_lalejini">Web Links</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
       <!-- ================================== -->
       <div class="row">
         <!-- Left Column -->
@@ -53,7 +53,13 @@
               </div>
               <div id="collapseBio" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bio-heading">
                 <div class="panel-body">
-                  I am currently a graduate student in the Digital Evolution Laboratory at Michigan State University studying Computer Science and Ecology, Evolutionary Biology, and Behavior.
+                  <div class = "biotext">
+                    I am currently a graduate student in the Digital Evolution Laboratory at Michigan State University studying Computer Science and Ecology, Evolutionary Biology, and Behavior.
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn cv-btn" data-toggle="modal" data-target="#cv_modal">
+                    View my Curriculum Vitae
+                  </button>
                 </div>
               </div>
             </div>
@@ -134,6 +140,27 @@
         $('#collapseResIntr').collapse("hide");
         $('#collapseMem').collapse("hide");
     </script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cv_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Alexander Lalejini's CV</h4>
+          </div>
+          <div class="modal-body">
+            <object data = "docs/lalejini_cv.pdf" type = "application/pdf" width="550" height="700">
+                <p> Your browser may not support viewing PDFs.  You can download the file directly by clicking <a href="docs/lalejini_cv.pdf">here</a>.</p>
+            </object>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end modal -->
+
   </body>
 
 </html>

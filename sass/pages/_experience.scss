@@ -1,6 +1,23 @@
 
-#cv {
-	color: $primary-text-color;
-	background-color: darken($primary-color, 7);
-	text-align: center;
+.navbar-exp {
+	@extend .navbar-lalejini;
+	background: none;
+
+}
+
+.panel-proj {
+	@extend .panel-lalejini;
+	border-color: lighten($secondary-color, 20);
+	margin-right: 0px;
+	.panel-body {
+		color: darken($primary-text-color, 20);
+	}
+	.panel-heading {
+		border-color: lighten($secondary-color, 20);
+
+		h3 {
+			color: lighten($tertiary-color, 10);
+		}
+	}
+
 }

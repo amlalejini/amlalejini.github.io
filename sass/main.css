@@ -3948,61 +3948,62 @@ tbody.collapse.in {
     margin-right: -15px; }
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
-.navbar-default, .navbar-lalejini {
+.navbar-default, .navbar-lalejini, .navbar-exp {
   background-color: #f8f8f8;
   border-color: #e7e7e7; }
-  .navbar-default .navbar-brand, .navbar-lalejini .navbar-brand {
+  .navbar-default .navbar-brand, .navbar-lalejini .navbar-brand, .navbar-exp .navbar-brand {
     color: #777; }
-    .navbar-default .navbar-brand:hover, .navbar-lalejini .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-lalejini .navbar-brand:focus {
+    .navbar-default .navbar-brand:hover, .navbar-lalejini .navbar-brand:hover, .navbar-exp .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-lalejini .navbar-brand:focus, .navbar-exp .navbar-brand:focus {
       color: #5e5e5e;
       background-color: transparent; }
-  .navbar-default .navbar-text, .navbar-lalejini .navbar-text {
+  .navbar-default .navbar-text, .navbar-lalejini .navbar-text, .navbar-exp .navbar-text {
     color: #777; }
-  .navbar-default .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a {
+  .navbar-default .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a, .navbar-exp .navbar-nav > li > a {
     color: #777; }
-    .navbar-default .navbar-nav > li > a:hover, .navbar-lalejini .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-lalejini .navbar-nav > li > a:focus {
+    .navbar-default .navbar-nav > li > a:hover, .navbar-lalejini .navbar-nav > li > a:hover, .navbar-exp .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-lalejini .navbar-nav > li > a:focus, .navbar-exp .navbar-nav > li > a:focus {
       color: #333;
       background-color: transparent; }
-  .navbar-default .navbar-nav > .active > a, .navbar-lalejini .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-lalejini .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-lalejini .navbar-nav > .active > a:focus {
+  .navbar-default .navbar-nav > .active > a, .navbar-lalejini .navbar-nav > .active > a, .navbar-exp .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-lalejini .navbar-nav > .active > a:hover, .navbar-exp .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-lalejini .navbar-nav > .active > a:focus, .navbar-exp .navbar-nav > .active > a:focus {
     color: #555;
     background-color: #e7e7e7; }
-  .navbar-default .navbar-nav > .disabled > a, .navbar-lalejini .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-lalejini .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-lalejini .navbar-nav > .disabled > a:focus {
+  .navbar-default .navbar-nav > .disabled > a, .navbar-lalejini .navbar-nav > .disabled > a, .navbar-exp .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-lalejini .navbar-nav > .disabled > a:hover, .navbar-exp .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-lalejini .navbar-nav > .disabled > a:focus, .navbar-exp .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
-  .navbar-default .navbar-toggle, .navbar-lalejini .navbar-toggle {
+  .navbar-default .navbar-toggle, .navbar-lalejini .navbar-toggle, .navbar-exp .navbar-toggle {
     border-color: #ddd; }
-    .navbar-default .navbar-toggle:hover, .navbar-lalejini .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-lalejini .navbar-toggle:focus {
+    .navbar-default .navbar-toggle:hover, .navbar-lalejini .navbar-toggle:hover, .navbar-exp .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-lalejini .navbar-toggle:focus, .navbar-exp .navbar-toggle:focus {
       background-color: #ddd; }
-    .navbar-default .navbar-toggle .icon-bar, .navbar-lalejini .navbar-toggle .icon-bar {
+    .navbar-default .navbar-toggle .icon-bar, .navbar-lalejini .navbar-toggle .icon-bar, .navbar-exp .navbar-toggle .icon-bar {
       background-color: #888; }
-  .navbar-default .navbar-collapse, .navbar-lalejini .navbar-collapse,
+  .navbar-default .navbar-collapse, .navbar-lalejini .navbar-collapse, .navbar-exp .navbar-collapse,
   .navbar-default .navbar-form,
-  .navbar-lalejini .navbar-form {
+  .navbar-lalejini .navbar-form,
+  .navbar-exp .navbar-form {
     border-color: #e7e7e7; }
-  .navbar-default .navbar-nav > .open > a, .navbar-lalejini .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-lalejini .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-lalejini .navbar-nav > .open > a:focus {
+  .navbar-default .navbar-nav > .open > a, .navbar-lalejini .navbar-nav > .open > a, .navbar-exp .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-lalejini .navbar-nav > .open > a:hover, .navbar-exp .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-lalejini .navbar-nav > .open > a:focus, .navbar-exp .navbar-nav > .open > a:focus {
     background-color: #e7e7e7;
     color: #555; }
   @media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-lalejini .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-lalejini .navbar-nav .open .dropdown-menu > li > a, .navbar-exp .navbar-nav .open .dropdown-menu > li > a {
       color: #777; }
-      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-lalejini .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-lalejini .navbar-nav .open .dropdown-menu > li > a:focus {
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-lalejini .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-exp .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-lalejini .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-exp .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
         background-color: transparent; }
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-lalejini .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-lalejini .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-lalejini .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-lalejini .navbar-nav .open .dropdown-menu > .active > a, .navbar-exp .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-lalejini .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-exp .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-lalejini .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-exp .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #555;
       background-color: #e7e7e7; }
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-lalejini .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-lalejini .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-lalejini .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-lalejini .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-exp .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-lalejini .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-exp .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-lalejini .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-exp .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
-  .navbar-default .navbar-link, .navbar-lalejini .navbar-link {
+  .navbar-default .navbar-link, .navbar-lalejini .navbar-link, .navbar-exp .navbar-link {
     color: #777; }
-    .navbar-default .navbar-link:hover, .navbar-lalejini .navbar-link:hover {
+    .navbar-default .navbar-link:hover, .navbar-lalejini .navbar-link:hover, .navbar-exp .navbar-link:hover {
       color: #333; }
-  .navbar-default .btn-link, .navbar-lalejini .btn-link {
+  .navbar-default .btn-link, .navbar-lalejini .btn-link, .navbar-exp .btn-link {
     color: #777; }
-    .navbar-default .btn-link:hover, .navbar-lalejini .btn-link:hover, .navbar-default .btn-link:focus, .navbar-lalejini .btn-link:focus {
+    .navbar-default .btn-link:hover, .navbar-lalejini .btn-link:hover, .navbar-exp .btn-link:hover, .navbar-default .btn-link:focus, .navbar-lalejini .btn-link:focus, .navbar-exp .btn-link:focus {
       color: #333; }
-    .navbar-default .btn-link[disabled]:hover, .navbar-lalejini .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, .navbar-lalejini .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-lalejini .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus, fieldset[disabled] .navbar-lalejini .btn-link:focus {
+    .navbar-default .btn-link[disabled]:hover, .navbar-lalejini .btn-link[disabled]:hover, .navbar-exp .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, .navbar-lalejini .btn-link[disabled]:focus, .navbar-exp .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-lalejini .btn-link:hover, fieldset[disabled] .navbar-exp .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus, fieldset[disabled] .navbar-lalejini .btn-link:focus, fieldset[disabled] .navbar-exp .btn-link:focus {
       color: #ccc; }
 
 .navbar-inverse {
@@ -4898,18 +4899,18 @@ button.list-group-item-danger {
     .panel-group .panel-footer + .panel-collapse .panel-body {
       border-bottom: 1px solid #ddd; }
 
-.panel-default, .panel-lalejini {
+.panel-default, .panel-lalejini, .panel-proj {
   border-color: #ddd; }
-  .panel-default > .panel-heading, .panel-lalejini > .panel-heading {
+  .panel-default > .panel-heading, .panel-lalejini > .panel-heading, .panel-proj > .panel-heading {
     color: #333333;
     background-color: #f5f5f5;
     border-color: #ddd; }
-    .panel-default > .panel-heading + .panel-collapse > .panel-body, .panel-lalejini > .panel-heading + .panel-collapse > .panel-body {
+    .panel-default > .panel-heading + .panel-collapse > .panel-body, .panel-lalejini > .panel-heading + .panel-collapse > .panel-body, .panel-proj > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #ddd; }
-    .panel-default > .panel-heading .badge, .panel-lalejini > .panel-heading .badge {
+    .panel-default > .panel-heading .badge, .panel-lalejini > .panel-heading .badge, .panel-proj > .panel-heading .badge {
       color: #f5f5f5;
       background-color: #333333; }
-  .panel-default > .panel-footer + .panel-collapse > .panel-body, .panel-lalejini > .panel-footer + .panel-collapse > .panel-body {
+  .panel-default > .panel-footer + .panel-collapse > .panel-body, .panel-lalejini > .panel-footer + .panel-collapse > .panel-body, .panel-proj > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ddd; }
 
 .panel-primary {
@@ -5813,13 +5814,13 @@ body {
       color: #d9d9d9;
       text-decoration: none; }
 
-.navbar-lalejini {
+.navbar-lalejini, .navbar-exp {
   background-color: #262626;
   border: none; }
 
-.navbar-default .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a, .navbar-exp .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a, .navbar-exp .navbar-nav > li > a {
   color: #0077B8; }
-  .navbar-default .navbar-nav > li > a:hover, .navbar-lalejini .navbar-nav > li > a:hover, .navbar-lalejini .navbar-nav > li > a:hover {
+  .navbar-default .navbar-nav > li > a:hover, .navbar-lalejini .navbar-nav > li > a:hover, .navbar-exp .navbar-nav > li > a:hover, .navbar-lalejini .navbar-nav > li > a:hover, .navbar-exp .navbar-nav > li > a:hover {
     color: #005685; }
 
 .navbar-nav.nav-justified > li {
@@ -5829,19 +5830,30 @@ body {
   background-color: #212121;
   border: none; }
 
-.panel-lalejini {
+.panel-lalejini, .panel-proj {
   background-color: #262626;
   border-color: #9f2c94;
   margin-right: 25px; }
-  .panel-lalejini .panel-heading {
+  .panel-lalejini .panel-heading, .panel-proj .panel-heading {
     background-color: #262626;
     border-color: #9f2c94; }
-  .panel-lalejini dl dt {
+    .panel-lalejini .panel-heading a, .panel-proj .panel-heading a {
+      text-decoration: none; }
+  .panel-lalejini dl dt, .panel-proj dl dt {
     color: #0098eb; }
-    .panel-lalejini dl dt a {
+    .panel-lalejini dl dt a, .panel-proj dl dt a {
       color: #0098eb; }
-  .panel-lalejini dl dd {
+  .panel-lalejini dl dd, .panel-proj dl dd {
     color: #a6a6a6; }
+  .panel-lalejini .biotext, .panel-proj .biotext {
+    margin-bottom: 20px;
+    color: #a6a6a6; }
+  .panel-lalejini .cv-btn, .panel-proj .cv-btn {
+    background: none;
+    padding: 0 0 0 0;
+    color: #0098eb; }
+    .panel-lalejini .cv-btn:hover, .panel-proj .cv-btn:hover {
+      color: #0077B8; }
 
 .img-default img {
   border: 8px solid #212121;
@@ -5861,9 +5873,17 @@ h3 {
   margin-right: 25px;
   margin-bottom: 10px; }
 
-#cv {
-  color: #d9d9d9;
-  background-color: #212121;
-  text-align: center; }
+.navbar-exp {
+  background: none; }
+
+.panel-proj {
+  border-color: #1fb0ff;
+  margin-right: 0px; }
+  .panel-proj .panel-body {
+    color: #a6a6a6; }
+  .panel-proj .panel-heading {
+    border-color: #1fb0ff; }
+    .panel-proj .panel-heading h3 {
+      color: #9f2c94; }
 
 /*# sourceMappingURL=main.css.map */
