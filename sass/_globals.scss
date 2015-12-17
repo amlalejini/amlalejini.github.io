@@ -6,11 +6,11 @@ body {
 }
 
 .jumbotron {
+  text-align: center;
   background: none;
-  padding-bottom: 0.1em;
-	padding-top: 0.3em;
+  padding-bottom: 5em;
+	padding-top: 5em;
 	margin: 0 0 0 0;
-
   .banner_link {
     color: $primary-text-color;
     &:hover {
@@ -20,36 +20,55 @@ body {
   }
 }
 
-
-.nav {
-  width: 100%;
-	text-align: center;
-	padding-bottom: 1.1em;
-  a {
-    color: $primary-text-color;
-    background: $secondary-color;
-    &:hover {
-      color: $secondary-color;
-    	background-color: $primary-text-color;
-    }
-  }
-  li {
-    float: none;
-    display: inline-block;
-    margin-right: 60px;
-  }
-  #active_page {
-    color: $secondary-color;
-    background-color: $primary-text-color;
-  }
+.navbar-lalejini {
+  @extend .navbar-default;
+  background-color: darken($primary-color, 5);
+  border: none;
 
 }
 
-.panel-default {
+.navbar-default .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a {
+  color: $secondary-color;
+  &:hover {
+    color: darken($secondary-color, 10);
+  }
+}
+
+
+// This makes nav-justified play nicely
+.navbar-nav.nav-justified > li {
+    float:none;
+
+}
+
+
+.well {
+  @extend .well;
 	background-color: darken($primary-color, 7);
-  border-radius: 5px;
-	padding: 0.5em;
-	margin: 0.5em;
+  border: none;
+}
+
+.panel-lalejini {
+  @extend .panel-default;
+  background-color: darken($primary-color, 5);
+  border-color: lighten($tertiary-color, 10);
+  margin-right: 25px;
+  .panel-heading {
+    background-color: darken($primary-color, 5);
+    border-color: lighten($tertiary-color, 10);
+  }
+
+  dl {
+    dt {
+      color: lighten($secondary-color, 10);
+      a {
+        color: lighten($secondary-color, 10);
+      }
+    }
+    dd {
+      color: darken($primary-text-color, 20);
+    }
+  }
 }
 
 .img-default {
@@ -60,20 +79,13 @@ body {
 }
 
 h1 {
-  text-align: center;
-  padding: 25px 0 15px 0;
-  font-size: 3.0em;
   color: $primary-text-color;
 }
 
 h2 {
-  font-size: 2.0em;
 	color: $tertiary-color;
 }
 
 h3 {
-  font-size: 1.10em;
 	color: $secondary-color;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
 }

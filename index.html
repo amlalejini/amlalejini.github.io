@@ -1,102 +1,139 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Alexander Lalejini</title>
-
-        <!-- Google font -->
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-
-        <link rel="stylesheet" href="sass/main.css" type="text/css" />
-        <!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->
-    </head>
-
-    <body>
-        <div class = "container">
-            <!-- ================================== -->
-            <!-- Heading -->
-            <div id="banner" class = "jumbotron">
-                <h1> <a href="index.html" class="banner_link">Alexander Michael Lalejini</a> </h1>
-            </div>
-
-
-            <div class = "row">
-                <div class = "col-md-12">
-                    <ul class = "nav nav-pills">
-                        <li><a href="index.html" class="btn-lg nav_btn" id="active_page">About</a></li>
-                        <li><a href="experience.html" class = "btn-lg nav_btn">Experience</a></li>
-                        <li><a href="contact.html" class = "btn-lg nav_btn">Contact</a></li>
-                        <li><a href="web_links.html" class = "btn-lg nav_btn">Web Links</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- ================================== -->
-            <div class = "row">
-                <div class = "col-md-5">
-                    <div class = "img-default">
-                        <img src="img/about_me.png" alt="Alex Lalejini" class="img-responsive"/>
-                    </div>
-                </div>
-
-                <div class = "col-md-7">
-                    <div class = "row">
-                        <div class = "col-md-12">
-                            <div class="panel-default">
-                                <h2> Memberships </h2>
-                                <dl>
-                                    <dt><a href="http://www.stars.msstate.edu/"> Social, Therapeutic and Robotic Systems (STaRS) Lab</a></dt>
-                                    <dd class="about_desc"> The STaRS Lab is a multidisciplinary group performing research on the interaction between robots and humans housed in the Department of Computer Science and Engineering at Mississippi State University.  Advisor: Dr. Cindy Bethel</dd>
-                                    <dt>Mechanical Bulldawgs</dt>
-                                    <dd class="about_desc"> 2015 NASA Robot Mining Competition Team</dd>
-                                <dl>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class = "row">
-
-                    <div class = "col-md-6">
-                            <div class="panel-default">
-                                <h2> Pastimes </h2>
-                                <dl>
-                                    <dt>Tabletop Gaming</dt>
-                                    <dd class="about_desc">
-                                        A non-exhaustive list of games I thoroughly enjoy: Magic: the Gathering, Dungeons and Dragons, Battlestar Galactica: The Board Game, Betrayal at House on the Hill.
-                                    </dd>
-                                    <dt>Soccer</dt>
-                                    <dd class="about_desc"></dd>
-                                    <dt>Travel</dt>
-                                    <dd class="about_desc"></dd>
-                                    <dt>Programming</dt>
-                                    <dd class="about_desc"> All things Python </dd>
-                                <dl>
-                            </div>
-                        </div>
-
-                        <div class = "col-md-6">
-                            <div class="panel-default">
-                                <h2> Academic Interests </h2>
-                                <dl>
-                                    <dt>Robotics</dt>
-                                    <dd class="about_desc"></dd>
-                                    <dt>Artificial Intelligence</dt>
-                                    <dd class="about_desc"></dd>
-                                    <dt>Evolution and Evolutionary Computation</dt>
-                                    <dd class="about_desc"></dd>
-                                <dl>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexander Lalejini</title>
+    <!-- Google font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="sass/main.css" type="text/css" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/turbo.jpg">
+  </head>
+  <body>
+    <div class = "container">
+      <!-- ================================== -->
+      <!-- Heading -->
+      <div id="banner" class = "jumbotron">
+        <h1> <a href="index.html" class="banner_link">Alexander Michael Lalejini</a> </h1>
+      </div>
+      <!-- ================================== -->
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-lalejini">
+        <div class="container-fluid">
+          <ul class = "nav navbar-nav nav-justified">
+            <li><a href="index.html" class="btn-lg nav_btn_lalejini" id="active_page">About</a></li>
+            <li><a href="experience.html" class = "btn-lg nav_btn_lalejini">Experience</a></li>
+            <li><a href="contact.html" class = "btn-lg nav_btn_lalejini">Contact</a></li>
+            <li><a href="web_links.html" class = "btn-lg nav_btn_lalejini">Web Links</a></li>
+          </ul>
         </div>
-    </body>
+      </div>
+      <!-- ================================== -->
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-5">
+          <div class ="img-default" id="about_me_img">
+            <img src="img/me.jpg" alt="Alex Lalejini" class="img-responsive"></img>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-7">
+          <div clas="panel-group">
+            <!-- BIO Panel -->
+            <div class="panel panel-lalejini">
+              <div class="panel-heading" role="tab" id="bio-heading">
+                <h2>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapseBio" aria-expanded="false" aria-controls="collapseBio">
+                     Bio
+                  </a>
+                </h2>
+              </div>
+              <div id="collapseBio" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bio-heading">
+                <div class="panel-body">
+                  I am currently a graduate student in the Digital Evolution Laboratory at Michigan State University studying Computer Science and Ecology, Evolutionary Biology, and Behavior.
+                </div>
+              </div>
+            </div>
+            <!-- Memberships Panel -->
+            <div class="panel panel-lalejini">
+              <div class="panel-heading" role="tab" id="mem-heading">
+                <h2>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapseMem" aria-expanded="false" aria-controls="collapseMem">
+                     Memberships
+                  </a>
+                </h2>
+              </div>
+              <div id="collapseMem" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="mem-heading">
+                <div class="panel-body">
+                  <dl>
+                    <dt><a href="http://www.stars.msstate.edu/"> Social, Therapeutic and Robotic Systems (STaRS) Lab</a></dt>
+                    <dd class="about_desc"> The STaRS Lab is a multidisciplinary group performing research on the interaction between robots and humans housed in the Department of Computer Science and Engineering at Mississippi State University.  Advisor: Dr. Cindy Bethel</dd>
+                    <dt>State Space Robotics (formerly known as the Mechanical Bulldawgs)</dt>
+                    <dd class="about_desc"> 2015 NASA Robot Mining Competition Team</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Research Interests -->
+            <div class="panel panel-lalejini">
+              <div class="panel-heading" role="tab" id="resintr-heading">
+                <h2>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapseResIntr" aria-expanded="false" aria-controls="collapseResIntr">
+                     Research Interests
+                  </a>
+                </h2>
+              </div>
+              <div id="collapseResIntr" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="resintr-heading">
+                <div class="panel-body">
+                  <dl>
+                    <dt>Robotics</dt>
+                    <dd class="about_desc"></dd>
+                    <dt>Artificial Intelligence</dt>
+                    <dd class="about_desc"></dd>
+                    <dt>Evolution and Evolutionary Computation</dt>
+                    <dd class="about_desc"></dd>
+                  <dl>
+                </div>
+              </div>
+            </div>
+            <!-- Pastimes -->
+            <div class="panel panel-lalejini">
+              <div class="panel-heading" role="tab" id="ptimes-heading">
+                <h2>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapsePTimes" aria-expanded="false" aria-controls="collapsePTimes">
+                     Pastimes
+                  </a>
+                </h2>
+              </div>
+              <div id="collapsePTimes" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ptimes-heading">
+                <div class="panel-body">
+                  <dl>
+                    <dt>Tabletop Gaming</dt>
+                    <dd class="about_desc">
+                        A non-exhaustive list of games I thoroughly enjoy: Magic: the Gathering, Dungeons and Dragons, Battlestar Galactica: The Board Game, Betrayal at House on the Hill.
+                    </dd>
+                    <dt>Soccer</dt>
+                    <dd class="about_desc"></dd>
+                    <dt>Travel</dt>
+                    <dd class="about_desc"></dd>
+                    <dt>Programming</dt>
+                    <dd class="about_desc"> All things Python </dd>
+                  <dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        $('#collapsePTimes').collapse("hide");
+        $('#collapseResIntr').collapse("hide");
+        $('#collapseMem').collapse("hide");
+    </script>
+  </body>
 
 </html>
