@@ -5889,4 +5889,11 @@ h3 {
     .panel-proj .panel-heading h3 {
       color: #9f2c94; }
 
+.pub_list .list-group .list-group-item {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+  border-color: #b3b3b3; }
+  .pub_list .list-group .list-group-item:hover {
+    background-color: #b3b3b3; }
+
 /*# sourceMappingURL=main.css.map */
