@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- everything in header must get loaded before page can load -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class = "container">
+      <!-- Heading -->
+      <div id="banner" class = "jumbotron">
+        <h1>Visualization: The Evolutionary Origins of Phenotypic Plasticity</h1>
+      </div>
+
+      <!-- ================================== -->
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-lalejini">
+        <div class="container-fluid">
+          <ul class = "nav navbar-nav nav-justified">
+            <li><a href="index.html" class="btn-lg nav_btn_lalejini" id="active_page">About</a></li>
+            <li><a href="experience.html" class = "btn-lg nav_btn_lalejini">Experience</a></li>
+            <li><a href="publications.html" class = "btn-lg nav_btn_lalejini">Publications</a></li>
+            <li><a href="contact.html" class = "btn-lg nav_btn_lalejini">Contact</a></li>
+            <li><a href="web_links.html" class = "btn-lg nav_btn_lalejini">Web Links</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ================================== -->
+
+      <div class="row">
+        <div class = "col-md-6">
+          <div class="row"> <!-- about panel row -->
+            <div class="col-md-12">
+              <div class="panel panel-lalejini">
+                <div class="panel-heading" role="tab" id="about-heading">
+                  <h2>
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
+                       About
+                    </a>
+                  </h2>
+                </div>
+                <div id="collapseAbout" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="about-heading">
+                  <div class="panel-body">
+                    <h3>Overview</h3>
+                    <p>
+                    Lineages of evolved genotypes are visualized as vertical bars where time (in updates) proceeds from top to bottom beginning with lineage's original ancestor genotype.
+                    </p>
+                    <h3>Phenotypic State Indication</h3>
+                    Any given genotype on the lineage must express one of the sixteen possible phenotypes enumerated to the right in the Legend. At each point in time, the color of the visualized lineage corresponds to the color representing the phenotype expressed by the lineage at that point in time. Hover your mouse over a phenotypic state in the visualization to see detail.
+                    <h3>Environment Indication</h3>
+                     The actual environmental conditions experienced by the evolving populations at each point in time are indicated by the color of the vertical axis. Hover your mouse over the environment axis to view details about the environment.
+                     <h3>Definitions</h3>
+                     <ul>
+                       <li><b>ENV-NAND</b> - the NAND computational task is rewarded and the NOT task is punished</li>
+                       <li><b>ENV-NOT</b> - the NOT computational task is rewarded and the NAND task is punished</li>
+                       <li><b>CONTROL-ENV</b> - both the NAND and the NOT computational tasks are rewarded</li>
+                     </ul>
+                     <h3>Source</h3>
+                     The source code for this visualization can be found: <a href="https://github.com/amlalejini/evo-origins-of-plast/tree/master/visualization">https://github.com/amlalejini/evo-origins-of-plast/tree/master/visualization</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end about panel row -->
+
+        </div> <!-- end col -->
+        <div class="col-md-6">
+          <div class="panel panel-lalejini">
+            <div class="panel-heading" role="tab" id="legend-heading">
+              <h2>
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseLegend" aria-expanded="false" aria-controls="collapseLegend">
+                   Phenotypic State Legend
+                </a>
+              </h2>
+            </div>
+            <div id="collapseLegend" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="legend-heading">
+              <div class="panel-body" id="legend-panel-body">
+                <div class ="img-default" id="lineage_vis_legend">
+                  <img src="img/RECOLOR-task-profiles.jpg" alt="Legend" class="img-responsive"></img>
+                </div>
+                <div class="text-box">
+                  <p>Enumeration of all possible phenotypic states. Each row represents a distinct phenotype. A green 'X' indicates that the associated task is performed in the specified environment, while a red '--' indicates that the task is not performed. For each environment, the column of the rewarded task is highlighted in green, and the column of the punished task is highlighted in red. A green 'X' in a green column or a red '--' in a red column is optimal. Each phenotype has a color code, which is used the visualization below. Note that the first four rows are non-plastic phenotypes, rows 5-8 exhibit partially beneficial plasticity, and row 9 is optimally beneficial. Rows 10-11 are mostly neutral, while rows 12-16 are detrimental forms of plasticity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-lalejini">
+            <div class="panel-heading">
+              <h2> Dashboard </h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <!-- Treatment selection -->
+                  <div class="dropdown">
+                    <button class="btn btn-block btn-default dropdown-toggle" type="button" id="treatment_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      NONE
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="treatment-selection-dropdown" aria-labelledby="treatment_selector">
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <!-- Zoom control -->
+                  <div class="btn-group" role="group" aria-label="vis_zoom">
+                    <button type="button" class="btn btn-default" id="vis_zoom_in">
+                      <span class="glyphicon glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" id="vis_zoom_out">
+                      <span class="glyphicon glyphicon glyphicon-zoom-out" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <!-- Slice control -->
+                  <div id="time_slice_dash">
+                    <input type="checkbox" data-toggle="toggle" data-on="Full" data-off="Sliced" id="slice_toggle">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- Lineage filtering options -->
+                  <div class="lineage_filter_options">
+                    <input class="lineage_type_filter" id="plastic_cb" type="radio" name="display" value="plastic">Plastic Only</input>
+                    <input class="lineage_type_filter" id="nonplastic_cb" type="radio" name="display" value="nonplastic" >Non-plastic Only</input>
+                    <input class="lineage_type_filter" id="all_cb" type="radio" name="display" value="all" checked> All </input>
+                  </div>
+                </div>
+
+
+              </div>
+            </div> <!-- end panel body -->
+          </div> <!-- end  pangel -->
+        </div> <!-- end col 12 -->
+      </div> <!-- end row -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-lalejini" id="vis_panel">
+            <div class="panel-heading">
+              <h2> Visualization </h2>
+            </div>
+            <div class="panel-body">
+              <div id="chart_area"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+      <script>
+        $('#collapseLegend').collapse("hide");
+        $('#collapseAbout').collapse("hide");
+      </script>
+      <!-- Include d3 js -->
+      <script src="//d3js.org/d3.v3.min.js"></script>
+      <!-- Include my script -->
+      <script src="js/lineage_visualization_settings.js"></script>
+      <script src="js/lineage_visualization.js"></script>
+    </div>
+  </body>
+
+</html>

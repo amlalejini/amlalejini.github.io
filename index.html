@@ -55,7 +55,10 @@
               <div id="collapseBio" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bio-heading">
                 <div class="panel-body">
                   <div class = "biotext">
-                    I am currently a graduate student in the Digital Evolution Laboratory at Michigan State University studying Computer Science and Ecology, Evolutionary Biology, and Behavior.
+                    I am currently a graduate student in the
+                    <a href="http://devolab.msu.edu/">Digital Evolution Laboratory</a>
+                    at <a href="https://msu.edu/">Michigan State University</a>
+                    studying Computer Science and Ecology, Evolutionary Biology, and Behavior.
                   </div>
                   <!-- Button trigger modal -->
                   <button type="button" class="btn cv-btn" data-toggle="modal" data-target="#cv_modal">
@@ -64,8 +67,31 @@
                 </div>
               </div>
             </div>
-            <!-- Memberships Panel -->
+            <!-- Research Interests -->
             <div class="panel panel-lalejini">
+              <div class="panel-heading" role="tab" id="resintr-heading">
+                <h2>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapseResIntr" aria-expanded="false" aria-controls="collapseResIntr">
+                     Research Interests
+                  </a>
+                </h2>
+              </div>
+              <div id="collapseResIntr" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="resintr-heading">
+                <div class="panel-body">
+                  <div class="biotext">
+                    As a computer scientist, my interests have been captured by the diverse set of algorithms
+                    encoded in the genomes of biological organisms. Many of these algorithms have been under active
+                    development for roughly four and a half billion years! My goal as a scientist is to analyze the
+                    algorithms developed by evolution. How do evolutionary processes remain open ended, continuously
+                    generating increasingly complex things? My current focus is on using digital evolution to
+                    explore the evolution of phenotypic plasticity and its role in major evolutionary transitions
+                    in individuality.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Memberships Panel -->
+            <!-- <div class="panel panel-lalejini">
               <div class="panel-heading" role="tab" id="mem-heading">
                 <h2>
                   <a class="collapsed" role="button" data-toggle="collapse" href="#collapseMem" aria-expanded="false" aria-controls="collapseMem">
@@ -88,26 +114,7 @@
                   </dl>
                 </div>
               </div>
-            </div>
-            <!-- Research Interests -->
-            <div class="panel panel-lalejini">
-              <div class="panel-heading" role="tab" id="resintr-heading">
-                <h2>
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapseResIntr" aria-expanded="false" aria-controls="collapseResIntr">
-                     Research Interests
-                  </a>
-                </h2>
-              </div>
-              <div id="collapseResIntr" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="resintr-heading">
-                <div class="panel-body">
-                  <div class="biotext">
-                  My research interests exist at the intersection of evolutionary biology, computer science, and robotics.
-                  Specifically, I am interested in using digital evolution systems to study evolution then leveraging my studies of evolution to inspire solutions to challenging problems in artificial intelligence and robotics.
-                  Currently, I am most interested in questions related to the evolution of intelligence, phenotypic plasticity, and sociality.
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> -->
             <!-- Pastimes -->
             <div class="panel panel-lalejini">
               <div class="panel-heading" role="tab" id="ptimes-heading">
@@ -120,16 +127,9 @@
               <div id="collapsePTimes" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="ptimes-heading">
                 <div class="panel-body">
                   <dl>
-                    <dt>Tabletop Gaming</dt>
-                    <dd class="about_desc">
-                        Magic: The Gathering, Battlestar Galactica: The Board Game, and many more.
-                    </dd>
-                    <dt>Soccer</dt>
-                    <dd class="about_desc"></dd>
-                    <dt>Travel</dt>
-                    <dd class="about_desc"></dd>
-                    <dt>Programming</dt>
-                    <dd class="about_desc"> All things Python </dd>
+                    When I'm not trying to understand the development cycle of evolutionary processes, I am likely
+                    participating in a tabletop gaming session (<i>e.g.</i> Magic: The Gathering, Battlestar Galactica: The Board Game,
+                    Apocalypse World style RPGs, etc.). I also enjoy playing soccer, gallivanting around the world, and programming.
                   <dl>
                 </div>
               </div>
@@ -140,8 +140,8 @@
     </div>
     <script>
         $('#collapsePTimes').collapse("hide");
-        $('#collapseResIntr').collapse("hide");
-        $('#collapseMem').collapse("hide");
+        // $('#collapseResIntr').collapse("hide");
+        // $('#collapseMem').collapse("hide");
     </script>
 
     <!-- Modal -->

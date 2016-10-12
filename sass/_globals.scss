@@ -24,7 +24,6 @@ body {
   @extend .navbar-default;
   background-color: darken($primary-color, 5);
   border: none;
-
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-lalejini .navbar-nav > li > a {
@@ -34,13 +33,10 @@ body {
   }
 }
 
-
 // This makes nav-justified play nicely
 .navbar-nav.nav-justified > li {
     float:none;
-
 }
-
 
 .well {
   @extend .well;
@@ -91,8 +87,8 @@ body {
 
 .img-default {
   img {
-    border: 8px solid darken($primary-color, 7);
-  	border-radius: 5px;
+    border: 2px solid darken($primary-color, 7);
+  	border-radius: 3px;
   }
 }
 
