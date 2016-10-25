@@ -33,7 +33,7 @@
       <!-- ================================== -->
 
       <div class="row">
-        <div class = "col-md-6">
+        <div class = "col-md-12">
           <div class="row"> <!-- about panel row -->
             <div class="col-md-12">
               <div class="panel panel-lalejini">
@@ -46,22 +46,136 @@
                 </div>
                 <div id="collapseAbout" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="about-heading">
                   <div class="panel-body">
-                    <h3>Overview</h3>
+                    <h3>The Big Picture</h3>
                     <p>
-                    Lineages of evolved genotypes are visualized as vertical bars where time (in updates) proceeds from top to bottom beginning with lineage's original ancestor genotype.
+                      Many effective and innovative survival mechanisms used by
+                      natural organisms rely on the capacity for phenotypic plasticity;
+                      that is, the ability of a genotype to alter how it is expressed
+                      based on the current environmental conditions. For programmers, implementing
+                      a 'phenotypically plastic' program is as simple
+                      as using conditional logic to ensure that the program behaves appropriately given
+                      certain conditions. It is less obvious how biological evolution develops phenotypic
+                      plasticity.
                     </p>
-                    <h3>Phenotypic State Indication</h3>
-                    Any given genotype on the lineage must express one of the sixteen possible phenotypes enumerated to the right in the Legend. At each point in time, the color of the visualized lineage corresponds to the color representing the phenotype expressed by the lineage at that point in time. Hover your mouse over a phenotypic state in the visualization to see detail.
-                    <h3>Environment Indication</h3>
-                     The actual environmental conditions experienced by the evolving populations at each point in time are indicated by the color of the vertical axis. Hover your mouse over the environment axis to view details about the environment.
-                     <h3>Definitions</h3>
+                    <h3>The Question</h3>
+                    <p>
+                      What is the step-by-step process by which phenotypic plasticity evolves?
+                      Are there recurring themes as evolution moves from non-plastic to more plastic
+                      strategies?
+                    </p>
+                    <h3>The Approach</h3>
+                    <p>
+                      If we want to observe the evolution of phenotypic plasticity step-by-step
+                      (mutation-by-mutation), we need a study system that we can extract high-resolution,
+                      historical genotype/phenotype data; this is something that would normally be
+                      quite difficult to do using biological systems. But, it turns out that
+                      computational evolution gives a great tool to ask questions about evolutionary
+                      processes, allowing us to record and analyze every mutation that occurs in a
+                      population of 'digital' organisms.
+                    </p>
+                    <h4>Study System</h4>
+                    <p>
+                      Here, we used the Avida Digital Evolution Platform to evolve phenotypically plastic
+                      digital organisms. Digital organisms in Avida are self-replicating computer programs
+                      whose genomes consist of instructions from a Turing-complete instruction set.
+                      Digital organisms in Avida compete for resources in a grid (a toroidal one in
+                      this case) by performing computational tasks. See below for a diagram of an
+                      organism in Avida.
+                    </p>
+                    <div class ="img-default" id="lineage_vis_legend">
+                      <img src="img/avida_org.png" alt="Legend" class="img-responsive"></img>
+                    </div>
+                    <h4>Environment</h4>
+                    <p>
+                      We evolved digital organisms in several environments under conditions known to
+                      lead to the evolution of phenotypic plasticity: (1) populations are exposed to
+                      temporally or spatially varying environments, (2) different environments favor
+                      different phenotypes, (3) no single phenotype exhibits high fitness across all
+                      environments, and (4) environments are differentiable by reliable signals. We
+                      also show a control environment where we keep the environment constant, expecting
+                      no plasticity to evolve.
+                    </p>
+                    <p>
+                      More specifically, we evolved organisms in several temporally changing environment (
+                      shown by the environment indicator bar on the 'y-axis'). In all environments,
+                      organisms were rewarded for performing the logical operations NAND and NOT. However,
+                      in all environments except the control, things were not so simple. In each of the
+                      experimental environments, sometimes NAND would be punished while NOT was rewarded
+                      and sometimes NOT would be punished while NAND was rewarded. This created selection
+                      pressure for organisms to since which environment they were in and to express
+                      the appropriate operation while surpressing the 'poison' operation. Check out the
+                      environment indicator bar in the visualization to see how the environments
+                      changed through the experiment. Below is a diagram of how environments changed.
+                    </p>
+                    <div class ="img-default" id="lineage_vis_legend">
+                      <img src="img/env.png" alt="Legend" class="img-responsive" style="background:white;"></img>
+                    </div>
+                    <p>
+                      The environments we tested included (explore data for each environment using environment
+                      selector on visualization dashboard):
+                      <ul>
+                        <li><b>Baseline Environment</b></li>
+                        <li><b>High Mutation Rate Environment:</b> relative to Baseline environment, this
+                        environment has an high mutation rate. </li>
+                        <li><b>Low Mutation Rate Environment:</b> relative to the Baseline environment, this
+                        environment has a low mutation rate. </li>
+                        <li><b>Rapidly Changing Environment:</b> relative to the Baseline environment, this
+                        environment changes rapidly (twice as fast as the baseline environment).</li>
+                        <li><b>Slowly Changing Environment:</b> relative to the Baseline environment, this
+                        environment changes slowly (the Baseline environment changes twice as fast as
+                        this environment). </li>
+                        <li><b>Control Environment:</b> this environment does not change. </li>
+                      </ul>
+                    </p>
+                    <p>
+                      Each environment type has different effects on the evolution of plasticity. In
+                      some cases, the visualization shows an alternative, bet-hedging  strategy evolve
+                      to deal with the changing environment. In environments where plasticity does evolve,
+                      we see that unconditional traits tend to evolve first; next, imprecise forms
+                      of phenotypic plasticity often appear before optimal forms finally evolve.
+                    </p>
+                    <h3>Okay, but what is this visualization?</h3>
+                    <p>
+                      To explore how phenotypic plasticity evolved in our experiments, we take a look
+                      at the final population of a given replicate, or run of evolution,
+                      and pick out the dominant organism. We then trace that organism's ancestral lineage
+                      all the way back to the original organism we used to seed the replicate.
+                    </p>
+                      Once we have a lineage, we can compute the phenotype of each ancestor along the lineage.
+                      Basically, we ask the question: what tasks do you do in each environment? There are
+                      16 possible phenotypes across the two environments, see the legend for an enumeration
+                      of these phenotypes. Once we phenotype each ancestor, we can assign it a color-code,
+                      which lets us visualize lineages as sequences of phenotypes (the phenotypes of
+                      ancestors in the lineage).
+                    <p>
+                      Lineages of evolved genotypes are visualized as vertical bars where time
+                      (in updates) proceeds from top to bottom beginning with lineage's original
+                      ancestor genotype.
+                    </p>
+                    <h4>Phenotypic State Indication</h4>
+                      Any given genotype on the lineage must express one of the sixteen possible
+                      phenotypes enumerated to in the legend. At each point in time,
+                      the color of the visualized lineage corresponds to the color representing the
+                      phenotype expressed by the lineage at that point in time. Hover your mouse over a
+                      phenotypic state in the visualization to see detail.
+                    <h4>Environment Indication</h4>
+                      The actual environmental conditions experienced by the evolving populations at
+                      each point in time are indicated by the color of the vertical axis. Hover your
+                      mouse over the environment axis to view details about the environment.
+                     <h4>Definitions</h4>
                      <ul>
                        <li><b>ENV-NAND</b> - the NAND computational task is rewarded and the NOT task is punished</li>
                        <li><b>ENV-NOT</b> - the NOT computational task is rewarded and the NAND task is punished</li>
                        <li><b>CONTROL-ENV</b> - both the NAND and the NOT computational tasks are rewarded</li>
                      </ul>
-                     <h3>Source</h3>
+                     <h4>Source</h4>
                      The source code for this visualization can be found: <a href="https://github.com/amlalejini/evo-origins-of-plast/tree/master/visualization">https://github.com/amlalejini/evo-origins-of-plast/tree/master/visualization</a>
+                     <h3>Talk to me!</h3>
+                     Is this visualization neat? Do you want to use something like it for data you might
+                     have? Or, have I explained something poorly, and there's something you don't understand?
+                     <h4>Contact me!</h4>
+                     Feel free to shoot me an email or get into contact with me about it! I'd love get some
+                     feedback: <a href="contact.html" class = "btn-lg nav_btn_lalejini">Contact Me Page</a>
                   </div>
                 </div>
               </div>
@@ -69,7 +183,9 @@
           </div> <!-- end about panel row -->
 
         </div> <!-- end col -->
-        <div class="col-md-6">
+        </div>
+        <div class="row">
+        <div class="col-md-12">
           <div class="panel panel-lalejini">
             <div class="panel-heading" role="tab" id="legend-heading">
               <h2>
@@ -84,7 +200,18 @@
                   <img src="img/RECOLOR-task-profiles.jpg" alt="Legend" class="img-responsive"></img>
                 </div>
                 <div class="text-box">
-                  <p>Enumeration of all possible phenotypic states. Each row represents a distinct phenotype. A green 'X' indicates that the associated task is performed in the specified environment, while a red '--' indicates that the task is not performed. For each environment, the column of the rewarded task is highlighted in green, and the column of the punished task is highlighted in red. A green 'X' in a green column or a red '--' in a red column is optimal. Each phenotype has a color code, which is used the visualization below. Note that the first four rows are non-plastic phenotypes, rows 5-8 exhibit partially beneficial plasticity, and row 9 is optimally beneficial. Rows 10-11 are mostly neutral, while rows 12-16 are detrimental forms of plasticity.</p>
+                  <p>
+                    Enumeration of all possible phenotypic states. Each row represents a distinct
+                    phenotype. A green 'X' indicates that the associated task is performed in the
+                    specified environment, while a red '--' indicates that the task is not performed.
+                    For each environment, the column of the rewarded task is highlighted in green,
+                    and the column of the punished task is highlighted in red. A green 'X' in a
+                    green column or a red '--' in a red column is optimal. Each phenotype has a
+                    color code, which is used the visualization below. Note that the first four
+                    rows are non-plastic phenotypes, rows 5-8 exhibit partially beneficial plasticity,
+                    and row 9 is optimally beneficial. Rows 10-11 are mostly neutral, while rows 12-16
+                    are detrimental forms of plasticity.
+                  </p>
                 </div>
               </div>
             </div>
