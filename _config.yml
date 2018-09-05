@@ -3,8 +3,6 @@
 title: "Alexander Lalejini"
 email: amlalejini@gmail.com
 
-baseurl: /learn_jekyll
-
 include:
   - _pages
 
