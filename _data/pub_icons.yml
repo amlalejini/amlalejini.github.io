@@ -1,0 +1,15 @@
+github_repository_icon: <i class="fab fa-github"></i>
+presentation_icon: <i class="fas fa-images"></i>
+pdf_icon: <i class="fas fa-file-pdf"></i>
+venue_journal_icon: <i class="fas fa-book-open"></i>
+venue_conference_icon: <i class="fas fa-chalkboard-teacher"></i>
+venue_book_icon: <i class="fas fa-book"></i>
+venue_journal_bullet: <i class="fa-li fas fa-book-open"></i>
+venue_conference_bullet: <i class="fa-li fas fa-chalkboard-teacher"></i>
+venue_book_bullet: <i class="fa-li fas fa-book"></i>
+venue_unknown_bullet: <i class="fa-li fas fa-question"></i>
+           
+          
+          
+          
+          

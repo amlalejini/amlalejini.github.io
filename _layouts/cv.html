@@ -1,0 +1,192 @@
+---
+layout: default
+---
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Curriculum Vitae</h1>
+    <a href="#cv-education"><i class="fas fa-graduation-cap"></i></a>
+    <a href="#cv-research"><i class="fas fa-flask"></i></a>   
+    <a href="#cv-publications"><i class="fas fa-books"></i></a>
+    <a href="#cv-presentations"><i class="fas fa-podium"></i></a>
+    <a href="#cv-teaching"><i class="fas fa-chalkboard-teacher"></i></a>
+    <a href="#cv-awards"><i class="fas fa-award"></i></a>
+    <a href="#cv-service"><i class="fas fa-hands-helping"></i></a>
+  </div>
+</div>
+
+
+<div class="container">
+  
+  <div class="row" id="cv-education">
+    <div class="col">
+      <h3>Education</h3>
+      <ul>
+        {% for edu in site.data.cv_education %}
+          <li><p>
+            {% if edu.institution %} 
+              <b>{{ edu.institution }}</b> {% if edu.location %} - {{ edu.location }} {% endif %} <br/> 
+            {% endif %}
+            {% if edu.dates %} {{ edu.dates }} <br/> {% endif %}
+            {% if edu.degree %} {{ edu.degree }} <br/> {% endif %}
+            {% if edu.advisor %} Advisor: {{ edu.advisor }} <br/> {% endif %}
+          </p></li>    
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="row" id="cv-research">
+    <div class="col">
+      <h3>Research Experience</h3>
+      <ul>
+        {% for exp in site.data.cv_research_experience %}
+          <li><p>
+              {% if exp.institution %} 
+                <b> {{ exp.institution }}</b> {% if exp.location %} - {{ exp.location }} {% endif %} <br/> 
+              {% endif %}
+              {% if exp.position %} 
+                {{ exp.position }}{% if exp.advisors %}, advisor(s): {{ exp.advisors }} {% endif %}
+                <br/>
+              {% endif %}
+              {% if exp.dates %} <i>{{ exp.dates }}</i> <br/> {% endif %}
+              {% if exp.description %} {{ exp.description }} <br/> {% endif %}
+              
+          </p></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="row" id="cv-publications">
+    <div class="col">
+      <h3>Publications</h3>
+      
+        {% for type in site.data.publications %}
+          {% if type.publications %}
+            <h5>{{ type.pretty_type }} </h5>
+            <ul class="fa-ul">
+              {% assign publications_sorted = type.publications | sort: 'year' | reverse %}
+              {% for pub in publications_sorted %}
+
+                {% if pub.venue %}
+                  {% case pub.venue %}
+                    {% when 'book' %}
+                      {% assign venue_bullet = '<i class="fa-li fas fa-book-open"></i>' %}
+                    {% when 'conference' %}
+                      {% assign venue_bullet = '<i class="fa-li fas fa-chalkboard-teacher"></i>' %}  
+                    {% when 'journal' %}                
+                      {% assign venue_bullet = '<i class="fa-li fas fa-book"></i>' %}
+                    {% else %}
+                      {% assign venue_bullet = nil %}
+                  {% endcase %}
+                {% endif %}
+
+                <li>
+                  {{ venue_bullet }}
+                  <p> 
+                    {{ pub.citation | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }} 
+                    <br/> 
+                    {% for badge in pub.badges %}
+                      <span class="badge badge-primary"> {{ badge }} </span>
+                    {% endfor %}
+                    
+                    {% if pub.github_repository_link %} {{ site.data.icons.link_github_repository_icon }} {% endif %}
+                    {% if pub.presentation_link %} {{ site.data.icons.link_presentation_icon }} {% endif %}
+                  </p>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endfor %}
+
+    </div>
+  </div>
+
+
+  <div class="row" id="cv-presentations">
+    <div class="col">
+      <h3>Presentations</h3>
+        <h5>Talks</h5>
+        <ul>
+          {% assign presentations_sorted = site.data.cv_presentations| sort: 'year' | reverse %}
+          {% for pres in presentations_sorted %}
+            {% if pres.type == "talk" %}
+              <li><p>
+                <b>{{ pres.title }}</b><br/>
+                {% if pres.authors %}<i>By {{ pres.authors }}</i> <br/> {% endif %}
+                Presented at {{ pres.venue }}.
+                {{ pres.date }}.
+                {{ pres.location }}.
+                {% if pres.slides_link %} <a href="{{ pres.slides_link }}">Slides</a>. {% endif %}
+              </p></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <h5>Posters</h5>
+        <ul>
+          {% assign presentations_sorted = site.data.cv_presentations| sort: 'year' | reverse %}
+          {% for pres in presentations_sorted %}
+            {% if pres.type == "poster" %}
+              <li><p>
+                <b>{{ pres.title }}</b><br/>
+                {% if pres.authors %}<i>By {{ pres.authors }}</i> <br/> {% endif %}
+                Presented at {{ pres.venue }}.
+                {{ pres.date }}.
+                {{ pres.location }}.
+                {% if pres.poster_link %} <a href="{{ pres.poster_link }}">Poster</a>. {% endif %}
+              </p></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+
+  <div class="row" id="cv-teaching">
+    <div class="col">
+      <h3>Teaching Experience</h3>
+      <ul>
+        {% for teaching_exp in site.data.cv_teaching %}
+        <li><p>
+          <b>{{ teaching_exp.exp }}</b> - {{ teaching_exp.date }} <br/>
+          <i>{{ teaching_exp.for }}</i> <br/>
+          {% if teaching_exp.description %} {{ teaching_exp.description }} {% endif %}
+        </p></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="row" id="cv-awards">
+    <div class="col">
+      <h3>Awards, Honors, and Fellowships</h3>
+      {% assign awards_sorted = site.data.cv_awards| sort: 'year' | reverse %}
+      <ul>
+          {% for award in awards_sorted %}
+            <li><p> 
+                <b> {{ award.award }}</b> <br/> 
+                <i>{{ award.date }}</i> <br/>
+                {% if award.description %} {{ award.description }} {% endif %}
+            </p></li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+
+  <div class="row" id="cv-service">
+    <div class="col">
+      <h3>Service and Outreach</h3>
+      {% assign service_sorted = site.data.cv_service | sort: 'year' | reverse %}
+      <ul>
+          {% for service in service_sorted %}
+            <li><p> 
+                <b> {{ service.service }}</b> <br/> 
+                {% if service.date %} <i>{{ service.date }}</i> <br/> {% endif %}
+                {% if service.description %} {{ service.description }} {% endif %}
+            </p></li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+
+</div>

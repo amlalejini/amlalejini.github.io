@@ -1,0 +1,115 @@
+- type: poster
+  title: Evolving event-driven agents with SignalGP
+  authors: Alexander Lalejini and Charles Ofria
+  venue: 2018 Annual BEACON Congress
+  date: August 8, 2018
+  location: East Lansing, MI (USA)
+  year: 2018
+  poster_link: https://docs.google.com/presentation/d/1XIw7LCK5iC9iBO7ZbDemVJX1gHbDm-pdxENGnwBH9Oo/edit?usp=sharing
+
+- type: poster
+  title: SignalGP
+  authors: Alexander Lalejini and Charles Ofria
+  venue: Engineering Graduate Research Symposium
+  location: Michigan State University, East Lansing, MI
+  date: March 29, 2018
+  year: 2018
+  poster_link: https://docs.google.com/presentation/d/1ij6-o-KPdtrBk6kNT7o9onmQZVSg2nA1Ce0flM6nL7g/edit?usp=sharing
+  badges: CS - honorable mention
+
+- type: poster
+  title: The Evolutionary Origins of Phenotypic Plasticity
+  authors: Alexander Lalejini and Charles Ofria
+  venue: Engineering Graduate Research Symposium
+  location: Michigan State University, East Lansing, MI
+  date: March 29, 2016
+  year: 2016
+  poster_link: https://docs.google.com/presentation/d/16FMFNkUKMYXoTPsUuJZtf8Z0Qfo4-yQ964WVOeT5TCs/edit?usp=sharing
+  badges: CS - honorable mention
+
+- type: poster
+  title: Robot Control
+  authors: Alexander Lalejini and Cindy Bethel
+  venue: Bagley College of Engineering Undergraduate Poster Competition
+  location: Mississippi State University, Starkville, MS
+  date: April 24, 2014
+  year: 2014
+
+- type: talk
+  title: The Evolutionary Origins of Phenotypic Plasticity
+  authors: Alexander Lalejini and Charles Ofria
+  venue: Fifteenth International Conference on the Synthesis and Simulation of Living Systems (ALIFE)
+  year: 2016
+  date: July 7, 2016
+  location: Cancun, Mexico
+  slides_link: https://docs.google.com/presentation/d/12AzO1cYUaEgHHlo6TdKaVV-UKG_hTCtN7vDz6waleLY/edit?usp=sharing
+
+- type: talk
+  title: The Evolutionary Origins of Phenotypic Plasticity
+  authors: Alexander Lalejini and Charles Ofria
+  venue: 2016 Annual BEACON Congress
+  year: 2016
+  date: August 11, 2016
+  location: East Lansing, MI (USA)
+  slides_link: https://docs.google.com/presentation/d/12AzO1cYUaEgHHlo6TdKaVV-UKG_hTCtN7vDz6waleLY/edit?usp=sharing
+
+- type: talk
+  title: Gene Duplications Drive the Evolution of Complex Traits and Regulation
+  authors: Alexander Lalejini, Michael J. Wiser, and Charles Ofria
+  venue: 2017 Annual BEACON Congress
+  year: 2017
+  date: August 4, 2017
+  location: East Lansing, MI (USA)
+  slides_link: https://docs.google.com/presentation/d/1by_lcyOZ2872BoSard0-b9LsejGxly9lxOobDiU0zy8/edit?usp=sharing
+
+- type: talk
+  title: Gene Duplications Drive the Evolution of Complex Traits and Regulation
+  authors: Alexander Lalejini, Michael J. Wiser, and Charles Ofria
+  venue: 14th European Conference on Artificial Life (ECAL)
+  year: 2017
+  date: September 5, 2017
+  location: Lyon, France
+  slides_link: https://docs.google.com/presentation/d/1by_lcyOZ2872BoSard0-b9LsejGxly9lxOobDiU0zy8/edit?usp=sharing
+
+- type: talk
+  title: Evaluation of supervisory control interfaces for mobile robot integration with tactical teams
+  authors: Alexander Lalejini, Dexter Duckworth, Richard Sween, Cindy L. Bethel, and Daniel W. Carruth
+  venue: 2014 IEEE Workshop on Advanced Robotics and Its Social Impacts (ARSO)
+  year: 2014
+  date: September 11, 2014
+  location: Evanston, IL (USA)
+
+- type: talk
+  title: Evolving event-driven programs with SignalGP
+  authors: Alexander Lalejini
+  venue: weekly BEACON Friday seminar
+  year: 2018
+  date: April 6, 2018
+  location: East Lansing, MI (USA)
+
+- type: talk
+  title: What else is in an evolved name? Exploring evolvable specificity with SignalGP
+  authors: Alexander Lalejini and Charles Ofria
+  venue: Genetic Programming Theory and Practice XVI
+  year: 2018
+  date: May 18, 2018
+  location: Ann Arbor, MI (USA)
+  slides_link: https://docs.google.com/presentation/d/1KF9iQb08CtQiWYD4py53DDJD_kjzT2U6Z3CtqfF8Bdc/edit?usp=sharing
+
+- type: talk
+  title: Evolving event-driven programs with SignalGP
+  venue: 2018 Genetic and Evolutionary Computation Conference (GECCO)
+  authors: Alexander Lalejini and Charles Ofria
+  location: Kyoto, Japan
+  date: July 17, 2018
+  year: 2018
+  slides_link: https://docs.google.com/presentation/d/1YKn9Hg7GNAsAEHNcHUKnWXq0HZD7k6zsM8irkIX-mlw/edit?usp=sharing
+
+- type: talk
+  title: Evolving reactive agents with SignalGP
+  authors: Alexander Lalejini and Charles Ofria
+  venue: 2018 Conference on Artificial Life (ALIFE)
+  year: 2018
+  date: July 26, 2018
+  location: Tokyo, Japan
+  slides_link: https://docs.google.com/presentation/d/1iMp2ndNikf_VMVkdxW3WUCtuaE2mmGr16p8Z-RixenQ/edit?usp=sharing

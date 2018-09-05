@@ -1,0 +1,25 @@
+
+# Site settings
+title: "Alexander Lalejini"
+email: amlalejini@gmail.com
+
+baseurl: /learn_jekyll
+
+include:
+  - _pages
+
+# Build settings
+sass:
+  sass_dir: _sass
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+    
+plugins:
+  - jekyll-sitemap
+  - jekyll-last-modified-at

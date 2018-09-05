@@ -1,0 +1,127 @@
+# Types of publication (in order of listing on page)
+publication_types:
+  - type_id: pre-pub
+    pretty: Pre-publication
+  - type_id: peer-reviewed-paper
+    pretty: Peer-reviewed papers
+  - type_id: peer-reviewed-abstract
+    pretty: Peer-reviewed abstracts
+  - type_id: book-chapter
+    pretty: Book chapters
+
+# Listing of publications
+publications:
+  - citation: |
+      Alexander Lalejini and Charles Ofria. (2018).
+      [Evolving reactive agents with SignalGP](https://doi.org/10.1162/isal_a_00069).
+      In Proceedings of the 2018 Conference on Artificial Life (ALIFE).
+      Edited by Takashi Ikegami, Nathaniel Virgo, Olaf Witkowski, Mizuki Oka, Reiji Suzuki, and Hiroyuki Iizuka.
+      pp. 368-369. DOI: [10.1162/isal_a_00069](https://doi.org/10.1162/isal_a_00069). MIT Press.
+    year: 2018
+    venue: conference  
+    type: peer-reviewed-abstract
+    presentation_link: https://docs.google.com/presentation/d/1iMp2ndNikf_VMVkdxW3WUCtuaE2mmGr16p8Z-RixenQ/edit?usp=sharing
+    github_repository_link: https://github.com/amlalejini/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP
+    link: https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_00069
+    pdf: /pubs/evolving-reactive-agents-with-signalgp.pdf
+
+  - citation: |
+      Emily Dolson, Alexander Lalejini, Steven Jorgensen, and Charles Ofria. (2018).
+      [Quantifying the tape of life: Ancestry-based metrics provide insights and intuition
+      about evolutionary dynamics.](https://doi.org/10.1162/isal_a_00020)
+      In Proceedings of the 2018 Conference on Artificial Life (ALIFE).
+      Edited by Takashi Ikegami, Nathaniel Virgo, Olaf Witkowski, Mizuki Oka, Reiji Suzuki, and Hiroyuki Iizuka.
+      pp. 75-82. DOI: [10.1162/isal_a_00020](https://doi.org/10.1162/isal_a_00020). MIT Press.
+    year: 2018
+    venue: conference
+    type: peer-reviewed-paper
+    presentation_link: https://docs.google.com/presentation/d/1dV044J3JzfLrdgfwWS_4Bq8-3UHOqvQQgmqEZEkrcCc/edit?usp=sharing
+    github_repository_link: https://github.com/stevenjson/ALife2018-Lineage
+    pdf: /pubs/quantifying-the-tape-of-life.pdf
+  
+  - citation: |
+      Alexander Lalejini and Charles Ofria. (2018).
+      [Evolving event-driven programs with SignalGP](https://doi.org/10.1145/3205455.3205523).
+      In Proceedings of the 2018 Genetic and Evolutionary Computation Conference (GECCO).
+      pp. 1135-1142.  DOI: [10.1145/3205455.3205523](https://doi.org/10.1145/3205455.3205523). ACM.
+    year: 2018
+    venue: "conference"
+    type: peer-reviewed-paper
+    presentation_link: "https://docs.google.com/presentation/d/1YKn9Hg7GNAsAEHNcHUKnWXq0HZD7k6zsM8irkIX-mlw/edit?usp=sharing"
+    github_repository_link: https://github.com/amlalejini/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP
+    pdf: /pubs/evolving-event-driven-programs-with-signalgp.pdf
+
+  
+  - citation: |
+      Alexander Lalejini, Michael J. Wiser, and Charles Ofria. (2017).
+      [Gene duplications drive the evolution of complex traits and regulation](https://doi.org/10.7551/ecal_a_045).
+      In Proceedings of the 14th European Conference on Artificial Life (ECAL) 2017.
+      Edited by Carole Knibbe, Guillaume Beslon, David Parsons, Dusan Misevic,
+      Jonathan Rouzaud-Cornabas, Nicolas Bredèche, Salima Hassas, Olivier Simonin,
+      and Hédi Soula. Vol 14. pp. 257-264. 
+      DOI: [10.7551/ecal_a_045](https://doi.org/10.7551/ecal_a_045). MIT Press.
+    link: https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_045
+    year: 2017
+    venue: "conference"
+    type: peer-reviewed-paper
+    presentation_link: https://docs.google.com/presentation/d/1by_lcyOZ2872BoSard0-b9LsejGxly9lxOobDiU0zy8/edit?usp=sharing
+    pdf: /pubs/gene-duplications-drive-the-evolution-of-complex-traits-and-regulation.pdf
+  
+  - citation: |
+      Alexander Lalejini and Charles Ofria. (2016). [The evolutionary origins of
+      phenotypic plasticity](https://doi.org/10.7551/978-0-262-33936-0-ch063). 
+      In Artificial Life XV: Proceedings of the Fifteenth
+      International Conference on the Synthesis and Simulation of Living Systems (ALIFE).
+      Edited by Carlos Gershenson, Tom Froese, Jesus M. Siqueiros, Wendy Aguilar,
+      Eduardo J. Izquierdo and Hiroki Sayama. Vol 14. pp. 372-379. 
+      DOI: [10.7551/978-0-262-33936-0-ch063](https://doi.org/10.7551/978-0-262-33936-0-ch063). MIT Press.
+    year: 2016
+    venue: "conference"
+    type: peer-reviewed-paper
+    badges: "best student paper"
+    presentation_link: https://docs.google.com/presentation/d/12AzO1cYUaEgHHlo6TdKaVV-UKG_hTCtN7vDz6waleLY/edit?usp=sharing
+    link: https://www.mitpressjournals.org/doi/abs/10.1162/978-0-262-33936-0-ch063
+    pdf: /pubs/the-evolutionary-origins-of-phenotypic-plasticity.pdf
+  
+  - citation: |
+      Christopher R. Hudson, Alexander Lalejini, Brandon Odom, Daniel W. Carruth, Cindy L. Bethel,
+      Phillip J. Durst, and Christopher Goodin. (2015).
+      ANVEL-ROS: The integration of the robot operating system with a high-fidelity simulator.
+      In Proceedings of the 2015 Ground Vehicle Systems Engineering and Technology Symposium (GVSETS).
+      p. 378.
+    year: 2015
+    venue: conference
+    type: peer-reviewed-paper
+    pdf: /pubs/ANVEL-ROS-integration.pdf
+  
+  - citation: |
+      Alexander Lalejini, Dexter Duckworth, Richard Sween, Cindy L. Bethel, and Daniel W. Carruth. (2014).
+      [Evaluation of supervisory control interfaces for mobile robot integration with tactical teams](https://doi.org/10.1109/ARSO.2014.7020971).
+      In Proceedings of 2014 IEEE Workshop on Advanced Robotics and Its Social Impacts (ARSO).
+      pp 1-6.
+      DOI: [10.1109/ARSO.2014.7020971](https://doi.org/10.1109/ARSO.2014.7020971). IEEE.
+    year: 2014
+    venue: conference
+    type: peer-reviewed-paper
+    pdf: /pubs/evaluation-of-supervisory-control-interfaces.pdf
+
+  - citation: |
+      Emily Dolson, Alexander Lalejini, and Charles Ofria. (in press).
+      [Exploring genetic programming systems with MAP-Elites](https://doi.org/10.7287/peerj.preprints.27154v1).
+      Genetic Programming Theory and Practice XVI. Springer.
+    year: 2018
+    venue: book
+    type: book-chapter
+    github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Genetic-Programming-Systems-with-MAP-Elites
+    pdf: /pubs/exploring-gp-systems-with-mape.pdf
+
+  - citation: |
+      Alexander Lalejini and Charles Ofria. (in press).
+      [What else is in an evolved name? Exploring evolvable specificity with SignalGP](https://doi.org/10.7287/peerj.preprints.27122v1).
+      Genetic Programming in Theory and Practice XVI. Springer.
+    year: 2018
+    venue: book
+    type: book-chapter
+    presentation_link: https://docs.google.com/presentation/d/1KF9iQb08CtQiWYD4py53DDJD_kjzT2U6Z3CtqfF8Bdc/edit?usp=sharing
+    github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Evolvable-Specificity-with-SignalGP
+    pdf: /pubs/exploring-evolvable-specificity.pdf

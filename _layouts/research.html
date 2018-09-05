@@ -1,0 +1,129 @@
+---
+layout: default
+---
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{ page.title }}</h1>
+    {% if page.jumbo_txt %}
+      <div class="lead"> {{ page.jumbo_txt | markdownify }} </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col">
+
+      <div class="card mb-3 border-0">
+        <div class="card-body">
+          <h4 class="card-title">Overview</h4>
+          <p class="card-text"> {{ page.overview | markdownify }} </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  {{ content }}
+
+  {% for research in site.data.research %}
+
+    <div class="row">
+
+      <div class="col"> <!-- each card has its own column in row column -->
+      
+        <div class="card mb-3">
+          
+          {% case research.image_pos %}
+            {% when "left" %}
+
+              <div class="row no-gutters">
+                  <div class="col-4 mb-1 ml-1 mt-1">
+                    
+                    {% if research.image_is_figure %}
+                      <figure class="figure">
+                        <img src="{{ research.image | relative_url }}" class="img-fluid figure-img" alt="">
+                        <figcaption class="figure-caption ml-2 mr-2">{{research.figure_caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+                      </figure>
+                    {% else %}
+                      <img src="{{ research.image | relative_url }}" class="img-fluid" alt="">
+                    {% endif %}                  
+
+                  </div>
+                  <div class="col">
+                      <div class="card-block px-2">
+                          <h4 class="card-title mt-3"> {{ research.project }}</h4>
+                          <div class="card-text"> {{ research.description | markdownify }} </div>
+                      </div>
+                  </div>
+              </div>
+
+            {% when "right" %}
+
+            <div class="row no-gutters">
+                <div class="col">
+                    <div class="card-block px-2">
+                        <h4 class="card-title mt-3"> {{ research.project }}</h4>
+                        <div class="card-text"> {{ research.description | markdownify }} </div>
+                    </div>
+                </div>
+                    <div class="col-4 mb-1 mr-1 mt-1">
+                    {% if research.image_is_figure %}
+                      <figure class="figure">
+                        <img src="{{ research.image | relative_url }}" class="img-fluid figure-img" alt="">
+                        <figcaption class="figure-caption ml-2 mr-2">{{research.figure_caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+                      </figure>
+                    {% else %}
+                      <img src="{{ research.image | relative_url }}" class="img-fluid" alt="">
+                    {% endif %}   
+                </div>
+            </div>
+
+            {% when "bottom" %} <!-- Default behavior is image at top of card. -->
+
+              <div class="card-body">
+                <h4 class="card-title">{{ research.project }}</h4>
+                <div class="card-text"> {{ research.description | markdownify }} </div>
+              </div>
+              
+              {% if research.image_is_figure %}
+                <figure class="figure">
+                  <img src="{{ research.image | relative_url }}" class="card-img-bottom figure-img" alt="">
+                  <figcaption class="figure-caption ml-2 mr-2">{{research.figure_caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+                </figure>
+              {% else %}
+                <img class="card-img-bottom" src="{{ research.image | relative_url }}" alt="Card image cap">
+              {% endif %}   
+            
+            {% else %}
+              
+              {% if research.image_is_figure %}
+                <figure class="figure">
+                  <img src="{{ research.image | relative_url }}" class="card-img-top figure-img" alt="">
+                  <figcaption class="figure-caption ml-2 mr-2">{{research.figure_caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+                </figure>
+              {% else %}
+                <img class="card-img-top" src="{{ research.image | relative_url }}" alt="Card image cap">
+              {% endif %} 
+
+              <div class="card-body">
+                <h4 class="card-title">{{ research.project }}</h4>
+                <div class="card-text"> {{ research.description | markdownify }} </div>
+              </div>
+
+          {% endcase %}
+
+
+        </div>
+
+      </div> <!-- end column -->
+
+    </div>
+
+  {% endfor %}
+
+</div>
