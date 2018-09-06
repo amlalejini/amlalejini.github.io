@@ -45,20 +45,20 @@ layout: default
           </thead>
           <tbody>
             <tr>
-              <th scope="row">{{ site.data.pub_icons.venue_journal_icon }}</th>
+              <th scope="row">{{ site.data.icons.venue_journal_icon }}</th>
               <td>
                 Journal publication
               </td>
             </tr>
             <tr>
-              <th scope="row">{{ site.data.pub_icons.venue_conference_icon }}</th>
+              <th scope="row">{{ site.data.icons.venue_conference_icon }}</th>
               <td>
                 Conference publication
               </td>
             
             </tr>
             <tr>
-              <th scope="row">{{ site.data.pub_icons.venue_book_icon }}</th>
+              <th scope="row">{{ site.data.icons.venue_book_icon }}</th>
               <td>
                 Book section/chapter
               </td>
@@ -72,15 +72,15 @@ layout: default
           </thead>
           <tbody>
             <tr>
-              <th scope="row">{{ site.data.pub_icons.pdf_icon }}</th>
+              <th scope="row">{{ site.data.icons.pdf_icon }}</th>
               <td>Link to download pdf version of publication</td>
             </tr>
             <tr>
-              <th scope="row">{{ site.data.pub_icons.github_repository_icon }}</th>
+              <th scope="row">{{ site.data.icons.github_repository_icon }}</th>
               <td>Link to an associated GitHub repository</td>
             </tr>
             <tr>
-              <th scope="row">{{ site.data.pub_icons.presentation_icon }}</th>
+              <th scope="row">{{ site.data.icons.presentation_icon }}</th>
               <td>Link to an associated poster or slide deck</td>
             </tr>
           </tbody>
@@ -111,16 +111,16 @@ layout: default
               {% if pub.venue %}
                 {% case pub.venue %}
                   {% when 'book' %}
-                    {{ site.data.pub_icons.venue_book_bullet }}
+                    {{ site.data.icons.venue_book_bullet }}
                   {% when 'conference' %}
-                    {{ site.data.pub_icons.venue_conference_bullet }}
+                    {{ site.data.icons.venue_conference_bullet }}
                   {% when 'journal' %}                
-                    {{ site.data.pub_icons.venue_journal_bullet }}
+                    {{ site.data.icons.venue_journal_bullet }}
                   {% else %}
-                    {{ site.data.pub_icons.venue_unknown_bullet }}
+                    {{ site.data.icons.venue_unknown_bullet }}
                 {% endcase %}
               {% else %}
-                {{ site.data.pub_icons.venue_unknown_bullet }}
+                {{ site.data.icons.venue_unknown_bullet }}
               {% endif %}
               <p> 
                 <!-- | remove: '<p>' | remove: '</p>' | is a hacky solution to remove <p></p> tags that markdownify surrounds things with. -->
@@ -129,9 +129,9 @@ layout: default
                 {% for badge in pub.badges %}
                   <span class="badge badge-primary"> {{ badge }} </span>
                 {% endfor %}
-                {% if pub.pdf %} <a href="{{ pub.pdf | relative_url }}"> {{ site.data.pub_icons.pdf_icon }}</a> {% endif %}
-                {% if pub.github_repository_link %} <a href="{{ pub.github_repository_link }}">{{ site.data.pub_icons.github_repository_icon }}</a> {% endif %}
-                {% if pub.presentation_link %}  <a href="{{ pub.presentation_link }}">{{ site.data.pub_icons.presentation_icon }}</a> {% endif %}
+                {% if pub.pdf %} <a href="{{ pub.pdf | relative_url }}"> {{ site.data.icons.pdf_icon }}</a> {% endif %}
+                {% if pub.github_repository_link %} <a href="{{ pub.github_repository_link }}">{{ site.data.icons.github_repository_icon }}</a> {% endif %}
+                {% if pub.presentation_link %}  <a href="{{ pub.presentation_link }}">{{ site.data.icons.presentation_icon }}</a> {% endif %}
               </p>
             </li>
           {% endfor %}
