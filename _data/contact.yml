@@ -1,4 +1,5 @@
 # This data file contains contact information.
+
 icons:
   contact_email_bullet: <i class="fa-li fa fa-envelope"></i>
   contact_github_bullet: <i class="fa-li fab fa-github"></i>

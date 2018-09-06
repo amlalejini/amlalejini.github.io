@@ -1,3 +1,5 @@
+# research.yml gives research project entries used on the Research page
+
 - project: Evolving event-driven programs with SignalGP
   image: "/imgs/signalgp.svg"
   image_pos: "bottom"

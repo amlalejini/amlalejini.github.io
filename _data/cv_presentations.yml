@@ -1,3 +1,5 @@
+# cv_presentations.yml gives a listing of presentations for my CV
+
 - type: poster
   title: Evolving event-driven agents with SignalGP
   authors: Alexander Lalejini and Charles Ofria

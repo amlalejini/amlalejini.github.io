@@ -1,3 +1,5 @@
+# publications.yml lists both publication types and publications
+
 # Types of publication (in order of listing on page)
 publication_types:
   - type_id: pre-pub

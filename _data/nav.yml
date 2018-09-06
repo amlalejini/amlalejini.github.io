@@ -1,14 +1,9 @@
+# nav.yml defines nav bar content. The order in the nav bar reflects the order here (top->bottom).
 - title: "About"
   href: "/"
-
 - title: "Research"
   href: "/research/"
-
 - title: "Publications"
   href: "/publications/"
-
 - title: "CV"
   href: "/cv/"
-
-# - title: "Contact"
-#   href: "/contact/"
