@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<!-- CV header and quick nav (via pretty icon links) -->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Curriculum Vitae</h1>
@@ -15,7 +15,10 @@ layout: default
   </div>
 </div>
 
-<div class="container">  
+<!-- Actual CV content, organized by category. -->
+<div class="container"> 
+  
+  <!-- Category - education -->
   <div class="row" id="cv-education">
     <div class="col">
       <h3>Education</h3>
@@ -34,6 +37,7 @@ layout: default
     </div>
   </div>
 
+  <!-- Category - research -->
   <div class="row" id="cv-research">
     <div class="col">
       <h3>Research Experience</h3>
@@ -48,56 +52,20 @@ layout: default
                 <br/>
               {% endif %}
               {% if exp.dates %} <i>{{ exp.dates }}</i> <br/> {% endif %}
-              {% if exp.description %} {{ exp.description }} <br/> {% endif %}
-              
+              {% if exp.description %} {{ exp.description }} <br/> {% endif %}         
           </p></li>
         {% endfor %}
       </ul>
     </div>
   </div>
   
+  <!-- Category - publications -->
   <div class="row" id="cv-publications">
     <div class="col">
-      <h3>Publications</h3>
-      
-        {% for type in site.data.publications %}
-          {% if type.publications %}
-            <h5>{{ type.pretty_type }} </h5>
-            <ul class="fa-ul">
-              {% assign publications_sorted = type.publications | sort: 'year' | reverse %}
-              {% for pub in publications_sorted %}
-
-                {% if pub.venue %}
-                  {% case pub.venue %}
-                    {% when 'book' %}
-                      {% assign venue_bullet = '<i class="fa-li fas fa-book-open"></i>' %}
-                    {% when 'conference' %}
-                      {% assign venue_bullet = '<i class="fa-li fas fa-chalkboard-teacher"></i>' %}  
-                    {% when 'journal' %}                
-                      {% assign venue_bullet = '<i class="fa-li fas fa-book"></i>' %}
-                    {% else %}
-                      {% assign venue_bullet = nil %}
-                  {% endcase %}
-                {% endif %}
-
-                <li>
-                  {{ venue_bullet }}
-                  <p> 
-                    {{ pub.citation | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }} 
-                    <br/> 
-                    {% for badge in pub.badges %}
-                      <span class="badge badge-primary"> {{ badge }} </span>
-                    {% endfor %}
-                    
-                    {% if pub.github_repository_link %} {{ site.data.icons.link_github_repository_icon }} {% endif %}
-                    {% if pub.presentation_link %} {{ site.data.icons.link_presentation_icon }} {% endif %}
-                  </p>
-                </li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        {% endfor %}
-
+      <h3>Publications</h3> 
+        <!-- List publications - this is largely copy and pasted from the publications
+             layout. Would be nice as an include except that I need to change the header level. -->
+        {% include list_publications.html header_level="5" %} 
     </div>
   </div>
 

@@ -1,0 +1,44 @@
+
+<!-- First, we'll loop over the types of publications, creating a header for each
+      and listing out all publications that are of that type. -->
+{% for pub_type in site.data.publications.publication_types %}
+  <!-- Filter the list of publications down to just those that are of this type. -->
+  {% assign pubs = site.data.publications.publications | where: "type",pub_type.type_id | sort: "year" | reverse %}
+  {% assign num_pubs = pubs | size %}
+  {% if num_pubs == 0 %} {% continue %} {% endif %} <!-- If none exist, move along without making a header for this type. -->
+  <!-- If we're here, some number of publications of this type exist. Give a header. -->
+  <h{% if include.header_level %}{{include.header_level}}{% else %}2{% endif %}>
+    {{ pub_type.pretty }}
+  </h{% if include.header_level %}{{include.header_level}}{% else %}2{% endif %}>
+    <ul class="fa-ul"> <!-- We'll use font awesome's unordered list (where fa icons are easily used as bullets) to list publications. -->
+      {% for pub in pubs %}
+        <li>
+          {% if pub.venue %}
+            {% case pub.venue %}
+              {% when 'book' %}
+                {{ site.data.icons.venue_book_bullet }}
+              {% when 'conference' %}
+                {{ site.data.icons.venue_conference_bullet }}
+              {% when 'journal' %}                
+                {{ site.data.icons.venue_journal_bullet }}
+              {% else %}
+                {{ site.data.icons.venue_unknown_bullet }}
+            {% endcase %}
+          {% else %}
+            {{ site.data.icons.venue_unknown_bullet }}
+          {% endif %}
+          <p> 
+            <!-- | remove: '<p>' | remove: '</p>' | is a hacky solution to remove <p></p> tags that markdownify surrounds things with. -->
+            {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }} 
+            <br/> 
+            {% for badge in pub.badges %}
+              <span class="badge badge-primary"> {{ badge }} </span>
+            {% endfor %}
+            {% if pub.pdf %} <a href="{{ pub.pdf | relative_url }}"> {{ site.data.icons.pdf_icon }}</a> {% endif %}
+            {% if pub.github_repository_link %} <a href="{{ pub.github_repository_link }}">{{ site.data.icons.github_repository_icon }}</a> {% endif %}
+            {% if pub.presentation_link %}  <a href="{{ pub.presentation_link }}">{{ site.data.icons.presentation_icon }}</a> {% endif %}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+{% endfor %}

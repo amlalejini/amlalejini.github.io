@@ -2,24 +2,24 @@
 layout: default
 ---
 
+<!-- Page header -->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">{{ page.title }}</h1>
-    
     <div class="lead">
       {{ page.jumbo_txt | markdownify }}
     </div>
-  
   </div>
 </div>
 
+<!-- Publication page content -->
 <div class="container">
 
-
+  <!-- This first row will contain a bit of explanatory text about how this page
+       is organized and a table w/icon explanations. -->
   <div class="row">
-
+    <!-- Context blurb -->
     <div class="col">
-      
       <div class="card border-0">
         <div class="card-body">
           <h5 class="card-title">Context</h5>
@@ -28,116 +28,62 @@ layout: default
           </div>
         </div>
       </div>
-      
     </div>
-
+    <!-- Icon definitions table -->
     <div class="col">
-
-    <div class="card" id="iconography-table">
-      <div class="card-body">
-        <h5 class="card-title">Iconography</h5>
-        <table class="table table-sm">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Icon</th>
-              <th scope="col">Publication venue</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">{{ site.data.icons.venue_journal_icon }}</th>
-              <td>
-                Journal publication
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">{{ site.data.icons.venue_conference_icon }}</th>
-              <td>
-                Conference publication
-              </td>
-            
-            </tr>
-            <tr>
-              <th scope="row">{{ site.data.icons.venue_book_icon }}</th>
-              <td>
-                Book section/chapter
-              </td>
-            </tr>
-          </tbody>
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Icon</th>
-              <th scope="col">Other information</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">{{ site.data.icons.pdf_icon }}</th>
-              <td>Link to download pdf version of publication</td>
-            </tr>
-            <tr>
-              <th scope="row">{{ site.data.icons.github_repository_icon }}</th>
-              <td>Link to an associated GitHub repository</td>
-            </tr>
-            <tr>
-              <th scope="row">{{ site.data.icons.presentation_icon }}</th>
-              <td>Link to an associated poster or slide deck</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="card" id="iconography-table">
+        <div class="card-body">
+          <h5 class="card-title">Iconography</h5>
+          <table class="table table-sm">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Icon</th>
+                <th scope="col">Publication venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{ site.data.icons.venue_journal_icon }}</th>
+                <td>Journal publication</td>
+              </tr>
+              <tr>
+                <th scope="row">{{ site.data.icons.venue_conference_icon }}</th>
+                <td>Conference publication</td>  
+              </tr>
+              <tr>
+                <th scope="row">{{ site.data.icons.venue_book_icon }}</th>
+                <td>Book section/chapter</td>
+              </tr>
+            </tbody>
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Icon</th>
+                <th scope="col">Other information</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{ site.data.icons.pdf_icon }}</th>
+                <td>Link to download pdf version of publication</td>
+              </tr>
+              <tr>
+                <th scope="row">{{ site.data.icons.github_repository_icon }}</th>
+                <td>Link to an associated GitHub repository</td>
+              </tr>
+              <tr>
+                <th scope="row">{{ site.data.icons.presentation_icon }}</th>
+                <td>Link to an associated poster or slide deck</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 
-  <!-- <p>Pub types:
-    {% for pt in present_pub_types %}
-    {{pt}}
-    {% endfor %}
-  </p> -->
+  <!-- This next enumerates all publications listed in publications.yml by category. -->
   <div class="row">
-
-    {% for pub_type in site.data.publications.publication_types %}
-      
-      {% assign pubs = site.data.publications.publications | where: "type",pub_type.type_id | sort: "year" | reverse %}
-      {% assign num_pubs = pubs | size %}
-      {% if num_pubs == 0 %} {% continue %} {% endif %}
-      
-      <h2>{{ pub_type.pretty }}</h2>
-
-        <ul class="fa-ul">
-          {% for pub in pubs %}
-            <li>
-              {% if pub.venue %}
-                {% case pub.venue %}
-                  {% when 'book' %}
-                    {{ site.data.icons.venue_book_bullet }}
-                  {% when 'conference' %}
-                    {{ site.data.icons.venue_conference_bullet }}
-                  {% when 'journal' %}                
-                    {{ site.data.icons.venue_journal_bullet }}
-                  {% else %}
-                    {{ site.data.icons.venue_unknown_bullet }}
-                {% endcase %}
-              {% else %}
-                {{ site.data.icons.venue_unknown_bullet }}
-              {% endif %}
-              <p> 
-                <!-- | remove: '<p>' | remove: '</p>' | is a hacky solution to remove <p></p> tags that markdownify surrounds things with. -->
-                {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }} 
-                <br/> 
-                {% for badge in pub.badges %}
-                  <span class="badge badge-primary"> {{ badge }} </span>
-                {% endfor %}
-                {% if pub.pdf %} <a href="{{ pub.pdf | relative_url }}"> {{ site.data.icons.pdf_icon }}</a> {% endif %}
-                {% if pub.github_repository_link %} <a href="{{ pub.github_repository_link }}">{{ site.data.icons.github_repository_icon }}</a> {% endif %}
-                {% if pub.presentation_link %}  <a href="{{ pub.presentation_link }}">{{ site.data.icons.presentation_icon }}</a> {% endif %}
-              </p>
-            </li>
-          {% endfor %}
-        </ul>
-    {% endfor %}
-
+    {% include list_publications.html header_level="2" %}
   </div>
 
 </div>

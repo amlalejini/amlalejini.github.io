@@ -2,19 +2,11 @@
 layout: default
 ---
 
-<!-- <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">{{ page.title }}</h1>
-    
-    </div>
-  </div> -->
-
 <div class="container">
 
+  <div class="row mt-3"> <!-- This row contains the about me blurb w/a picture. -->
 
-  <div class="row mt-3">
-
-    <div class="col-8">
+    <div class="col-8"> <!-- About me blurb -->
       <div class="card border-0">
         <div class="card-body">
           <div class="card-block px-2">
@@ -27,7 +19,7 @@ layout: default
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-4"> <!-- Image of me -->
       <figure class="figure">
         <img src="{{ page.about_me_img | relative_url }}" class="figure-img img-fluid rounded" alt="Picture of me!">
         <figcaption class="figure-caption text-right">
@@ -38,7 +30,6 @@ layout: default
       </figure>
     </div>
 
-
-  </div>
-
+  </div> <!-- end row -->
+  
 </div>
