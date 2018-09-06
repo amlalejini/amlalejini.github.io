@@ -2,6 +2,7 @@
 github_repository_icon: <i class="fab fa-github"></i>
 presentation_icon: <i class="fas fa-images"></i>
 pdf_icon: <i class="fas fa-file-pdf"></i>
+bibtex_icon: <i class="fas fa-quote-right"></i>
 
 venue_journal_icon: <i class="fas fa-book-open"></i>
 venue_conference_icon: <i class="fas fa-chalkboard-teacher"></i>

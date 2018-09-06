@@ -38,10 +38,33 @@
               <span class="badge badge-primary"> {{ badge }} </span>
             {% endfor %}
             {% if pub.pdf %} <a href="{{ pub.pdf | relative_url }}"> {{ site.data.icons.pdf_icon }}</a> {% endif %}
-            {% if pub.github_repository_link %} <a href="{{ pub.github_repository_link }}">{{ site.data.icons.github_repository_icon }}</a> {% endif %}
-            {% if pub.presentation_link %}  <a href="{{ pub.presentation_link }}">{{ site.data.icons.presentation_icon }}</a> {% endif %}
+            {% if pub.bibtex %}
+              <a href="#" data-toggle="modal" data-target="#{{ pub.bibtex_id }}">{{ site.data.icons.bibtex_icon }}</a>
+            {% endif %}
+            {% if pub.github_repository_link %}<a href="{{ pub.github_repository_link }}">{{ site.data.icons.github_repository_icon }}</a> {% endif %}
+            {% if pub.presentation_link %}<a href="{{ pub.presentation_link }}">{{ site.data.icons.presentation_icon }}</a> {% endif %}
           </p>
         </li>
+        {% if pub.bibtex %}
+          <div class="modal fade" id="{{ pub.bibtex_id }}" tabindex="-1" role="dialog" aria-labelledby="{{ pub.bibtex_id }}-label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="{{pub.bibtex_id}}-label">Cite</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  {{ pub.bibtex | markdownify }}
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
       {% endfor %}
     </ul>
 {% endfor %}

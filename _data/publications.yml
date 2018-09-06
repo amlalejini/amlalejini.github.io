@@ -27,8 +27,22 @@ publications:
     type: peer-reviewed-abstract
     presentation_link: https://docs.google.com/presentation/d/1iMp2ndNikf_VMVkdxW3WUCtuaE2mmGr16p8Z-RixenQ/edit?usp=sharing
     github_repository_link: https://github.com/amlalejini/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP
-    link: https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_00069
     pdf: /pubs/evolving-reactive-agents-with-signalgp.pdf
+    bibtex_id: Lalejini2018-ALIFE
+    bibtex: |
+      ```bibtex
+      @inproceedings{Lalejini2018-ALIFE,
+        address = {Cambridge, MA},
+        author = {Lalejini, Alexander and Ofria, Charles},
+        booktitle = {The 2018 Conference on Artificial Life},
+        doi = {10.1162/isal_a_00069},
+        pages = {368--369},
+        publisher = {MIT Press},
+        title = {{Evolving Reactive Agents with SignalGP}},
+        url = {https://www.mitpressjournals.org/doi/abs/10.1162/isal{\_}a{\_}00069},
+        year = {2018}
+      }
+      ```
 
   - citation: |
       Emily Dolson, Alexander Lalejini, Steven Jorgensen, and Charles Ofria. (2018).
@@ -43,7 +57,22 @@ publications:
     presentation_link: https://docs.google.com/presentation/d/1dV044J3JzfLrdgfwWS_4Bq8-3UHOqvQQgmqEZEkrcCc/edit?usp=sharing
     github_repository_link: https://github.com/stevenjson/ALife2018-Lineage
     pdf: /pubs/quantifying-the-tape-of-life.pdf
-  
+    bibtex_id: Dolson2018-ALIFE
+    bibtex: |
+      ```bibtex
+      @inproceedings{Dolson2018-ALIFE,
+        address = {Cambridge, MA},
+        author = {Dolson, Emily and Lalejini, Alexander and Jorgensen, Steven and Ofria, Charles},
+        booktitle = {The 2018 Conference on Artificial Life},
+        doi = {10.1162/isal_a_00020},
+        pages = {75--82},
+        publisher = {MIT Press},
+        title = {{Quantifying the Tape of Life: Ancestry-based Metrics Provide Insights and Intuition about Evolutionary Dynamics}},
+        url = {https://www.mitpressjournals.org/doi/abs/10.1162/isal{\_}a{\_}00020},
+        year = {2018}
+      }
+      ```
+
   - citation: |
       Alexander Lalejini and Charles Ofria. (2018).
       [Evolving event-driven programs with SignalGP](https://doi.org/10.1145/3205455.3205523).
@@ -55,8 +84,28 @@ publications:
     presentation_link: "https://docs.google.com/presentation/d/1YKn9Hg7GNAsAEHNcHUKnWXq0HZD7k6zsM8irkIX-mlw/edit?usp=sharing"
     github_repository_link: https://github.com/amlalejini/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP
     pdf: /pubs/evolving-event-driven-programs-with-signalgp.pdf
+    bibtex_id: Lalejini2018-GECCO
+    bibtex: |
+      ```bibtex
+      @inproceedings{Lalejini2018-GECCO,
+        abstract = {We present SignalGP, a new genetic programming (GP) technique designed to incorporate the event-driven programming paradigm into computational evolution's toolbox. Event-driven programming is a software design philosophy that simplifies the development of reactive programs by automatically triggering program modules (event-handlers) in response to external events, such as signals from the environment or messages from other programs. SignalGP incorporates these concepts by extending existing tag-based referencing techniques into an event-driven context. Both events and functions are labeled with evolvable tags; when an event occurs, the function with the closest matching tag is triggered. In this work, we apply SignalGP in the context of linear GP. We demonstrate the value of the event-driven paradigm using two distinct test problems (an environment coordination problem and a distributed leader election problem) by comparing SignalGP to variants that are otherwise identical, but must actively use sensors to process events or messages. In each of these problems, rapid interaction with the environment or other agents is critical for maximizing fitness. We also discuss ways in which SignalGP can be generalized beyond our linear GP implementation.},
+        address = {New York, New York, USA},
+        archivePrefix = {arXiv},
+        arxivId = {1804.05445},
+        author = {Lalejini, Alexander and Ofria, Charles},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference on - GECCO '18},
+        doi = {10.1145/3205455.3205523},
+        eprint = {1804.05445},
+        isbn = {9781450356183},
+        keywords = {event-driven computation,event-driven programming,genetic programming,linear genetic programming,signalgp,tags},
+        pages = {1135--1142},
+        publisher = {ACM Press},
+        title = {{Evolving event-driven programs with SignalGP}},
+        url = {http://arxiv.org/abs/1804.05445{\%}0Ahttp://dx.doi.org/10.1145/3205455.3205523 http://dl.acm.org/citation.cfm?doid=3205455.3205523},
+        year = {2018}
+      }
+      ```
 
-  
   - citation: |
       Alexander Lalejini, Michael J. Wiser, and Charles Ofria. (2017).
       [Gene duplications drive the evolution of complex traits and regulation](https://doi.org/10.7551/ecal_a_045).
@@ -71,6 +120,24 @@ publications:
     type: peer-reviewed-paper
     presentation_link: https://docs.google.com/presentation/d/1by_lcyOZ2872BoSard0-b9LsejGxly9lxOobDiU0zy8/edit?usp=sharing
     pdf: /pubs/gene-duplications-drive-the-evolution-of-complex-traits-and-regulation.pdf
+    bibtex_id: Lalejini2017-ECAL
+    bibtex: |
+      ```bibtex
+      @inproceedings{Lalejini2017-ECAL,
+        address = {Cambridge, MA},
+        author = {Lalejini, Alexander and Wiser, Michael J. and Ofria, Charles},
+        booktitle = {Proceedings of the 14th European Conference on Artificial Life ECAL 2017},
+        doi = {10.7551/ecal_a_045},
+        isbn = {978-0-262-34633-7},
+        month = {sep},
+        number = {September},
+        pages = {257--264},
+        publisher = {MIT Press},
+        title = {{Gene duplications drive the evolution of complex traits and regulation}},
+        url = {https://www.mitpressjournals.org/doi/abs/10.1162/isal{\_}a{\_}045},
+        year = {2017}
+      }
+      ```
   
   - citation: |
       Alexander Lalejini and Charles Ofria. (2016). [The evolutionary origins of
@@ -87,7 +154,24 @@ publications:
     presentation_link: https://docs.google.com/presentation/d/12AzO1cYUaEgHHlo6TdKaVV-UKG_hTCtN7vDz6waleLY/edit?usp=sharing
     link: https://www.mitpressjournals.org/doi/abs/10.1162/978-0-262-33936-0-ch063
     pdf: /pubs/the-evolutionary-origins-of-phenotypic-plasticity.pdf
-  
+    bibtex_id: Lalejini2016-ALIFE
+    bibtex: |
+      ```bibtex
+      @inproceedings{Lalejini2016-ALIFE,
+        abstract = {Many effective and innovative survival mechanisms used by natural organisms rely on the capacity for phenotypic plasticity; that is, the ability of a genotype to alter how it is expressed based on the current environmental conditions. Understanding the evolution of phenotypic plasticity is an important step towards understanding the origins of many types of biological complexity, as well as to meeting challenges in evolutionary computation where dynamic solutions are required. Here, we leverage the Avida Digital Evolution Platform to experimentally explore the selective pressures and evolutionary pathways that lead to phenotypic plasticity. We present evolved lineages wherein unconditional traits tend to evolve first; next, imprecise forms of phenotypic plasticity often ap-pear before optimal forms finally evolve. We visualize the phenotypic states traversed by evolved lineages across environments with differing rates of mutations and environmental change. We see that under all conditions, populations can fail to evolve phenotypic plasticity, instead relying on mutation-based solutions.},
+        address = {Cambridge, MA},
+        author = {Lalejini, Alexander and Ofria, Charles},
+        booktitle = {Proceedings of the Artificial Life Conference 2016},
+        doi = {10.7551/978-0-262-33936-0-ch063},
+        isbn = {978-0-262-33936-0},
+        pages = {372--379},
+        publisher = {MIT Press},
+        title = {{The Evolutionary Origins of Phenotypic Plasticity}},
+        url = {https://mitpress.mit.edu/sites/default/files/titles/content/alife16/978-0-262-33936-0-ch063.pdf https://www.mitpressjournals.org/doi/abs/10.1162/978-0-262-33936-0-ch063},
+        year = {2016}
+      }
+      ```
+
   - citation: |
       Christopher R. Hudson, Alexander Lalejini, Brandon Odom, Daniel W. Carruth, Cindy L. Bethel,
       Phillip J. Durst, and Christopher Goodin. (2015).
@@ -98,6 +182,16 @@ publications:
     venue: conference
     type: peer-reviewed-paper
     pdf: /pubs/ANVEL-ROS-integration.pdf
+    bibtex_id: Hudson2015-GVSETS
+    bibtex: |
+      ```bibtex
+      @inproceedings{Hudson2015-GVSETS,
+        author = {Hudson, Christopher R and Lalejini, Alexander and Odom, Brandon and Carruth, Daniel W and Bethel, Cindy L and Durst, Phillip J and Goodin, Christopher},
+        booktitle = {2015 Ground Vehicle Systems Engineering and Technology Symposium},
+        title = {{Anvel-ROS: the Integration of the Robot Operating System With a High-Fidelity Simulator}},
+        year = {2015}
+        }
+      ```
   
   - citation: |
       Alexander Lalejini, Dexter Duckworth, Richard Sween, Cindy L. Bethel, and Daniel W. Carruth. (2014).
@@ -109,6 +203,26 @@ publications:
     venue: conference
     type: peer-reviewed-paper
     pdf: /pubs/evaluation-of-supervisory-control-interfaces.pdf
+    bibtex_id: Lalejini2014-ARSO
+    bibtex: |
+      ```
+      @inproceedings{Lalejini2014-ARSO,
+        abstract = {As robotic systems become more sophisticated, they are increasingly called upon to accompany humans in high-stress environments. This research was conducted to support the integration of robotic systems into tactical teams operating in challenging and stressful environments. Robotic systems used to assist tactical teams will need to support some form of autonomy; these systems must be capable of providing operators supervisory control in cases of unpredictable real-time events. An evaluation of the relative effectiveness of three different methods of supervisory control of an autonomously operated mobile robot system was conducted: (1) hand gestures using a Microsoft Kinect, (2) an interactive Android application on a hand-held mobile device, and (3) verbal commands issued through a headset. These methods of supervisory control were compared to a teleoperated robot using a gamepad controller. The results from this pilot study determined that the touchscreen device was the easiest interface to use to override the robot's next intended movement (L2(3,23)=11.413, p=.003, d=1.58) and was considered the easiest interface to use overall (L2(3,23)=8.078, p=.044, d=.93). The results also indicate that the touchscreen device provided the most enjoyable, satisfying, and engaging interface of the four user interfaces evaluated.},
+        author = {Lalejini, Alexander and Duckworth, Dexter and Sween, Richard and Bethel, Cindy L. and Carruth, Daniel},
+        booktitle = {2014 IEEE International Workshop on Advanced Robotics and its Social Impacts},
+        doi = {10.1109/ARSO.2014.7020971},
+        isbn = {978-1-4799-6968-5},
+        issn = {21627576},
+        month = {sep},
+        number = {January},
+        pages = {1--6},
+        publisher = {IEEE},
+        title = {{Evaluation of supervisory control interfaces for mobile robot integration with tactical teams}},
+        url = {http://ieeexplore.ieee.org/document/7020971/},
+        volume = {2015-Janua},
+        year = {2014}
+      }
+      ```
 
   - citation: |
       Emily Dolson, Alexander Lalejini, and Charles Ofria. (in press).
@@ -119,6 +233,17 @@ publications:
     type: book-chapter
     github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Genetic-Programming-Systems-with-MAP-Elites
     pdf: /pubs/exploring-gp-systems-with-mape.pdf
+    bibtex_id: Dolson2018-GPTP
+    bibtex: |
+      ```bibtex
+      @article{Dolson2018-GPTP,
+        author = {Dolson, Emily and Lalejini, Alexander and Ofria, Charles},
+        doi = {10.7287/peerj.preprints.27154},
+        pages = {1--18},
+        title = {{Exploring Genetic Programming Systems with MAP-Elites}},
+        year = {2018}
+      }
+      ```
 
   - citation: |
       Alexander Lalejini and Charles Ofria. (in press).
@@ -130,3 +255,16 @@ publications:
     presentation_link: https://docs.google.com/presentation/d/1KF9iQb08CtQiWYD4py53DDJD_kjzT2U6Z3CtqfF8Bdc/edit?usp=sharing
     github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Evolvable-Specificity-with-SignalGP
     pdf: /pubs/exploring-evolvable-specificity.pdf
+    bibtex_id: Lalejini2018-GPTP
+    bibtex: |
+      ```bibtex
+      @article{Lalejini2018-GPTP,
+        author = {Lalejini, Alexander and Ofria, Charles},
+        doi = {10.7287/peerj.preprints.27122v1},
+        journal = {PeerJ Preprints 6:e27122v1},
+        pages = {1--21},
+        title = {{What else is in an evolved name? Exploring evolvable specificity with SignalGP}},
+        url = {https://doi.org/10.7287/peerj.preprints.27122v1},
+        year = {2018}
+      }
+      ```
