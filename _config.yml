@@ -6,11 +6,9 @@ email: amlalejini@gmail.com
 include:
   - _pages
 
-# Build settings
 sass:
   sass_dir: _sass
 
-# Defaults
 defaults:
   -
     scope:
@@ -20,4 +18,3 @@ defaults:
     
 plugins:
   - jekyll-sitemap
-  - jekyll-last-modified-at
