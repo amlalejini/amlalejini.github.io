@@ -1,37 +1,36 @@
-<hr>
+<hr> <!-- Separate footer from rest of page with horizontal line. -->
 
-<footer>
+<footer> 
+    <div class="container"> <!-- Footer is contained in Bootstrap container. -->
 
-    <div class="container">
-      
+      <!-- === Contact me information === -->
       <div class="row">
         <div class="col">
           <h5>Contact me</h5>
         </div>  
       </div>
 
+      <!-- Email and social media on one side, address on the other. -->
       <div class="row">
-        
+        <!-- Give email and social media contact info. -->
         <div class="col-auto" id="contact-me">
             <ul class="fa-ul">
-              <li><i class="fa-li fa fa-envelope"></i> amlalejini@gmail.com </li>
-              <li><i class="fa-li fab fa-github"></i> <a href="https://github.com/amlalejini"> amlalejini </a></li>
-              <li><i class="fa-li fab fa-twitter"></i><a href="https://twitter.com/amlalejini"> @amlalejini </a></li>
+              <li>{{ site.data.contact.icons.contact_email_bullet }} {{ site.data.contact.email.address }} </li>
+              <li>{{ site.data.contact.icons.contact_github_bullet }}<a href="{{ site.data.contact.github.link }}"> {{ site.data.contact.github.username }} </a></li>
+              <li>{{ site.data.contact.icons.contact_twitter_bullet }}<a href="{{ site.data.contact.twitter.link }}"> {{ site.data.contact.twitter.username }} </a></li>
             </ul>
         </div>
-
+        <!-- Give physical work/office address. -->
         <div class="col">
           <ul class="fa-ul">
-            <li><i class="fa-li fas fa-map-marker-alt"></i>
-                  <p>MSU - BEACON Center <br/> 
-                  Biomedical and Physical Sciences Building <br/> 
-                  567 Wilson Road Room 1455 <br/>
-                  East Lansing, MI 48824</p>
+            <li>{{ site.data.contact.icons.contact_address_bullet }}
+                {{ site.data.contact.address | markdownify }}
             </li>
           </ul> 
         </div>
       </div>
 
+      <!-- === Site information ===  -->
       <div class="row justify-content-center">
         <div class="col-auto">
           <i class="fas fa-copyright"></i>
@@ -42,13 +41,11 @@
             <a href="https://getbootstrap.com/">Bootstrap</a>,
             and <a href="https://fontawesome.com/">Font Awesome</a>.
             <a href="https://github.com/amlalejini/amlalejini.github.io">Source</a>.
-            {{ page.last_modified_at }}
           </small>
         </div>
       </div>
 
     </div>
-
 </footer>
 
 
