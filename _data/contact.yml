@@ -1,11 +1,5 @@
 # This data file contains contact information.
 
-icons:
-  contact_email_bullet: <i class="fa-li fa fa-envelope"></i>
-  contact_github_bullet: <i class="fa-li fab fa-github"></i>
-  contact_twitter_bullet: <i class="fa-li fab fa-twitter"></i>
-  contact_address_bullet: <i class="fa-li fas fa-map-marker-alt"></i>
-
 twitter:
   link: https://twitter.com/amlalejini
   username: "@amlalejini"
