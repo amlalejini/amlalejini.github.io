@@ -8,6 +8,9 @@ publication_types:
     pretty: Peer-reviewed papers
   - type_id: peer-reviewed-abstract
     pretty: Peer-reviewed abstracts
+    overview: |
+      These are short (usually 2-page) summaries of research recently published or
+      to be published elsewhere.
   - type_id: book-chapter
     pretty: Book chapters
 

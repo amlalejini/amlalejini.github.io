@@ -12,6 +12,7 @@
   <h{% if include.header_level %}{{include.header_level}}{% else %}2{% endif %}>
     {{ pub_type.pretty }}
   </h{% if include.header_level %}{{include.header_level}}{% else %}2{% endif %}>
+    {% if pub_type.overview %}{{ pub_type.overview | markdownify }} {% endif %}
     <ul class="fa-ul"> <!-- We'll use font awesome's unordered list (where fa icons are easily used as bullets) to list publications. -->
       {% for pub in pubs %}
         <li>
