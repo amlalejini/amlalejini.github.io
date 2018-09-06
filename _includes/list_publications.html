@@ -7,6 +7,8 @@
   {% assign num_pubs = pubs | size %}
   {% if num_pubs == 0 %} {% continue %} {% endif %} <!-- If none exist, move along without making a header for this type. -->
   <!-- If we're here, some number of publications of this type exist. Give a header. -->
+  <!-- The below nonsense lets me give an include argument to specify the heading level for
+        publication category headings. -->
   <h{% if include.header_level %}{{include.header_level}}{% else %}2{% endif %}>
     {{ pub_type.pretty }}
   </h{% if include.header_level %}{{include.header_level}}{% else %}2{% endif %}>

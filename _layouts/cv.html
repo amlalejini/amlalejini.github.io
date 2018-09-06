@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <!-- CV header and quick nav (via pretty icon links) -->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -63,13 +64,12 @@ layout: default
   <div class="row" id="cv-publications">
     <div class="col">
       <h3>Publications</h3> 
-        <!-- List publications - this is largely copy and pasted from the publications
-             layout. Would be nice as an include except that I need to change the header level. -->
+        <!-- List publications with a lovely parameterized include. -->
         {% include list_publications.html header_level="5" %} 
     </div>
   </div>
 
-
+  <!-- Category - presentations (posters and talks) -->
   <div class="row" id="cv-presentations">
     <div class="col">
       <h3>Presentations</h3>
@@ -108,6 +108,7 @@ layout: default
     </div>
   </div>
 
+  <!-- Category - teaching -->
   <div class="row" id="cv-teaching">
     <div class="col">
       <h3>Teaching Experience</h3>
@@ -123,6 +124,7 @@ layout: default
     </div>
   </div>
 
+  <!-- Category - awards/honors/fellowships -->
   <div class="row" id="cv-awards">
     <div class="col">
       <h3>Awards, Honors, and Fellowships</h3>
@@ -130,8 +132,8 @@ layout: default
       <ul>
           {% for award in awards_sorted %}
             <li><p> 
-                <b> {{ award.award }}</b> <br/> 
-                <i>{{ award.date }}</i> <br/>
+                <b>{{ award.award }}</b><br/> 
+                <i>{{ award.date }}</i><br/>
                 {% if award.description %} {{ award.description }} {% endif %}
             </p></li>
           {% endfor %}
@@ -139,6 +141,7 @@ layout: default
     </div>
   </div>
 
+  <!-- Category - service/outreach -->
   <div class="row" id="cv-service">
     <div class="col">
       <h3>Service and Outreach</h3>
