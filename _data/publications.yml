@@ -225,24 +225,34 @@ publications:
       ```
 
   - citation: |
-      Emily Dolson, Alexander Lalejini, and Charles Ofria. (in press).
-      [Exploring genetic programming systems with MAP-Elites](https://doi.org/10.7287/peerj.preprints.27154v1).
-      Genetic Programming Theory and Practice XVI. Springer.
-    year: 2018
+      Dolson E., Lalejini A., Ofria C. (2019). 
+      [Exploring Genetic Programming Systems with MAP-Elites](https://doi.org/10.1007/978-3-030-04735-1_1). 
+      In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
+    year: 2019
     venue: book
     type: book-chapter
     github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Genetic-Programming-Systems-with-MAP-Elites
     pdf: /pubs/exploring-gp-systems-with-mape.pdf
-    bibtex_id: Dolson2018-GPTP
+    bibtex_id: Dolson2019-GPTP
     bibtex: |
-      ```bibtex
-      @article{Dolson2018-GPTP,
-        author = {Dolson, Emily and Lalejini, Alexander and Ofria, Charles},
-        doi = {10.7287/peerj.preprints.27154},
-        pages = {1--18},
-        title = {{Exploring Genetic Programming Systems with MAP-Elites}},
-        year = {2018}
-      }
+      ```@Inbook{Dolson2019-GPTP,
+            author="Dolson, Emily
+            and Lalejini, Alexander
+            and Ofria, Charles",
+            editor="Banzhaf, Wolfgang
+            and Spector, Lee
+            and Sheneman, Leigh",
+            title="Exploring Genetic Programming Systems with MAP-Elites",
+            bookTitle="Genetic Programming Theory and Practice XVI",
+            year="2019",
+            publisher="Springer International Publishing",
+            address="Cham",
+            pages="1--16",
+            abstract="MAP-Elites is an evolutionary computation technique that has proven valuable for exploring and illuminating the genotype-phenotype space of a computational problem. In MAP-Elites, a population is structured based on phenotypic traits of prospective solutions; each cell represents a distinct combination of traits and maintains only the most fit organism found with those traits. The resulting map of trait combinations allows the user to develop a better understanding of how each trait relates to fitness and how traits interact. While MAP-Elites has not been demonstrated to be competitive for identifying the optimal Pareto front, the insights it provides do allow users to better understand the underlying problem. In particular, MAP-Elites has provided insight into the underlying structure of problem representations, such as the value of connection cost or modularity to evolving neural networks. Here, we extend the use of MAP-Elites to examine genetic programming representations, using aspects of program architecture as traits to explore. We demonstrate that MAP-Elites can generate programs with a much wider range of architectures than other evolutionary algorithms do (even those that are highly successful at maintaining diversity), which is not surprising as this is the purpose of MAP-Elites. Ultimately, we propose that MAP-Elites is a useful tool for understanding why genetic programming representations succeed or fail and we suggest that it should be used to choose selection techniques and tune parameters.",
+            isbn="978-3-030-04735-1",
+            doi="10.1007/978-3-030-04735-1_1",
+            url="https://doi.org/10.1007/978-3-030-04735-1_1"
+          }
       ```
 
   - citation: |
