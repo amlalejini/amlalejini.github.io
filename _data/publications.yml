@@ -257,25 +257,33 @@ publications:
       ```
 
   - citation: |
-      Alexander Lalejini and Charles Ofria. (in press).
-      [What else is in an evolved name? Exploring evolvable specificity with SignalGP](https://doi.org/10.7287/peerj.preprints.27122v1).
-      Genetic Programming in Theory and Practice XVI. Springer.
-    year: 2018
+      Lalejini A., Ofria C. (2019) 
+      [What Else Is in an Evolved Name? Exploring Evolvable Specificity with SignalGP](https://doi.org/10.1007/978-3-030-04735-1_6). 
+      In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
+    year: 2019
     venue: book
     type: book-chapter
     presentation_link: https://docs.google.com/presentation/d/1KF9iQb08CtQiWYD4py53DDJD_kjzT2U6Z3CtqfF8Bdc/edit?usp=sharing
     github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Evolvable-Specificity-with-SignalGP
     pdf: /pubs/exploring-evolvable-specificity.pdf
-    bibtex_id: Lalejini2018-GPTP
+    bibtex_id: Lalejini2019-GPTP
     bibtex: |
       ```bibtex
-      @article{Lalejini2018-GPTP,
-        author = {Lalejini, Alexander and Ofria, Charles},
-        doi = {10.7287/peerj.preprints.27122v1},
-        journal = {PeerJ Preprints 6:e27122v1},
-        pages = {1--21},
-        title = {{What else is in an evolved name? Exploring evolvable specificity with SignalGP}},
-        url = {https://doi.org/10.7287/peerj.preprints.27122v1},
-        year = {2018}
+      @Inbook{Lalejini2019-GPTP,
+        author="Lalejini, Alexander
+        and Ofria, Charles",
+        editor="Banzhaf, Wolfgang
+        and Spector, Lee
+        and Sheneman, Leigh",
+        title="What Else Is in an Evolved Name? Exploring Evolvable Specificity with SignalGP",
+        bookTitle="Genetic Programming Theory and Practice XVI",
+        year="2019",
+        publisher="Springer International Publishing",
+        address="Cham",
+        pages="103--121",
+        abstract="Tags are evolvable labels that provide genetic programs a flexible mechanism for specification. Tags are used to label and refer to programmatic elements, such as functions or jump targets. However, tags differ from traditional, more rigid methods for handling labeling because they allow for inexact references; that is, a referring tag need not exactly match its referent. Here, we explore how adjusting the threshold for how what qualifies as a match affects adaptive evolution. Further, we propose broadened applications of tags in the context of a genetic programming (GP) technique called SignalGP. SignalGP gives evolution direct access to the event-driven paradigm. Program modules in SignalGP are tagged and can be triggered by signals (with matching tags) from the environment, from other agents, or due to internal regulation. Specifically, we propose to extend this tag based system to: (1) provide more fine-grained control over module execution and regulation (e.g., promotion and repression) akin to natural gene regulatory networks, (2) employ a mosaic of GP representations within a single program, and (3) facilitate major evolutionary transitions in individuality (i.e., allow hierarchical program organization to evolve de novo).",
+        isbn="978-3-030-04735-1",
+        doi="10.1007/978-3-030-04735-1_6",
+        url="https://doi.org/10.1007/978-3-030-04735-1_6"
       }
       ```
