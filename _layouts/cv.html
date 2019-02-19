@@ -22,7 +22,7 @@ layout: default
   <!-- Category - education -->
   <div class="row" id="cv-education">
     <div class="col">
-      <h3>Education</h3>
+      <h3>{{ site.data.icons.cv_edu_icon }} Education</h3>
       <ul>
         {% for edu in site.data.cv_education %}
           <li><p>
@@ -41,7 +41,7 @@ layout: default
   <!-- Category - research -->
   <div class="row" id="cv-research">
     <div class="col">
-      <h3>Research Experience</h3>
+      <h3>{{ site.data.icons.cv_research_icon }} Research Experience</h3>
       <ul>
         {% for exp in site.data.cv_research_experience %}
           <li><p>
@@ -63,7 +63,7 @@ layout: default
   <!-- Category - publications -->
   <div class="row" id="cv-publications">
     <div class="col">
-      <h3>Publications</h3> 
+      <h3>{{ site.data.icons.cv_publications_icon }} Publications</h3> 
         <!-- List publications with a lovely parameterized include. -->
         {% include list_publications.html header_level="5" %} 
     </div>
@@ -72,7 +72,7 @@ layout: default
   <!-- Category - presentations (posters and talks) -->
   <div class="row" id="cv-presentations">
     <div class="col">
-      <h3>Presentations</h3>
+      <h3>{{ site.data.icons.cv_presentations_icons }} Presentations</h3>
         <h5>Talks</h5>
         <ul>
           {% assign presentations_sorted = site.data.cv_presentations| sort: 'year' | reverse %}
@@ -111,7 +111,7 @@ layout: default
   <!-- Category - teaching -->
   <div class="row" id="cv-teaching">
     <div class="col">
-      <h3>Teaching Experience</h3>
+      <h3>{{ site.data.icons.cv_teaching_icon }} Teaching Experience</h3>
       <ul>
         {% for teaching_exp in site.data.cv_teaching %}
         <li><p>
@@ -127,7 +127,7 @@ layout: default
   <!-- Category - awards/honors/fellowships -->
   <div class="row" id="cv-awards">
     <div class="col">
-      <h3>Awards, Honors, and Fellowships</h3>
+      <h3>{{ site.data.icons.cv_awards_icons }} Awards, Honors, and Fellowships</h3>
       {% assign awards_sorted = site.data.cv_awards| sort: 'year' | reverse %}
       <ul>
           {% for award in awards_sorted %}
@@ -144,7 +144,7 @@ layout: default
   <!-- Category - service/outreach -->
   <div class="row" id="cv-service">
     <div class="col">
-      <h3>Service and Outreach</h3>
+      <h3>{{ site.data.icons.cv_service_icons }} Service and Outreach</h3>
       {% assign service_sorted = site.data.cv_service | sort: 'year' | reverse %}
       <ul>
           {% for service in service_sorted %}
