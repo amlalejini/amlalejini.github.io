@@ -25,3 +25,4 @@ cv_presentations_icons: <i class="fas fa-podium"></i>
 cv_teaching_icon: <i class="fas fa-chalkboard-teacher"></i>
 cv_awards_icons: <i class="fas fa-award"></i>
 cv_service_icons: <i class="fas fa-hands-helping"></i>
+cv_workshop_icon: <i class="fas fa-tools"></i>

@@ -1,0 +1,12 @@
+# cv_teaching.yml lists my teaching experience for my CV
+
+- workshop: |
+    Co-Organizer, <a href="https://github.com/alife-data-standards/ALIFE2018-Standards-Workshop">Developing Software Standards for the Artificial Life Community<a>
+  date: July, 2018; August, 2018
+  for: 2018 Conference on Artificial Life (ALIFE); 2018 BEACON Congress
+  description: |
+    This workshop aimed to start a conversation about identifying best practices 
+    and developing data and tool standards amongst individuals who design, develop,
+    and use a wide range of artificial life systems, including artificial chemistries, 
+    abstract ecologies, evolutionary systems, and a range of other communities 
+    who express interest.
