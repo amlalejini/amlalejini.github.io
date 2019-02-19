@@ -225,7 +225,7 @@ publications:
       ```
 
   - citation: |
-      Dolson E., Lalejini A., Ofria C. (2019). 
+      Emily Dolson, Alexander Lalejini, and Charles Ofria. (2019). 
       [Exploring Genetic Programming Systems with MAP-Elites](https://doi.org/10.1007/978-3-030-04735-1_1). 
       In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
     year: 2019
@@ -257,7 +257,7 @@ publications:
       ```
 
   - citation: |
-      Lalejini A., Ofria C. (2019) 
+      Alexander Lalejini and Charles Ofria (2019) 
       [What Else Is in an Evolved Name? Exploring Evolvable Specificity with SignalGP](https://doi.org/10.1007/978-3-030-04735-1_6). 
       In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
     year: 2019
