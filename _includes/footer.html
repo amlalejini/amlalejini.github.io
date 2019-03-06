@@ -1,13 +1,13 @@
 <hr> <!-- Separate footer from rest of page with horizontal line. -->
 
-<footer> 
+<footer>
     <div class="container"> <!-- Footer is contained in Bootstrap container. -->
 
       <!-- === Contact me information === -->
       <div class="row">
         <div class="col">
           <h5>Contact me</h5>
-        </div>  
+        </div>
       </div>
 
       <!-- Email and social media on one side, address on the other. -->
@@ -26,11 +26,14 @@
             <li>{{ site.data.icons.contact_address_bullet }}
                 {{ site.data.contact.address | markdownify }}
             </li>
-          </ul> 
+          </ul>
         </div>
       </div>
 
       <!-- === Site information ===  -->
+      <div class="row justify-content-center">
+        <a href="https://github.com/amlalejini/amlalejini.github.io"><img src="https://img.shields.io/github/last-commit/amlalejini/amlalejini.github.io.svg?label=last%20update"/></a>
+      </div>
       <div class="row justify-content-center">
         <div class="col-auto">
           <i class="fas fa-copyright"></i>
@@ -44,8 +47,5 @@
           </small>
         </div>
       </div>
-
     </div>
 </footer>
-
-
