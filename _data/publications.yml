@@ -17,13 +17,23 @@ publication_types:
 # Listing of publications
 publications:
   - citation: |
+      Alexander Lalejini and Charles Ofria. (in press).
+      Tag-accessed Memory for Genetic Programming.
+      In the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+    year: 2019
+    venue: conference
+    type: peer-reviewed-abstract
+    github_repository_link: https://github.com/amlalejini/GECCO-2019-tag-accessed-memory
+    pdf: /pubs/tag-accessed-memory-for-genetic-programming-gecco-2019.pdf
+
+  - citation: |
       Alexander Lalejini and Charles Ofria. (2018).
       [Evolving reactive agents with SignalGP](https://doi.org/10.1162/isal_a_00069).
       In Proceedings of the 2018 Conference on Artificial Life (ALIFE).
       Edited by Takashi Ikegami, Nathaniel Virgo, Olaf Witkowski, Mizuki Oka, Reiji Suzuki, and Hiroyuki Iizuka.
       pp. 368-369. DOI: [10.1162/isal_a_00069](https://doi.org/10.1162/isal_a_00069). MIT Press.
     year: 2018
-    venue: conference  
+    venue: conference
     type: peer-reviewed-abstract
     presentation_link: https://docs.google.com/presentation/d/1iMp2ndNikf_VMVkdxW3WUCtuaE2mmGr16p8Z-RixenQ/edit?usp=sharing
     github_repository_link: https://github.com/amlalejini/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP
@@ -112,7 +122,7 @@ publications:
       In Proceedings of the 14th European Conference on Artificial Life (ECAL) 2017.
       Edited by Carole Knibbe, Guillaume Beslon, David Parsons, Dusan Misevic,
       Jonathan Rouzaud-Cornabas, Nicolas Bredèche, Salima Hassas, Olivier Simonin,
-      and Hédi Soula. Vol 14. pp. 257-264. 
+      and Hédi Soula. Vol 14. pp. 257-264.
       DOI: [10.7551/ecal_a_045](https://doi.org/10.7551/ecal_a_045). MIT Press.
     link: https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_045
     year: 2017
@@ -138,14 +148,14 @@ publications:
         year = {2017}
       }
       ```
-  
+
   - citation: |
       Alexander Lalejini and Charles Ofria. (2016). [The evolutionary origins of
-      phenotypic plasticity](https://doi.org/10.7551/978-0-262-33936-0-ch063). 
+      phenotypic plasticity](https://doi.org/10.7551/978-0-262-33936-0-ch063).
       In Artificial Life XV: Proceedings of the Fifteenth
       International Conference on the Synthesis and Simulation of Living Systems (ALIFE).
       Edited by Carlos Gershenson, Tom Froese, Jesus M. Siqueiros, Wendy Aguilar,
-      Eduardo J. Izquierdo and Hiroki Sayama. Vol 14. pp. 372-379. 
+      Eduardo J. Izquierdo and Hiroki Sayama. Vol 14. pp. 372-379.
       DOI: [10.7551/978-0-262-33936-0-ch063](https://doi.org/10.7551/978-0-262-33936-0-ch063). MIT Press.
     year: 2016
     venue: "conference"
@@ -192,7 +202,7 @@ publications:
         year = {2015}
         }
       ```
-  
+
   - citation: |
       Alexander Lalejini, Dexter Duckworth, Richard Sween, Cindy L. Bethel, and Daniel W. Carruth. (2014).
       [Evaluation of supervisory control interfaces for mobile robot integration with tactical teams](https://doi.org/10.1109/ARSO.2014.7020971).
@@ -225,8 +235,8 @@ publications:
       ```
 
   - citation: |
-      Emily Dolson, Alexander Lalejini, and Charles Ofria. (2019). 
-      [Exploring Genetic Programming Systems with MAP-Elites](https://doi.org/10.1007/978-3-030-04735-1_1). 
+      Emily Dolson, Alexander Lalejini, and Charles Ofria. (2019).
+      [Exploring Genetic Programming Systems with MAP-Elites](https://doi.org/10.1007/978-3-030-04735-1_1).
       In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
     year: 2019
     venue: book
@@ -257,8 +267,8 @@ publications:
       ```
 
   - citation: |
-      Alexander Lalejini and Charles Ofria (2019) 
-      [What Else Is in an Evolved Name? Exploring Evolvable Specificity with SignalGP](https://doi.org/10.1007/978-3-030-04735-1_6). 
+      Alexander Lalejini and Charles Ofria (2019)
+      [What Else Is in an Evolved Name? Exploring Evolvable Specificity with SignalGP](https://doi.org/10.1007/978-3-030-04735-1_6).
       In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
     year: 2019
     venue: book
