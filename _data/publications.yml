@@ -16,15 +16,15 @@ publication_types:
 
 # Listing of publications
 publications:
-  - citation: |
-      Alexander Lalejini and Charles Ofria. (in press).
-      Tag-accessed Memory for Genetic Programming.
-      In the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
-    year: 2019
-    venue: conference
-    type: peer-reviewed-abstract
-    github_repository_link: https://github.com/amlalejini/GECCO-2019-tag-accessed-memory
-    pdf: /pubs/tag-accessed-memory-for-genetic-programming-gecco-2019.pdf
+  # - citation: |
+  #     Alexander Lalejini and Charles Ofria. (in press).
+  #     Tag-accessed Memory for Genetic Programming.
+  #     In the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+  #   year: 2019
+  #   venue: conference
+  #   type: peer-reviewed-abstract
+  #   github_repository_link: https://github.com/amlalejini/GECCO-2019-tag-accessed-memory
+  #   pdf: /pubs/tag-accessed-memory-for-genetic-programming-gecco-2019.pdf
 
   - citation: |
       Alexander Lalejini and Charles Ofria. (2018).
