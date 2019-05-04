@@ -242,7 +242,7 @@ publications:
     venue: book
     type: book-chapter
     github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Genetic-Programming-Systems-with-MAP-Elites
-    pdf: /pubs/exploring-gp-systems-with-mape.pdf
+    pdf: /pubs/Dolson_et_al_2019_Exploring_Genetic_Programming_Systems_with_MAP-Elites.pdf
     bibtex_id: Dolson2019-GPTP
     bibtex: |
       ```
@@ -275,7 +275,7 @@ publications:
     type: book-chapter
     presentation_link: https://docs.google.com/presentation/d/1KF9iQb08CtQiWYD4py53DDJD_kjzT2U6Z3CtqfF8Bdc/edit?usp=sharing
     github_repository_link: https://github.com/amlalejini/GPTP-2018-Exploring-Evolvable-Specificity-with-SignalGP
-    pdf: /pubs/exploring-evolvable-specificity.pdf
+    pdf: /pubs/Lalejini_Ofria_2019_What_Else_Is_in_an_Evolved_Name.pdf
     bibtex_id: Lalejini2019-GPTP
     bibtex: |
       ```bibtex
