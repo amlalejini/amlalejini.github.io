@@ -16,15 +16,25 @@ publication_types:
 
 # Listing of publications
 publications:
-  # - citation: |
-  #     Alexander Lalejini and Charles Ofria. (in press).
-  #     Tag-accessed Memory for Genetic Programming.
-  #     In the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
-  #   year: 2019
-  #   venue: conference
-  #   type: peer-reviewed-abstract
-  #   github_repository_link: https://github.com/amlalejini/GECCO-2019-tag-accessed-memory
-  #   pdf: /pubs/tag-accessed-memory-for-genetic-programming-gecco-2019.pdf
+  - citation: |
+      Emily Dolson, Alexander Lalejini, Steven Jorgensen, and Charles Ofria. (in press).
+      Interpretting the Tape of Life: Ancestry-based metrics and visualizations
+      provide insights and intuition about evolutionary dynamics. Artificial Life.
+      MIT Press.
+    year: 2019
+    venue: journal
+    type: peer-reviewed-paper
+    github_repository_link: https://github.com/emilydolson/interpreting_the_tape_of_life
+
+  - citation: |
+      Alexander Lalejini and Charles Ofria. (to appear).
+      Tag-accessed Memory for Genetic Programming.
+      To appear in the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+    year: 2019
+    venue: conference
+    type: peer-reviewed-abstract
+    github_repository_link: https://github.com/amlalejini/GECCO-2019-tag-accessed-memory
+    pdf: /pubs/Lalejini_Ofria_2019_Tag-accessed_Memory.pdf
 
   - citation: |
       Alexander Lalejini and Charles Ofria. (2018).
