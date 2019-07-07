@@ -17,6 +17,16 @@ publication_types:
 # Listing of publications
 publications:
   - citation: |
+      Jose Guadalupe Hernandez, Alexander Lalejini, Emily Dolson, and Charles Ofria (2019).
+      Random subsampling improves performance in lexicase selection.
+      In Proceedings of the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+    year: 2019
+    venue: conference
+    type: peer-reviewed-paper
+    github_repository_link: https://github.com/amlalejini/GECCO-2019-cohort-lexicase
+    pdf: /pubs/Hernandez_et_al_2019_Random_Subsampling_Improves_Performance_in_Lexicase_Selection.pdf
+
+  - citation: |
       Emily Dolson, Alexander Lalejini, Steven Jorgensen, and Charles Ofria. (in press).
       Interpretting the Tape of Life: Ancestry-based metrics and visualizations
       provide insights and intuition about evolutionary dynamics. Artificial Life.
@@ -27,9 +37,9 @@ publications:
     github_repository_link: https://github.com/emilydolson/interpreting_the_tape_of_life
 
   - citation: |
-      Alexander Lalejini and Charles Ofria. (to appear).
+      Alexander Lalejini and Charles Ofria. (2019).
       Tag-accessed Memory for Genetic Programming.
-      To appear in the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+      In Proceedings of the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
     year: 2019
     venue: conference
     type: peer-reviewed-abstract
