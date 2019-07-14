@@ -7,10 +7,12 @@ bibtex_icon: <i class="fas fa-quote-right"></i>
 venue_journal_icon: <i class="fas fa-book-open"></i>
 venue_conference_icon: <i class="fas fa-chalkboard-teacher"></i>
 venue_book_icon: <i class="fas fa-book"></i>
+venue_workshop_icon: <i class="fas fa-tools"></i>
 
 venue_journal_bullet: <i class="fa-li fas fa-book-open"></i>
 venue_conference_bullet: <i class="fa-li fas fa-chalkboard-teacher"></i>
 venue_book_bullet: <i class="fa-li fas fa-book"></i>
+venue_workshop_bullet: <i class="fa-li fas fa-tools"></i>
 venue_unknown_bullet: <i class="fa-li fas fa-question"></i>
 
 contact_email_bullet: <i class="fa-li fa fa-envelope"></i>
@@ -19,7 +21,7 @@ contact_twitter_bullet: <i class="fa-li fab fa-twitter"></i>
 contact_address_bullet: <i class="fa-li fas fa-map-marker-alt"></i>
 
 cv_edu_icon: <i class="fas fa-graduation-cap"></i>
-cv_research_icon: <i class="fas fa-flask"></i>   
+cv_research_icon: <i class="fas fa-flask"></i>
 cv_publications_icon: <i class="fas fa-books"></i>
 cv_presentations_icons: <i class="fas fa-podium"></i>
 cv_teaching_icon: <i class="fas fa-chalkboard-teacher"></i>

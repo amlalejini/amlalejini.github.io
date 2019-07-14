@@ -22,7 +22,9 @@
                 {{ site.data.icons.venue_book_bullet }}
               {% when 'conference' %}
                 {{ site.data.icons.venue_conference_bullet }}
-              {% when 'journal' %}                
+              {% when 'workshop' %}
+                {{ site.data.icons.venue_workshop_bullet }}
+              {% when 'journal' %}
                 {{ site.data.icons.venue_journal_bullet }}
               {% else %}
                 {{ site.data.icons.venue_unknown_bullet }}
@@ -30,10 +32,10 @@
           {% else %}
             {{ site.data.icons.venue_unknown_bullet }}
           {% endif %}
-          <p> 
+          <p>
             <!-- | remove: '<p>' | remove: '</p>' | is a hacky solution to remove <p></p> tags that markdownify surrounds things with. -->
-            {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }} 
-            <br/> 
+            {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }}
+            <br/>
             {% for badge in pub.badges %}
               <span class="badge badge-primary"> {{ badge }} </span>
             {% endfor %}

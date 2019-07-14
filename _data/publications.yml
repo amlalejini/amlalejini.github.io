@@ -22,7 +22,7 @@ publications:
       In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19), Manuel López-Ibáñez (Ed.).
       ACM, New York, NY, USA, 2028-2031. DOI: [https://doi.org/10.1145/3319619.3326900](https://doi.org/10.1145/3319619.3326900)
     year: 2019
-    venue: conference
+    venue: workshop
     type: peer-reviewed-paper
     github_repository_link: https://github.com/amlalejini/GECCO-2019-cohort-lexicase
     presentation_link: https://docs.google.com/presentation/d/1E4rjdK9v5MEKPKhKlosPb-M_ldYQP1Q_VEz2LLOOjdc/edit?usp=sharing
@@ -99,7 +99,7 @@ publications:
       In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19), Manuel López-Ibáñez (Ed.).
       ACM, New York, NY, USA, 1349-1356. DOI: [https://doi.org/10.1145/3319619.3326825](https://doi.org/10.1145/3319619.3326825)
     year: 2019
-    venue: conference
+    venue: workshop
     type: peer-reviewed-paper
     pdf: /pubs/Bohm_et_al_2019_MABE2.pdf
     bibtex_id: Bohm2019-MABE2
@@ -308,7 +308,7 @@ publications:
       pp 1-6.
       DOI: [10.1109/ARSO.2014.7020971](https://doi.org/10.1109/ARSO.2014.7020971). IEEE.
     year: 2014
-    venue: conference
+    venue: workshop
     type: peer-reviewed-paper
     pdf: /pubs/evaluation-of-supervisory-control-interfaces.pdf
     bibtex_id: Lalejini2014-ARSO
