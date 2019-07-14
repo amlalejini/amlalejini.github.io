@@ -102,26 +102,27 @@ publications:
     venue: conference
     type: peer-reviewed-paper
     pdf: /pubs/Bohm_et_al_2019_MABE2.pdf
+    bibtex_id: Bohm2019-MABE2
     bibtex: |
-    ```bibtex
-    @inproceedings{Bohm2019-MABE2,
-      author = {Bohm, Clifford and Lalejini, Alexander and Schossau, Jory and Ofria, Charles},
-      title = {MABE 2.0: An Introduction to MABE and a Road Map for the Future of MABE Development},
-      booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
-      series = {GECCO '19},
-      year = {2019},
-      isbn = {978-1-4503-6748-6},
-      location = {Prague, Czech Republic},
-      pages = {1349--1356},
-      numpages = {8},
-      url = {http://doi.acm.org/10.1145/3319619.3326825},
-      doi = {10.1145/3319619.3326825},
-      acmid = {3326825},
-      publisher = {ACM},
-      address = {New York, NY, USA},
-      keywords = {MABE, artificial life, empirical library, evolution, evolutionary computation, modular agent-based evolver, open source, software development},
-    }
-    ```
+      ```bibtex
+      @inproceedings{Bohm2019-MABE2,
+        author = {Bohm, Clifford and Lalejini, Alexander and Schossau, Jory and Ofria, Charles},
+        title = {MABE 2.0: An Introduction to MABE and a Road Map for the Future of MABE Development},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        series = {GECCO '19},
+        year = {2019},
+        isbn = {978-1-4503-6748-6},
+        location = {Prague, Czech Republic},
+        pages = {1349--1356},
+        numpages = {8},
+        url = {http://doi.acm.org/10.1145/3319619.3326825},
+        doi = {10.1145/3319619.3326825},
+        acmid = {3326825},
+        publisher = {ACM},
+        address = {New York, NY, USA},
+        keywords = {MABE, artificial life, empirical library, evolution, evolutionary computation, modular agent-based evolver, open source, software development},
+      }
+      ```
 
   - citation: |
       Alexander Lalejini and Charles Ofria. (2018).
