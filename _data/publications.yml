@@ -38,13 +38,37 @@ publications:
 
   - citation: |
       Alexander Lalejini and Charles Ofria. (2019).
-      Tag-accessed Memory for Genetic Programming.
-      In Proceedings of the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+      [Tag-accessed memory for genetic programming.](https://dl.acm.org/citation.cfm?doid=3319619.3321892)
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19), Manuel López-Ibáñez (Ed.).
+      ACM, New York, NY, USA, 346-347.
+      DOI: [https://doi.org/10.1145/3319619.3321892](https://doi.org/10.1145/3319619.3321892)
     year: 2019
     venue: conference
     type: peer-reviewed-abstract
     github_repository_link: https://github.com/amlalejini/GECCO-2019-tag-accessed-memory
+    presentation_link: https://docs.google.com/presentation/d/1j4IusMVaNVOEcxFkIcveNyB_sfaFowQUFcLqLloCa5M/edit?usp=sharing
     pdf: /pubs/Lalejini_Ofria_2019_Tag-accessed_Memory.pdf
+    bibtex_id: Lalejini2019-TagMem
+    bibtex: |
+      ```bibtex
+      @inproceedings{Lalejini2019-TagMem,
+        author = {Lalejini, Alexander and Ofria, Charles},
+        title = {Tag-accessed Memory for Genetic Programming},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        series = {GECCO '19},
+        year = {2019},
+        isbn = {978-1-4503-6748-6},
+        location = {Prague, Czech Republic},
+        pages = {346--347},
+        numpages = {2},
+        url = {http://doi.acm.org/10.1145/3319619.3321892},
+        doi = {10.1145/3319619.3321892},
+        acmid = {3321892},
+        publisher = {ACM},
+        address = {New York, NY, USA},
+        keywords = {genetic programming, linear genetic programming, memory access, tag-based referencing, tags},
+      }
+      ```
 
   - citation: |
       Alexander Lalejini and Charles Ofria. (2018).
