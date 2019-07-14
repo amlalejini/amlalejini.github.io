@@ -17,14 +17,37 @@ publication_types:
 # Listing of publications
 publications:
   - citation: |
-      Jose Guadalupe Hernandez, Alexander Lalejini, Emily Dolson, and Charles Ofria (2019).
-      Random subsampling improves performance in lexicase selection.
-      In Proceedings of the 2019 Genetic and Evolutionary Computation Conference (GECCO) Companion.
+      Jose Guadalupe Hernandez, Alexander Lalejini, Emily Dolson, and Charles Ofria. (2019).
+      [Random subsampling improves performance in lexicase selection.](https://dl.acm.org/citation.cfm?id=3326900)
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19), Manuel López-Ibáñez (Ed.).
+      ACM, New York, NY, USA, 2028-2031. DOI: [https://doi.org/10.1145/3319619.3326900](https://doi.org/10.1145/3319619.3326900)
     year: 2019
     venue: conference
     type: peer-reviewed-paper
     github_repository_link: https://github.com/amlalejini/GECCO-2019-cohort-lexicase
+    presentation_link: https://docs.google.com/presentation/d/1E4rjdK9v5MEKPKhKlosPb-M_ldYQP1Q_VEz2LLOOjdc/edit?usp=sharing
     pdf: /pubs/Hernandez_et_al_2019_Random_Subsampling_Improves_Performance_in_Lexicase_Selection.pdf
+    bibtex_id: Hernandez2019-SubsamplingLexicase
+    bibtex: |
+      ```bibtex
+      @inproceedings{Hernandez2019-SubsamplingLexicase,
+        author = {Hernandez, Jose Guadalupe and Lalejini, Alexander and Dolson, Emily and Ofria, Charles},
+        title = {Random Subsampling Improves Performance in Lexicase Selection},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        series = {GECCO '19},
+        year = {2019},
+        isbn = {978-1-4503-6748-6},
+        location = {Prague, Czech Republic},
+        pages = {2028--2031},
+        numpages = {4},
+        url = {http://doi.acm.org/10.1145/3319619.3326900},
+        doi = {10.1145/3319619.3326900},
+        acmid = {3326900},
+        publisher = {ACM},
+        address = {New York, NY, USA},
+        keywords = {cohort lexicase, cohorts, down-sampled lexicase, genetic programming, lexicase selection, parent selection, program synthesis},
+      }
+      ```
 
   - citation: |
       Emily Dolson, Alexander Lalejini, Steven Jorgensen, and Charles Ofria. (in press).
