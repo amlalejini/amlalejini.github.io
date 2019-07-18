@@ -17,6 +17,32 @@ publication_types:
 # Listing of publications
 publications:
   - citation: |
+      Alexander Lalejini, Emily Dolson, Clifford Bohm, Austin J. Ferguson, David P. Parsons, Penelope Faulkner Rainford, Paul Richmond, and Charles Ofria (2019).
+      [Data Standards for Artificial Life Software.](https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_00213)
+      The 2019 Conference on Artificial Life, 507–514. [https://doi.org/10.1162/isal_a_00213](https://doi.org/10.1162/isal_a_00213)
+    year: 2019
+    venue: conference
+    type: peer-reviewed-paper
+    github_repository_link:
+    pdf: /pubs/Lalejini_et_al_2019_Data_Standards_For_Artificial_Life_Software.pdf
+    bibtex_id: Lalejini2019-DataStandards
+    bibtex: |
+      ```bibtex
+        @article{Lalejini2019-DataStandards,
+          author = {Lalejini, Alexander and Dolson, Emily and Bohm, Clifford and Ferguson, Austin J. and Parsons, David P. and Rainford, Penelope Faulkner and Richmond, Paul and Ofria, Charles},
+          title = {Data Standards for Artificial Life Software},
+          journal = {The 2019 Conference on Artificial Life},
+          volume = {},
+          number = {31},
+          pages = {507-514},
+          year = {2019},
+          doi = {10.1162/isal\_a\_00213},
+          URL = { https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_00213 },
+          eprint = { https://www.mitpressjournals.org/doi/pdf/10.1162/isal_a_00213 }
+        }
+      ```
+
+  - citation: |
       Jose Guadalupe Hernandez, Alexander Lalejini, Emily Dolson, and Charles Ofria. (2019).
       [Random subsampling improves performance in lexicase selection.](https://dl.acm.org/citation.cfm?id=3326900)
       In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '19), Manuel López-Ibáñez (Ed.).
@@ -365,7 +391,7 @@ publications:
       ```
 
   - citation: |
-      Alexander Lalejini and Charles Ofria (2019)
+      Alexander Lalejini and Charles Ofria (2019).
       [What Else Is in an Evolved Name? Exploring Evolvable Specificity with SignalGP](https://doi.org/10.1007/978-3-030-04735-1_6).
       In Banzhaf W., Spector L., Sheneman L. (eds) Genetic Programming Theory and Practice XVI. Genetic and Evolutionary Computation. Springer, Cham
     year: 2019
