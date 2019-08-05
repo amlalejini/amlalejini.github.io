@@ -1,5 +1,23 @@
 # cv_presentations.yml gives a listing of presentations for my CV
 
+- type: talk
+  title: Data Standards for Artificial Life Software
+  authors: Alexander Lalejini, Emily Dolson, Clifford Bohm, Austin J. Ferguson, David P. Parsons, Penelope Faulkner Rainford, Paul Richmond, and Charles Ofria
+  venue: The 2019 Conference on Artificial Life
+  year: 2019
+  date: July 29, 2019
+  location: Newcastle upon Tyne, England
+  slides_link: https://docs.google.com/presentation/d/19fQMsfnYh154G5ZdcJfsjcap6MKjG57p-VncMsjwbQY/edit?usp=sharing
+
+- type: talk
+  title: Random Subsampling Improves Performance in Lexicase Selection
+  authors: Jose Hernandez, Alexander Lalejini (speaker), Emily Dolson, Charles Ofria
+  venue: The Genetic and Evolutionary Computation Conference (GECCO)
+  year: 2019
+  date: July 12, 2019
+  location: Prague, Czech Republic
+  slides_link: https://docs.google.com/presentation/d/1E4rjdK9v5MEKPKhKlosPb-M_ldYQP1Q_VEz2LLOOjdc/edit?usp=sharing
+
 - type: poster
   title: Tag-accessed Memory
   authors: Alexander Lalejini and Charles Ofria
