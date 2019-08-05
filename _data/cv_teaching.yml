@@ -1,10 +1,23 @@
 # cv_teaching.yml lists my teaching experience for my CV
 
 - exp: |
+    Co-instructor for the 'Making a Game of It' summer camp for high school students
+  date: Summer 2019
+  for: Michigan State University College of Engineering Summer Programs, East Lansing, MI
+  description: |
+    Making a Game of It is a weeklong summer camp for high school students organized
+    and run by Michigan State University.
+    I, along with two other instructors (Josh Nahum and Matthew Andres Moreno),
+    taught students Python. After two days of introductory material, students formed groups and designed & implemented
+    their own video games. At the end of the camp, students presented their work
+    to their peers and parents.
+    [Summer camp materials (lesson plans, examples, resources) can be found here](https://lalejini.com/2019-msu-pygame/).
+
+- exp: |
     Teaching Assistant for CSE 491: Algorithms Engineering
   date: Spring 2017
   for: Michigan State University Computer Science and Engineering Department, East Lansing, MI
   description: |
-    Held regular office hours. 
-    Met one-on-one with students. 
+    Held regular office hours.
+    Met one-on-one with students.
     Graded homeworks (written and programming) and exams.
