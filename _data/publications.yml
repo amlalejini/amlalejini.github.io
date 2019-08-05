@@ -188,6 +188,7 @@ publications:
     year: 2018
     venue: conference
     type: peer-reviewed-paper
+    badges: "International Society for Artificial Life Outstanding Student Publication Award"
     presentation_link: https://docs.google.com/presentation/d/1dV044J3JzfLrdgfwWS_4Bq8-3UHOqvQQgmqEZEkrcCc/edit?usp=sharing
     github_repository_link: https://github.com/stevenjson/ALife2018-Lineage
     pdf: /pubs/quantifying-the-tape-of-life.pdf
