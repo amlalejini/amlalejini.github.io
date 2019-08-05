@@ -23,7 +23,8 @@ publications:
     year: 2019
     venue: conference
     type: peer-reviewed-paper
-    github_repository_link:
+    github_repository_link: https://github.com/alife-data-standards/alife-data-standards
+    presentation_link: https://docs.google.com/presentation/d/19fQMsfnYh154G5ZdcJfsjcap6MKjG57p-VncMsjwbQY/edit?usp=sharing
     pdf: /pubs/Lalejini_et_al_2019_Data_Standards_For_Artificial_Life_Software.pdf
     bibtex_id: Lalejini2019-DataStandards
     bibtex: |
