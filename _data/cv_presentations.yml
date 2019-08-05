@@ -27,6 +27,15 @@
   year: 2019
   poster_link: https://docs.google.com/presentation/d/1j4IusMVaNVOEcxFkIcveNyB_sfaFowQUFcLqLloCa5M/edit?usp=sharing
 
+- type: talk
+  title: Evolving Signal-driven Digital Organisms with SignalGP
+  authors: Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria
+  venue: Evolution of Complex Life (ECLife)
+  year: 2019
+  date: May 15, 2019
+  location: Atlanta, Georgia
+  slides_link: https://docs.google.com/presentation/d/1MGvWkt48nQ_ZHamfYCdPA2IU__8KNfJXNf7QsXH76I0/edit?usp=sharing
+
 - type: poster
   title: Evolving event-driven agents with SignalGP
   authors: Alexander Lalejini and Charles Ofria
