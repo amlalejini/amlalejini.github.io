@@ -85,6 +85,7 @@ layout: default
                 Presented at {{ pres.venue }}.
                 {{ pres.date }}.
                 {{ pres.location }}.
+                {% if pres.abstract_pdf %} <a href="{{ pres.abstract_pdf | relative_url }}"> Abstract</a>. {% endif %}
                 {% if pres.slides_link %} <a href="{{ pres.slides_link }}">Slides</a>. {% endif %}
               </p></li>
             {% endif %}

@@ -35,6 +35,7 @@
   date: May 15, 2019
   location: Atlanta, Georgia
   slides_link: https://docs.google.com/presentation/d/1MGvWkt48nQ_ZHamfYCdPA2IU__8KNfJXNf7QsXH76I0/edit?usp=sharing
+  abstract_pdf: /pubs/ECLife_2019___SignalGP_Abstract.pdf
 
 - type: poster
   title: Evolving event-driven agents with SignalGP
