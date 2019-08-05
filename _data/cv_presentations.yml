@@ -1,6 +1,15 @@
 # cv_presentations.yml gives a listing of presentations for my CV
 
 - type: poster
+  title: Tag-accessed Memory
+  authors: Alexander Lalejini and Charles Ofria
+  venue: The Genetic and Evolutionary Computation Conference (GECCO)
+  date: July 15, 2019
+  location: Prague, Czech Republic
+  year: 2019
+  poster_link: https://docs.google.com/presentation/d/1j4IusMVaNVOEcxFkIcveNyB_sfaFowQUFcLqLloCa5M/edit?usp=sharing
+
+- type: poster
   title: Evolving event-driven agents with SignalGP
   authors: Alexander Lalejini and Charles Ofria
   venue: 2018 Annual BEACON Congress
