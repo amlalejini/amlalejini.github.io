@@ -16,6 +16,45 @@ publication_types:
 
 # Listing of publications
 publications:
+
+  - citation: |
+        Austin J. Ferguson, Jose G. Hernandez, Daniel Junghans, Alexander Lalejini, Emily Dolson, Charles Ofria (2020)
+        [Characterizing the Effects of Random Subsampling on Lexicase Selection.](https://link.springer.com/chapter/10.1007/978-3-030-39958-0_1)
+        In: Banzhaf W., Goodman E., Sheneman L., Trujillo L., Worzel B. (eds)
+        Genetic Programming Theory and Practice XVII. Genetic and Evolutionary Computation.
+        Springer, Cham
+    year: 2020
+    venue: book
+    type: book-chapter
+    github_repository_link: https://github.com/FergusonAJ/gptp-2019-subsampled-lexicase
+    bibtex_id: Ferguson-GPTP-2020
+    bibtex: |
+      ```bibtex
+      @Inbook{Ferguson-GPTP-2020,
+        author="Ferguson, Austin J.
+        and Hernandez, Jose Guadalupe
+        and Junghans, Daniel
+        and Lalejini, Alexander
+        and Dolson, Emily
+        and Ofria, Charles",
+        editor="Banzhaf, Wolfgang
+        and Goodman, Erik
+        and Sheneman, Leigh
+        and Trujillo, Leonardo
+        and Worzel, Bill",
+        title="Characterizing the Effects of Random Subsampling on Lexicase Selection",
+        bookTitle="Genetic Programming Theory and Practice XVII",
+        year="2020",
+        publisher="Springer International Publishing",
+        address="Cham",
+        pages="1--23",
+        abstract="Lexicase selection is a proven parent-selection algorithm designed for genetic programming problems, especially for uncompromising test-based problems where many distinct test cases must all be passed. Previous work has shown that random subsampling techniques can improve lexicase selection's problem-solving success; here, we investigate why. We test two types of random subsampling lexicase variants: down-sampled lexicase, which uses a random subset of all training cases each generation; and cohort lexicase, which collects candidate solutions and training cases into small groups for testing, reshuffling those groups each generation. We show that both of these subsampling lexicase variants improve problem-solving success by facilitating deeper evolutionary searches; that is, they allow populations to evolve for more generations (relative to standard lexicase) given a fixed number of test-case evaluations. We also demonstrate that the subsampled variants require less computational effort to find solutions, even though subsampling hinders lexicase's ability to preserve specialists. Contrary to our expectations, we did not find any evidence of systematic loss of phenotypic diversity maintenance due to subsampling, though we did find evidence that cohort lexicase is significantly better at preserving phylogenetic diversity than down-sampled lexicase.",
+        isbn="978-3-030-39958-0",
+        doi="10.1007/978-3-030-39958-0_1",
+        url="https://doi.org/10.1007/978-3-030-39958-0_1"
+      }
+      ```
+
   - citation: |
       Alexander Lalejini, Emily Dolson, Clifford Bohm, Austin J. Ferguson, David P. Parsons, Penelope Faulkner Rainford, Paul Richmond, and Charles Ofria (2019).
       [Data Standards for Artificial Life Software.](https://www.mitpressjournals.org/doi/abs/10.1162/isal_a_00213)
