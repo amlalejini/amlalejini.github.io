@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-sm">
+
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <div class="row">
+          <header class="post-header pt-5">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+          </header>
+        </div>
+
+        {% unless page.no_toc %}
+          <div class="row pb-1">
+            <div class="col px-0">
+              <div class="card border-left-0 border-right-0 rounded-0">
+                <div class="card-body">
+                  <h4 class = "card-title">
+                    contents
+                  </h4>
+                  {% include toc.html h_min=2 h_max=2 threshold=9 santize=true  html=content %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endunless %}
+
+        <div class="row pt-4">
+          <div class="col px-0">
+            <div class="post-content" itemprop="articleBody">
+              {% include anchor_headings.html html=content anchorBody="🔗" anchorClass="toc-anchor" beforeHeading=true%}
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
