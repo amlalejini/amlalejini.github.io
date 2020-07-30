@@ -4,14 +4,14 @@ title: Blog
 permalink: /blog/
 ---
 
-## <a href="#here">🔗</a> here
+## <a href="#here"><i class='far fa-link' style='color:slategrey;'></i></a> here
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-## <a href="#devolab">🔗</a> [devolab](https://devolab.org/)
+## <a href="#devolab"><i class='far fa-link' style='color:slategrey;'></i></a> [devolab](https://devolab.org/)
 <ul class="posts">
   {% for post in site.data.devolab_posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
