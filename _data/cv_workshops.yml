@@ -1,12 +1,18 @@
 # cv_teaching.yml lists my teaching experience for my CV
 
 - workshop: |
-    Co-Organizer, <a href="https://github.com/alife-data-standards/ALIFE2018-Standards-Workshop">Developing Software Standards for the Artificial Life Community<a>
+    Co-organizer, <a href="https://lalejini.com/ALife-2020--Emerging-Researchers-in-ALife-Workshop/">Emerging Researchers in Artificial Life Workshop</a>
+  date: July 2020
+  for: 2020 Conference on Artificial Life (ALIFE)
+  description: |
+    This workshop offered students, post-docs, and junior researchers in the Artificial Life community
+    a space to present research (via 5 minute lightning talks) and network.
+- workshop: |
+    Co-organizer, <a href="https://github.com/alife-data-standards/ALIFE2018-Standards-Workshop">Developing Software Standards for the Artificial Life Community</a>
   date: July, 2018; August, 2018
   for: 2018 Conference on Artificial Life (ALIFE); 2018 BEACON Congress
   description: |
-    This workshop aimed to start a conversation about identifying best practices 
-    and developing data and tool standards amongst individuals who design, develop,
-    and use a wide range of artificial life systems, including artificial chemistries, 
-    abstract ecologies, evolutionary systems, and a range of other communities 
-    who express interest.
+    These workshops started a conversation about identifying best practices for standardizing data storage
+    in Artificial Life. We began developing data and tool standards for individuals who design, develop,
+    and use a wide range of artificial life systems, including artificial chemistries,
+    abstract ecologies, and evolutionary systems. We published <a href="https://doi.org/10.1162/isal_a_00213">a summary of the workshop outcomes</a>.
