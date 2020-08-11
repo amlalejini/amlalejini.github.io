@@ -37,8 +37,10 @@
     Artificial Life Conference (ALIFE) 2018, 2020;
     BEACON funding requests (2016, 2017, 2018, & 2019)
 
-- service: Mentor, <a href="https://mmore500.com/waves/index.html">Workshop for Avida-ED Software Development (WAVES)</a>
+- service: |
+    Mentor, <a href="https://mmore500.com/waves/index.html">Workshop for Avida-ED Software Development (WAVES)</a>
   year: 2020
+  date: Summer 2020
   description: |
     I mentored two workshop participants over a 10 week period.
     Together, we developed open-source software to benefit the next generation of the Avida-ED scientific
@@ -46,3 +48,10 @@
     Descriptions of my mentees' projects can be found
     <a href="https://mmore500.com/waves/blog/wrapped-d3-visualizations.html">here</a> and
     <a href="https://mmore500.com/waves/blog/d3-sorting.html">here</a>.
+
+- service: Conference chair, Emerging Researchers in Artificial Life
+  year: 2020
+  date: Fall 2019 - Fall 2020
+  description: |
+    Elected position.
+    In charge of leading conference activities at the Artificial Life conference and coordinating with the conference organizers.
