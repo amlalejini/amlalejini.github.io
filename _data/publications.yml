@@ -13,12 +13,49 @@ publication_types:
       to be published elsewhere.
   - type_id: book-chapter
     pretty: Book chapters
+  - type_id: misc
+    pretty: Miscellaneous
+    overview: |
+      Miscellaneous publications that are not peer reviewed.
 
+################################
 # Listing of publications
+################################
+# Valid fields
+# - citation
+# - year
+# - venue
+# - type
+# - badges
+# - presentation_link
+# - link
+# - pdf
+# - bibtex_id
+# - bibtex
+
 publications:
 
   - citation: |
-        Austin J. Ferguson, Jose G. Hernandez, Daniel Junghans, Alexander Lalejini, Emily Dolson, Charles Ofria (2020)
+      Nadine Strasser, Alexander Lalejini, and Charles Ofria (2020).
+      Detecting the genetic signature of mutualisms from lineages.
+      [The 2020 Workshop on Symbiosis in Artificial Life](https://anyaevostinar.github.io/sal-workshop/) at the 2020 Conference on Artificial Life.
+    year: 2020
+    venue: workshop
+    type: misc
+    pdf: /pubs/strasser-2020-alife-2020-sal-workshop.pdf
+
+  - citation: |
+      Lauren Gillespie, Emily Dolson, Alexander Lalejini, and Charles Ofria (2018).
+      Changing Environments Drive the Separation of Genes and Increased Evolvability in NK-Inspired Landscapes.
+      Late breaking abstract at The 2018 Conference on Artificial Life.
+    year: 2018
+    venue: conference
+    type: misc
+    github_respository_link: https://github.com/leg2015/Aagos
+    pdf: /pubs/gillespie-2018-changing-environments-drive-gene-separation.pdf
+
+  - citation: |
+        Austin J. Ferguson, Jose G. Hernandez, Daniel Junghans, Alexander Lalejini, Emily Dolson, Charles Ofria (2020).
         [Characterizing the Effects of Random Subsampling on Lexicase Selection.](https://link.springer.com/chapter/10.1007/978-3-030-39958-0_1)
         In: Banzhaf W., Goodman E., Sheneman L., Trujillo L., Worzel B. (eds)
         Genetic Programming Theory and Practice XVII. Genetic and Evolutionary Computation.
