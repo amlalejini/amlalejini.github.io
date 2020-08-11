@@ -23,16 +23,26 @@
     other outreach events as a BEACON affiliate (e.g., MSU Darwin Day, MSU Science Festival).
 
 - service: Mentor, MSU Summer Research Opportunities Program (SROP)
-  date: Summer 2016, summer 2017, summer 2018, and summer 2019
-  year: 2018
+  date: Summer 2016, Summer 2017, Summer 2018, and Summer 2019
+  year: 2019
   description: |
-    I worked with undergraduate students to choose, perform, and present summer
-    research.
+    The goal of SROP is to increase the number of underrepresented students who pursue graduate study and research careers.
+    As a mentor, I work closely with my undergraduate mentees to develop and carry out a summer research agenda.
 
 - service: Reviewer
-  year: 2018
+  year: 2020
   description: |
-    European Conference on Artificial Life (ECAL) 2017,
-    Genetic and Evolutionary Computation Conference (GECCO) 2018, and
-    Artificial Life Conference (ALIFE) 2018, BEACON funding requests (2016, 2017,
-    2018, & 2019)
+    European Conference on Artificial Life (ECAL) 2017;
+    Genetic and Evolutionary Computation Conference (GECCO) 2018;
+    Artificial Life Conference (ALIFE) 2018, 2020;
+    BEACON funding requests (2016, 2017, 2018, & 2019)
+
+- service: Mentor, <a href="https://mmore500.com/waves/index.html">Workshop for Avida-ED Software Development (WAVES)</a>
+  year: 2020
+  description: |
+    I mentored two workshop participants over a 10 week period.
+    Together, we developed open-source software to benefit the next generation of the Avida-ED scientific
+    and educational software platform.
+    Descriptions of my mentees' projects can be found
+    <a href="https://mmore500.com/waves/blog/wrapped-d3-visualizations.html">here</a> and
+    <a href="https://mmore500.com/waves/blog/d3-sorting.html">here</a>.
