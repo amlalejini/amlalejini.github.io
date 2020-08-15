@@ -1,15 +1,5 @@
 # cv_service.yml gives a listing of service/outreach experiences for my CV
 
-- service: Volunteer, Monthly SWAT training exercises
-  date: Fall 2013 - Spring 2015
-  year: 2013
-  description: |
-    As a member of the STaRS Lab, I assisted with monthly training exercises with
-    the Starkville, MS Police Department SWAT team. Our lab worked to integrate
-    robots into the team's slow and methodical search of large buildings training sessions.
-    During these training sessions, I operated robots and role-played as a survivor
-    in need of rescue.
-
 - service: Volunteer, Poolside judge for the National SeaPerch Challenge
   date: May 17, 2014
   year: 2014
