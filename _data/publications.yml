@@ -154,17 +154,17 @@ publications:
 
   - citation: |
       Emily Dolson, Alexander Lalejini, Steven Jorgensen, and Charles Ofria. (2020).
-      [Interpretting the Tape of Life: Ancestry-based metrics and visualizations](https://doi.org/10.1162/artl_a_00313)
+      [Interpreting the Tape of Life: Ancestry-based metrics and visualizations](https://doi.org/10.1162/artl_a_00313)
       provide insights and intuition about evolutionary dynamics. Artificial Life.
       MIT Press. DOI: [10.1162/artl_a_00313](https://doi.org/10.1162/artl_a_00313)
     year: 2020
     venue: journal
     type: peer-reviewed-paper
     github_repository_link: https://github.com/emilydolson/interpreting_the_tape_of_life
-    bibtex_id: dolson-2020-interpretting-the-tape-of-life
+    bibtex_id: dolson-2020-interpreting-the-tape-of-life
     bibtex: |
       ```
-      @article{dolson-2020-interpretting-the-tape-of-life,
+      @article{dolson-2020-interpreting-the-tape-of-life,
         author = {Dolson, Emily and Lalejini, Alexander and Jorgensen, Steven and Ofria, Charles},
         title = {Interpreting the Tape of Life: Ancestry-Based Analyses Provide Insights and Intuition about Evolutionary Dynamics},
         journal = {Artificial Life},
