@@ -1,6 +1,15 @@
 # cv_presentations.yml gives a listing of presentations for my CV
 
 - type: talk
+  title: Environmental change, mutation rate, and the evolution of gene overlap
+  authors: Lauren Gillespie (speaker), Alexander Lalejini (speaker), Emily Dolson, and Charles Ofria
+  venue: 2020 BEACON Congress
+  year: 2020
+  date: August 14, 2020
+  location: Virtual
+  slides_link: https://docs.google.com/presentation/d/1zMWNVtRDQlNUbD-sADnymDbcG6zzdRZMbCEJ4Fx_9hc/edit
+
+- type: talk
   title: Data Standards for Artificial Life Software
   authors: Alexander Lalejini, Emily Dolson, Clifford Bohm, Austin J. Ferguson, David P. Parsons, Penelope Faulkner Rainford, Paul Richmond, and Charles Ofria
   venue: The 2019 Conference on Artificial Life
