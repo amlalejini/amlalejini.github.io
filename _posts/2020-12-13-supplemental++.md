@@ -6,6 +6,7 @@ date: 2020-12-13
 last-updated: 2020-12-15
 ---
 
+Apparently, I am excited about good supplemental material.
 Explanation of what this is and who it is for.
 Overview of how I do supplemental material. Don't like pdf as a medium - just not as expressive and flexible as I'd like. Can't hold code, organize material in a non-linear way.
 
