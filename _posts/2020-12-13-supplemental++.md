@@ -23,14 +23,10 @@ _Disclaimer:_ this bestiary isn't meant to be exhaustive! Because my intended au
 ☎️ I'm always curious about other folks' workflows and favorite tools for putting together manuscripts/supplemental material! Reach out, send me suggestions!
 
 ## Git + GitHub
-![backbone](https://img.shields.io/badge/-backbone-ff69b4
-)
-![versioning](https://img.shields.io/badge/-versioning-ff69b4
-)
-![code](https://img.shields.io/badge/-code%20storage-ff69b4
-)
-![data](https://img.shields.io/badge/-data%20storage%20(only%20a%20little)-ff69b4
-)
+![backbone](https://img.shields.io/badge/-backbone-ff69b4)
+![versioning](https://img.shields.io/badge/-versioning-ff69b4)
+![code](https://img.shields.io/badge/-code%20storage-ff69b4)
+![data](https://img.shields.io/badge/-data%20storage%20(only%20a%20little)-ff69b4)
 
 [Git](https://git-scm.com/) + [GitHub](https://github.com/) repositories are the backbone of my entire workflow for every project.
 Git is your friendly neighborhood version control system.
@@ -45,7 +41,9 @@ Anything that I don't include (like large data files), I am sure to link to in t
 All of this allows me use my paper's GitHub repository as a one-stop-shop for all of that paper's supplemental material.
 Even better, services like [Zenodo](https://zenodo.org/) allow you to easily cite your repository by assigning it a permanent DOI (check out [this guide](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html) for setting that up).
 
-🛑, I don't recommend storing large data files on GitHub. There are [better services](#open-science-framework-osf) for storing data that you can link to from your repo!
+Tips
+- 🛑, I don't recommend storing large data files on GitHub. There are [better services](#open-science-framework-osf) for storing data that you can link to from your repo!
+- README files aren't just for your root directory! Add README.md files to important directories in your repository. If someone clicks into a directory with a README file on GitHub, the contents of the readme are automatically rendered below the directory listing. This is a great way to give folks a quick and convenient guide to the directory's contents.
 
 Here's some useful resources for using git/github:
 
@@ -90,34 +88,27 @@ Create custom badges to direct folks to where your data are hosted or where they
 )
 
 ## Open Science Framework (OSF)
-![code](https://img.shields.io/badge/-code%20storage-ff69b4
-)
-![data](https://img.shields.io/badge/-data%20storage-ff69b4
-)
-![doi](https://img.shields.io/badge/-citable%20doi-ff69b4
-)
+![code](https://img.shields.io/badge/-code%20storage-ff69b4)
+![data](https://img.shields.io/badge/-data%20storage-ff69b4)
+![doi](https://img.shields.io/badge/-citable%20doi-ff69b4)
 
 ## Docker containers
 ![reproducibility](https://img.shields.io/badge/-reproducibility-ff69b4
 )
 
 ## R Markdown
-![analysis](https://img.shields.io/badge/-data%20analysis-ff69b4
-)
-![visualization](https://img.shields.io/badge/-visualization-ff69b4
-)
-![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4
-)
+![analysis](https://img.shields.io/badge/-data%20analysis-ff69b4)
+![visualization](https://img.shields.io/badge/-visualization-ff69b4)
+![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4)
 
 [readable data analysis]
 
 ## Bookdown
-![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4
-)
-![slick](https://img.shields.io/badge/-it%20just%20looks%20slick-ff69b4
-)
+![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4)
+![slick](https://img.shields.io/badge/-it%20just%20looks%20slick-ff69b4)
 
 [bundling everything together]
+[inspired by claus' dataviz book]
 
 
 
