@@ -15,7 +15,11 @@ layout: default
             {% if page.subtitle %}
               <h3 class="text-secondary">{{ page.subtitle }}</h3>
             {% endif %}
-            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+              {% if page.last-updated %} <i>(updated: {{ page.last-updated | date: "%b %-d, %Y" }})</i> {% endif %}
+              {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+            </p>
           </header>
         </div>
 
