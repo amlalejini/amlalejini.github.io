@@ -3,17 +3,24 @@ layout: post
 title: "Supplemental material++"
 subtitle: "a collection of tools and services to spice up (and improve) your supplemental material"
 date: 2020-12-13
-last-updated: 2020-12-15
+last-updated: 2020-12-16
+author: Alexander Lalejini
 ---
 
-Apparently, I am excited about good supplemental material.
-Explanation of what this is and who it is for.
-Overview of how I do supplemental material. Don't like pdf as a medium - just not as expressive and flexible as I'd like. Can't hold code, organize material in a non-linear way.
+Apparently, I'm just really into supplemental material; this is the _second_ blog post on ❤️supplemental material❤️ that I've scraped together, and blog posts aren't typically my thing!
 
-Things that i use, not an exhaustive list of things.
-You'll notice no jupyter notebooks at the moment; those are great, I just don't use them very often because I'm more often using R + R markdown.
+**This post is meant to serve as a living bestiary for nifty tools and resources that I use (in practice or aspirationally) to compose supplemental material for academic papers (or really whatever I might want supplemental material for).**
 
-Reach out, send me suggestions!
+Most often, I see supplemental material provided as a pdf file with links to code and/or data hosted somewhere on the internet (or worse, pasted directly into the file 😱). Pdfs just don't cut it for me. The pdf is not an expressive enough medium 🎨 to hold all of the miscellaneous artifacts that should go along with a publication.
+
+Who is this post for?
+
+- Mostly future me. I'm not naive enough to think that anyone other than me will ever click through to this blog post.
+- I guess anyone looking for inspiration for building beautiful supplemental material.
+
+_Disclaimer:_ this bestiary isn't meant to be exhaustive! Because my intended audience is primarily future me, I'm only adding tools/services that _I_ regularly use. There's lots of awesome stuff out there that you might not find here. For example, You'll notice that I don't include jupyter notebooks at the moment; those are great, I just don't use them very often because I do most of my analyses in R + R Markdown.
+
+☎️ I'm always curious about other folks' workflows and favorite tools for putting together manuscripts/supplemental material! Reach out, send me suggestions!
 
 ## Git + GitHub
 ![backbone](https://img.shields.io/badge/-backbone-ff69b4
