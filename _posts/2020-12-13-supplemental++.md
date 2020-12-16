@@ -25,7 +25,7 @@ Reach out, send me suggestions!
 ![data](https://img.shields.io/badge/-data%20storage%20(only%20a%20little)-ff69b4
 )
 
-Git + GitHub repositories are the backbone of my entire workflow for every project.
+[Git](https://git-scm.com/) + [GitHub](https://github.com/) repositories are the backbone of my entire workflow for every project.
 Git is your friendly neighborhood version control system.
 Track (and show) the history of your project, tag versions to easily access older versions of your project, make collaborating with other folks on your source code so much easier.
 Want to know when (and maybe why) exactly you added that line of code? Git blame is your friend!
@@ -38,6 +38,8 @@ Anything that I don't include (like large data files), I am sure to link to in t
 All of this allows me use my paper's GitHub repository as a one-stop-shop for all of that paper's supplemental material.
 Even better, services like [Zenodo](https://zenodo.org/) allow you to easily cite your repository by assigning it a permanent DOI (check out [this guide](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html) for setting that up).
 
+🛑, I don't recommend storing large data files on GitHub. There are [better services](#open-science-framework-osf) for storing data that you can link to from your repo!
+
 Here's some useful resources for using git/github:
 
 - [Software carpentry lesson on git](http://swcarpentry.github.io/git-novice/)
@@ -45,13 +47,20 @@ Here's some useful resources for using git/github:
 - <https://mmore500.com/waves/blog/extra-git.html>
 
 ## Zenodo
-![doi](https://img.shields.io/badge/-citable%20doi-ff69b4
-)
+![doi](https://img.shields.io/badge/-citable%20doi-ff69b4)
+
+[Zenodo](https://zenodo.org/) is a nifty service that you can use to attach a DOI to a GitHub repository (and to other things).
+Zenodo makes is super easy to cite GitHub repositories in a paper ([see this guide](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html)).
+
+Tips
+
+- For bibtex users, Zenodo will spit out the citation for your repo in bibtex format!
+  - BUT, you should always sanity check the reference in your compiled document. Depending on your bibliography format, it may leave important things off like the actual DOI or the url. I can often get around this by adding a `note` field to the bibtex entry (e.g., `note={DOI: xxxx}`).
+  - Also, if you're using the DOI'd repository as your supplemental material, consider updating the `title` field to make that obvious (the default `title` is just the name of the repository on GitHub).
 
 
 ## Repository badges
-![fun](https://img.shields.io/badge/-fun-ff69b4
-)
+![fun](https://img.shields.io/badge/-fun-ff69b4)
 
 Sticking badges on a repository (or any document, really) is just good fun. And useful, too!
 You often find badges at the top of README files on GitHub repositories. For example,
