@@ -41,12 +41,11 @@ Anything that I don't include (like large data files), I am sure to link to in t
 All of this allows me use my paper's GitHub repository as a one-stop-shop for all of that paper's supplemental material.
 Even better, services like [Zenodo](https://zenodo.org/) allow you to easily cite your repository by assigning it a permanent DOI (check out [this guide](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html) for setting that up).
 
-Tips
+**Tips**
 - 🛑, I don't recommend storing large data files on GitHub. There are [better services](#open-science-framework-osf) for storing data that you can link to from your repo!
 - README files aren't just for your root directory! Add README.md files to important directories in your repository. If someone clicks into a directory with a README file on GitHub, the contents of the readme are automatically rendered below the directory listing. This is a great way to give folks a quick and convenient guide to the directory's contents.
 
-Here's some useful resources for using git/github:
-
+**Resources:**
 - [Software carpentry lesson on git](http://swcarpentry.github.io/git-novice/)
 - [Enrichment seminar given by Dr. Emily Dolson on git/GitHub](https://mmore500.com/waves/enrichment/week1.html)
 - <https://mmore500.com/waves/blog/extra-git.html>
@@ -98,15 +97,15 @@ You don't _have_ to use jekyll; you can use whatever you'd like (e.g., [bookdown
 
 GH pages _really_ shines for supplemental material in combination with other tools, like R markdown (e.g., R analyses => pretty HTML files) or nbconvert for jupyter notebooks (e.g., python notebook analyses => pretty HTML files). For example, instead of pointing readers to your raw source code, point them to a nicely formatted HTML file generated from your analysis code that weaves readable explanations together with code and output (e.g., stats, visualizations, etc.).
 
-Resources
-
-- [blog post on making supplemental material web-accessible](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html#bonus-make-your-supplemental-material-web-accessible)
-
-Tips
+**Tips:**
 
 - Separate the main branch from the pages branch (`gh-pages` by default).
   - You can use another service (e.g., github action) to push/deploy your site to the gh-pages anytime your push to the main branch if the changes pass automated testing. This way, your supplemental material will stay in lock-step with _working_ versions of your project 😉
 - GitHub pages is also great for personal websites (e.g., [this website](https://github.com/amlalejini/amlalejini.github.io), lab websites, conference workshop websites, _et cetera!
+
+**Resources:**
+
+- [blog post on making supplemental material web-accessible](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html#bonus-make-your-supplemental-material-web-accessible)
 
 ## Open Science Framework (OSF)
 ![code](https://img.shields.io/badge/-code%20storage-ff69b4)
@@ -121,26 +120,36 @@ I'll also link my OSF repository with my project's associated GitHub repository 
 
 In my aspirational supplemental material, I like to include a 'Data Availability' section that links to/cites the OSF repository that holds my experiment data.
 
-Tips
+**Tips:**
 
 - [osfclient](https://github.com/osfclient/osfclient) is a nifty python library and command-line tool for uploading files to and downloading files from your OSF projects.
   - e.g., use this to have your experiment software automatically upload data when your experiment finishes, or use it to write convenient scripts that download/extract/organize your data for anyone interested in playing with it (including future you!).
 
 ## Docker containers
-![reproducibility](https://img.shields.io/badge/-reproducibility-ff69b4
-)
+![reproducibility](https://img.shields.io/badge/-reproducibility-ff69b4)
 
-Tips
+Dockerfiles (and the images/containers they generate) give you a way of fully specifying the requisite development environment for compiling/running your computational experiments.
+Nüst _et al._ make a great case for using Docker for reproducible science in their [10 simple rules paper](https://doi.org/10.1371/journal.pcbi.1008316).
 
-- intermediate containers
-- pinning
-- read the Ten simple rules paper
+[Docker Hub](https://hub.docker.com/) is a great place to host your containers.
+Plus, Docker Hub repositories can be linked with GitHub repositories.
+You can stick your Dockerfile in your GitHub repo, and Docker Hub will watch for new commits and build your Dockerfile.
 
-Resources
+**Tips:**
+
+- Grab a badge from <shields.io>
+  - to link to docker hub repo [![DockerHub link](https://img.shields.io/badge/DockerHub-Hosted-blue)](https://hub.docker.com/r/amlalejini/tag-based-genetic-regulation-for-gp)
+  - to indicate build status ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/amlalejini/tag-based-genetic-regulation-for-gp)
+- When you build your docker image locally (e.g., `docker build .`), the build process will drop intermediate images as you go (for each RUN directive). If something fails during the build, you can always hop into the last successful image to investigate 🔍.
+  - if your build fails, you can use `docker image ls -a` to see all of the recently created intermediate images
+  - once you pick an image to spin up, you can run it interactively `docker run -it the_image_id`
+  - `docker system prune` is your friend while you debug your dockerfile locally!
+- Lot's of great tips here: [Ten simple rules for writing Dockerfiles for reproducible data science](https://doi.org/10.1371/journal.pcbi.1008316)
+
+**Resources:**
 
 - Nüst, D., Sochat, V., Marwick, B., Eglen, S. J., Head, T., Hirst, T., & Evans, B. D. (2020). Ten simple rules for writing Dockerfiles for reproducible data science. PLOS Computational Biology, 16(11), e1008316. <https://doi.org/10.1371/journal.pcbi.1008316>
-  - and the associated github repository
-
+  - and the associated github repository with lots of examples: <https://github.com/nuest/ten-simple-rules-dockerfiles/tree/master/examples>
 
 
 ## R Markdown
@@ -150,12 +159,30 @@ Resources
 
 [readable data analysis]
 
+**Tips:**
+
+- Add a table of contents, `toc: true`
+- If you want to go wild and interweave Python and R code, you can use the [reticulate](https://rstudio.github.io/reticulate/) package
+
+**Resources:**
+
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
 ## Bookdown
 ![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4)
 ![slick](https://img.shields.io/badge/-it%20just%20looks%20slick-ff69b4)
 
 [bundling everything together]
 [inspired by claus' dataviz book]
+
+**Tips:**
+- custom source file locations
+
+**Resources:**
+
+- [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+  - Comprehensive introduction/guide/documentation by the developer, Yihui Xie
+  - This getting started demo is also super handy: <https://github.com/rstudio/bookdown-demo>
 
 
 
