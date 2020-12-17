@@ -144,6 +144,8 @@ You can stick your Dockerfile in your GitHub repo, and Docker Hub will watch for
   - if your build fails, you can use `docker image ls -a` to see all of the recently created intermediate images
   - once you pick an image to spin up, you can run it interactively `docker run -it the_image_id`
   - `docker system prune` is your friend while you debug your dockerfile locally!
+- Pinning versions
+  - Great tip from [Matthew](https://twitter.com/morenomatthewa): you can build it without the pins, then open the container and run `apt policy packagename` for the things you want to pin
 - Lot's of great tips here: [Ten simple rules for writing Dockerfiles for reproducible data science](https://doi.org/10.1371/journal.pcbi.1008316)
 
 **Resources:**
