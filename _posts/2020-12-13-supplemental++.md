@@ -66,6 +66,7 @@ Tips
 
 ## Repository badges
 ![fun](https://img.shields.io/badge/-fun-ff69b4)
+![informative](https://img.shields.io/badge/-information%20at%20a%20glance-ff69b4)
 
 Sticking badges on a repository (or any document, really) is just good fun. And useful, too!
 You often find badges at the top of README files on GitHub repositories. For example,
@@ -84,8 +85,28 @@ Create custom badges to direct folks to where your data are hosted or where they
 - Lot's of services that you can hook your repository into (e.g., code coverage, continuous integration, etc) will provide a badge that indicates the status of your repository on their service.
 
 ## GitHub Pages
-![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4
-)
+![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4)
+
+What's way cooler than pdf-bound supplemental material? Web-enabled supplemental material!
+
+GitHub pages is a minimal effort (and free!) way to generate and host a static website directly from a GitHub repository.
+Generating a website for a repository is actually as easy as toggling a switch in your repository's settings.
+If you do nothing but flip on the GH pages switch and write a decent readme, you'll have solid landing page for paper ([here's one I did when I was first figuring out github pages](https://lalejini.com/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP/)).
+
+By default, GH pages compiles your site using [Jekyll](https://jekyllrb.com/), which is really flexible, fairly easy to use, and has a huge community using it.
+You don't _have_ to use jekyll; you can use whatever you'd like (e.g., [bookdown!](#bookdown)).
+
+GH pages _really_ shines for supplemental material in combination with other tools, like R markdown (e.g., R analyses => pretty HTML files) or nbconvert for jupyter notebooks (e.g., python notebook analyses => pretty HTML files). For example, instead of pointing readers to your raw source code, point them to a nicely formatted HTML file generated from your analysis code that weaves readable explanations together with code and output (e.g., stats, visualizations, etc.).
+
+Resources
+
+- [blog post on making supplemental material web-accessible](https://lalejini.com/2020/04/02/gh-supplemental-material-guide.html#bonus-make-your-supplemental-material-web-accessible)
+
+Tips
+
+- Separate the main branch from the pages branch (`gh-pages` by default).
+  - You can use another service (e.g., github action) to push/deploy your site to the gh-pages anytime your push to the main branch if the changes pass automated testing. This way, your supplemental material will stay in lock-step with _working_ versions of your project 😉
+- GitHub pages is also great for personal websites (e.g., [this website](https://github.com/amlalejini/amlalejini.github.io), lab websites, conference workshop websites, _et cetera!
 
 ## Open Science Framework (OSF)
 ![code](https://img.shields.io/badge/-code%20storage-ff69b4)
