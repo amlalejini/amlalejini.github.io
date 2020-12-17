@@ -3,7 +3,7 @@ layout: post
 title: "Supplemental material++"
 subtitle: "a collection of tools and services to spice up (and improve) your supplemental material"
 date: 2020-12-13
-last-updated: 2020-12-16
+last-updated: 2020-12-17
 author: Alexander Lalejini
 ---
 
@@ -113,9 +113,35 @@ Tips
 ![data](https://img.shields.io/badge/-data%20storage-ff69b4)
 ![doi](https://img.shields.io/badge/-citable%20doi-ff69b4)
 
+OSF lets you create repositories (which they assign a citable DOI) that you can stick stuff in (e.g., code, data, documentation, etc).
+OSF repositories have all sorts of integrations that let you associate disparate backend components together in a sustainable/citable way.
+
+I've primarily used OSF repositories as a place to dump compressed data files (instead of dealing with git/github's large file storage system).
+I'll also link my OSF repository with my project's associated GitHub repository (and whatever other integrations make sense).
+
+In my aspirational supplemental material, I like to include a 'Data Availability' section that links to/cites the OSF repository that holds my experiment data.
+
+Tips
+
+- [osfclient](https://github.com/osfclient/osfclient) is a nifty python library and command-line tool for uploading files to and downloading files from your OSF projects.
+  - e.g., use this to have your experiment software automatically upload data when your experiment finishes, or use it to write convenient scripts that download/extract/organize your data for anyone interested in playing with it (including future you!).
+
 ## Docker containers
 ![reproducibility](https://img.shields.io/badge/-reproducibility-ff69b4
 )
+
+Tips
+
+- intermediate containers
+- pinning
+- read the Ten simple rules paper
+
+Resources
+
+- Nüst, D., Sochat, V., Marwick, B., Eglen, S. J., Head, T., Hirst, T., & Evans, B. D. (2020). Ten simple rules for writing Dockerfiles for reproducible data science. PLOS Computational Biology, 16(11), e1008316. <https://doi.org/10.1371/journal.pcbi.1008316>
+  - and the associated github repository
+
+
 
 ## R Markdown
 ![analysis](https://img.shields.io/badge/-data%20analysis-ff69b4)
