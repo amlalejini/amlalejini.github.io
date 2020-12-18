@@ -3,7 +3,7 @@ layout: post
 title: "Supplemental material++"
 subtitle: "a collection of tools and services to spice up (and improve) your supplemental material"
 date: 2020-12-13
-last-updated: 2020-12-17
+last-updated: 2020-12-18
 author: Alexander Lalejini
 ---
 
@@ -174,7 +174,7 @@ Check out Yihui Xie's [R Markdown: Definitive Guide](https://bookdown.org/yihui/
 **Tips:**
 
 - Add a table of contents (`toc:true`) to your output to make it easier to jump around your document
-  - e.g.,
+  - e.g. add `toc` options to your R markdown file's front matter,
     ```
     ---
     title: "My fun analyses with a table of contents"
@@ -190,16 +190,20 @@ Check out Yihui Xie's [R Markdown: Definitive Guide](https://bookdown.org/yihui/
 **Resources:**
 
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+- [Getting started with R Markdown on RStudio](https://rmarkdown.rstudio.com/lesson-1.html)
 
 ## Bookdown
 ![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4)
 ![slick](https://img.shields.io/badge/-it%20just%20looks%20slick-ff69b4)
 
-[bundling everything together]
-[inspired by claus' dataviz book]
+[Bookdown](https://bookdown.org/) is an R package that can bundle multiple R Markdown (and vanilla markdown) documents into a cohesive and slick ebook.
+My first exposure to bookdown in the wild was Claus Wilke's fantastic [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/), which was written entirely in R Markdown and compiled using bookdown.
 
-**Tips:**
-- custom source file locations
+I like using bookdown to tie together all of my supplemental material into a single, nifty ebook (e.g., <https://lalejini.com/Tag-based-Genetic-Regulation-for-LinearGP/supplemental/>).
+
+I _highly_ recommend starting with Yihui Xie's [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/), which itself is compiled using bookdown!
+I also recommend playing around with Yihui Xie's [bookdown demo](https://github.com/rstudio/bookdown-demo) to get a feel for using bookdown.
+
 
 **Resources:**
 
