@@ -36,6 +36,27 @@ publication_types:
 publications:
 
   - citation: |
+      Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria, C. (2020).
+      [Tag-based Genetic Regulation for Genetic Programming.](https://arxiv.org/abs/2012.09229)
+      preprint, arXiv:2012.09229.
+    year: 2020
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/amlalejini/Tag-based-Genetic-Regulation-for-LinearGP
+    bibtex_id: lalejini2020tagbased
+    bibtex: |
+      ```bibtex
+      @misc{lalejini2020tagbased,
+            title={Tag-based Genetic Regulation for Genetic Programming},
+            author={Alexander Lalejini and Matthew Andres Moreno and Charles Ofria},
+            year={2020},
+            eprint={2012.09229},
+            archivePrefix={arXiv},
+            primaryClass={cs.NE}
+      }
+      ```
+
+  - citation: |
       Nadine Strasser, Alexander Lalejini, and Charles Ofria (2020).
       Detecting the genetic signature of mutualisms from lineages.
       [The 2020 Workshop on Symbiosis in Artificial Life](https://anyaevostinar.github.io/sal-workshop/) at the 2020 Conference on Artificial Life.
@@ -51,7 +72,7 @@ publications:
     year: 2018
     venue: conference
     type: misc
-    github_respository_link: https://github.com/leg2015/Aagos
+    github_repository_link: https://github.com/leg2015/Aagos
     pdf: /pubs/gillespie-2018-changing-environments-drive-gene-separation.pdf
 
   - citation: |
