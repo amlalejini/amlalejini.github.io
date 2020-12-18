@@ -15,10 +15,10 @@ Most often, I see supplemental material provided as a pdf file with links to cod
 
 Who is this post for?
 
-- Mostly future me. I'm not naive enough to think that anyone other than me will ever click through to this blog post.
-- I guess anyone looking for inspiration for building beautiful supplemental material.
+- Mostly future me.
+- Anyone looking for inspiration for building beautiful supplemental material.
 
-_Disclaimer:_ this bestiary isn't meant to be exhaustive! Because my intended audience is primarily future me, I'm only adding tools/services that _I_ regularly use. There's lots of awesome stuff out there that you might not find here. For example, You'll notice that I don't include jupyter notebooks at the moment; those are great, I just don't use them very often because I do most of my analyses in R + R Markdown.
+_Disclaimer:_ this bestiary isn't meant to be exhaustive! Because my primary audience is future me, I'm only adding tools/services that _I_ regularly use. There's lots of awesome stuff out there that you might not find here. For example, You'll notice that I don't include jupyter notebooks at the moment; those are great, I just don't use them very often because I do most of my analyses with R + R Markdown.
 
 ☎️ I'm always curious about other folks' workflows and favorite tools for putting together manuscripts/supplemental material! Reach out, send me suggestions!
 
@@ -151,7 +151,7 @@ You can stick your Dockerfile in your GitHub repo, and Docker Hub will watch for
 **Resources:**
 
 - Nüst, D., Sochat, V., Marwick, B., Eglen, S. J., Head, T., Hirst, T., & Evans, B. D. (2020). Ten simple rules for writing Dockerfiles for reproducible data science. PLOS Computational Biology, 16(11), e1008316. <https://doi.org/10.1371/journal.pcbi.1008316>
-  - and the associated github repository with lots of examples: <https://github.com/nuest/ten-simple-rules-dockerfiles/tree/master/examples>
+  - Plus the associated github repository with lots of examples: <https://github.com/nuest/ten-simple-rules-dockerfiles/tree/master/examples>
 
 
 ## R Markdown
@@ -159,12 +159,33 @@ You can stick your Dockerfile in your GitHub repo, and Docker Hub will watch for
 ![visualization](https://img.shields.io/badge/-visualization-ff69b4)
 ![accessibility](https://img.shields.io/badge/-web%20accessibility-ff69b4)
 
-[readable data analysis]
+R Markdown lets you interweave your R code, visualizations, and explanatory text all together in one document.
+Then, use [knitr](https://yihui.org/knitr/) to 'knit' it all into a single HTML file or pdf (or both!).
+Output your R Markdown as an HTML page, push it to your GitHub repository, turn on GitHub pages, and ✨!
+You've got a nicely formatted web page with all of your data analyses!
+
+RStudio (which I totally recommend to anyone starting out with R coding) makes this workflow _really_ easy.
+Just pop open your `.Rmd` file, and mash the `Knit` button.
+
+![knit]({{ site.baseurl }}/imgs/blog/2020-12-13-supplemental++/knit.png)
+
+Check out Yihui Xie's [R Markdown: Definitive Guide](https://bookdown.org/yihui/rmarkdown/) to see what's possible with R Markdown (spoiler: a whole bunch of awesome stuff is possible).
 
 **Tips:**
 
-- Add a table of contents, `toc: true`
-- If you want to go wild and interweave Python and R code, you can use the [reticulate](https://rstudio.github.io/reticulate/) package
+- Add a table of contents (`toc:true`) to your output to make it easier to jump around your document
+  - e.g.,
+    ```
+    ---
+    title: "My fun analyses with a table of contents"
+    output:
+      html_document:
+        toc: true
+        toc_float: true
+        toc_depth: 4
+    ---
+    ```
+- If you want to go wild and interweave Python and R code, you can use the [reticulate](https://rstudio.github.io/reticulate/) package!
 
 **Resources:**
 
