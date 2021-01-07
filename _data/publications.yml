@@ -182,6 +182,7 @@ publications:
     venue: journal
     type: peer-reviewed-paper
     github_repository_link: https://github.com/emilydolson/interpreting_the_tape_of_life
+    pdf: /pubs/Dolson_et_al_2020_Interpreting_the_Tape_of_Life.pdf
     bibtex_id: dolson-2020-interpreting-the-tape-of-life
     bibtex: |
       ```
