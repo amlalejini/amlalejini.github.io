@@ -10,9 +10,9 @@ In this post, I'll walk you (or future me 👋 😉) through getting a [bookdown
 
 This guide assumes familiarity with each of the tools and services that we'll use; I'm just here to help you duct tape them all together ☺️!
 
-See [this GitHub repository](https://github.com/amlalejini/auto-deploying-bookdown-example) for a fully demo.
+**TL;DR: See [this GitHub repository](https://github.com/amlalejini/auto-deploying-bookdown-example) for  the fully functional demo.**
 
-Ingredients
+Ingredients 🍲
 
 - [bookdown](https://bookdown.org/) is an R package that can generate an ebook (or pdf, Word doc, etc.) from a collection of R markdown (and vanilla markdown) documents.
   - R markdown supports a wide range of languages in addition to R (e.g., Python, Julia, etc.)
@@ -169,16 +169,167 @@ The `nocite: '@*'` line tells bookdown to add _everything_ from `book.bib` and `
 
 **All of these example files can also be found on GitHub: <https://github.com/amlalejini/auto-deploying-bookdown-example>.**
 
-
 ## Step 2. Setting up a Dockerfile to run bookdown
 
-at this point I also like to hook my repo up to
+With our ebook compiling locally, we want to specify a docker image with the requisite environment to compile everything.
 
-### Dealing with data that you don't want to store in a GitHub repository.
+`Dockerfile`
 
+```
+# Pull a base image
+FROM ubuntu:20.04
+
+# Copy everything (minus anything specified in .dockerignore) into the image
+COPY . /opt/auto-deploying-bookdown-example
+
+# To make installs not ask questions about timezones
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=America/New_York
+
+##############################
+# install base dependencies
+# - for R repository
+#   - dirmngr
+#   - gpg-agent
+# - for bookdown compilation
+#   - pandoc, pandoc-citeproc, texlive-base, texlive-latex-extra
+##############################
+RUN \
+  apt-get update \
+    && \
+  apt-get install -y -qq --no-install-recommends \
+    software-properties-common \
+    curl=7.68.0-1ubuntu2.4 \
+    g++-10=10.2.0-5ubuntu1~20.04 \
+    make=4.2.1-1.2 \
+    cmake=3.16.3-1ubuntu1  \
+    python3=3.8.2-0ubuntu2 \
+    python3-pip \
+    python3-virtualenv \
+    git=1:2.25.1-1ubuntu3 \
+    dirmngr \
+    gpg-agent \
+    pandoc \
+    pandoc-citeproc \
+    texlive-base \
+    texlive-latex-extra \
+    lmodern \
+    && \
+  echo "installed base dependencies"
+
+########################################################
+# install r with whatever r packages we need/want
+# - source: https://rtask.thinkr.fr/installation-of-r-4-0-on-ubuntu-20-04-lts-and-tips-for-spatial-packages/
+########################################################
+RUN \
+  gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 \
+    && \
+  gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | apt-key add - \
+    && \
+  apt update \
+    && \
+  add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/' \
+    && \
+  apt-get install -y -q --no-install-recommends \
+    r-base=4.0.3-1.2004.0 \
+    r-base-dev \
+    libssl-dev \
+    libcurl4-openssl-dev \
+    libfreetype6-dev \
+    libmagick++-dev \
+    libxml2-dev \
+    libfontconfig1-dev \
+    cargo \
+    && \
+  R -e "install.packages('rmarkdown', dependencies=NA, repos='http://cran.rstudio.com/')" \
+    && \
+  R -e "install.packages('knitr', dependencies=NA, repos='http://cran.rstudio.com/')" \
+    && \
+  R -e "install.packages('bookdown', dependencies=NA, repos='http://cran.rstudio.com/')" \
+    && \
+  R -e "install.packages('tidyverse',dependencies=NA, repos='http://cran.rstudio.com/')" \
+    && \
+  R -e "install.packages('cowplot',dependencies=NA, repos='http://cran.rstudio.com/')" \
+    && \
+  echo "installed r and configured r environment"
+
+
+########################################################
+# build supplemental material (will also run data analyses)
+########################################################
+RUN \
+  cd /opt/auto-deploying-bookdown-example \
+    && \
+  ./build_book.sh \
+    && \
+  echo "compiled bookdown ebook
+```
+
+This Dockerfile assumes that everything you need to build your bookdown site is inside your GitHub repository. What if you need data that you don't want to add to your GitHub repository (e.g., too big/too much)?
+
+### Using data stored on OSF
+
+Downloading data stored on the [Open Science Framework](https://osf.io/) into your docker image is easy using the [osfclient python package](https://github.com/osfclient/osfclient).
+
+E.g., in your `Dockerfile` before running the `build_book.sh` script, add something along the lines of:
+
+```
+########################################################
+# install osfclient, use to download project data
+########################################################
+RUN \
+  pip3 install osfclient \
+    && \
+  export OSF_PROJECT=w95ne \
+    && \
+  export PROJECT_PATH=/opt/auto-deploying-bookdown-example/ \
+    && \
+  osf -p ${OSF_PROJECT} fetch data.tar.gz ${PROJECT_PATH}/data.tar.gz \
+    && \
+  tar -xzf ${PROJECT_PATH}/data.tar.gz -C ${PROJECT_PATH}/ \
+    && \
+  echo "download"
+```
 
 ## Step 3. Using GitHub actions to automatically build and deploy your ebook
 
+Now that we have a Dockerfile that specifies how to build our ebook, we can wire up some GitHub actions to watch our repository for new commits, build our ebook, and deploy to github pages.
+
+`.github/workflows/deploy-bookdown.yml`
+
+```
+name: Build and deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: docker build
+        run:
+        |
+          docker build . --file Dockerfile --tag example
+          docker container create --name pages_build example:latest
+          docker cp pages_build:/opt/auto-deploying-bookdown-example/_book ./_book
+      - name: deploy to github pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to
+          FOLDER: _book # The folder the action should deploy
+          CLEAN: true # Automatically remove deleted files from the deploy branch
+```
+
+Done!
+
+You can check out the Actions tab on your github repository to see the output log resulting from your workflow. E.g., [for this example repository](https://github.com/amlalejini/auto-deploying-bookdown-example/actions).
 
 ## Useful resources
 
