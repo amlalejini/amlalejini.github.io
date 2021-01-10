@@ -340,6 +340,8 @@ You can check out the Actions tab on your github repository to see the output lo
 
 ## Useful resources
 
-
-- Bookdown has really good documentation in the form of a bookdown-generated ebook, [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
-- [bookdown demo GitHub repository](https://github.com/rstudio/bookdown-demo)
+- bookdown
+  - Bookdown has really good documentation in the form of a bookdown-generated ebook, [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+  - [bookdown demo GitHub repository](https://github.com/rstudio/bookdown-demo)
+- GitHub actions/workflows
+  - [GitHub's learning lab](https://lab.github.com/) has fantastic interactive tutorials for working with all sorts of GitHub features, including actions!
