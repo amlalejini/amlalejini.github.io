@@ -2,7 +2,7 @@
 layout: post
 title: "Automatically deploy a bookdown ebook with GitHub actions"
 date: 2021-01-09
-last-updated: 2021-01-09
+last-updated: 2021-01-10
 author: Alexander Lalejini
 ---
 
@@ -294,6 +294,13 @@ RUN \
 ## Step 3. Using GitHub actions to automatically build and deploy your ebook
 
 Now that we have a Dockerfile that specifies how to build our ebook, we can wire up some GitHub actions to watch our repository for new commits, build our ebook, and deploy to github pages.
+
+First, turn on GitHub pages for your repository (under the repo's Settings tab).
+Select the `gh-pages` branch, and save the changes.
+
+Next, we need to tell GitHub not to use jekyll to generate your site because we'll be generating the site ourselves using bookdown. All you need to do is add an empty `.nojekyll` file to your gh-pages branch. You can do this manually or directly on GitHub with the Add file button.
+
+Finally, we're ready to add a workflow (`.github/workflows/deploy-bookdown.yml`) to our GitHub repository that will string together GitHub actions to automatically build and deploy our bookdown site.
 
 `.github/workflows/deploy-bookdown.yml`
 
