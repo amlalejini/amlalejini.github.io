@@ -85,6 +85,7 @@ publications:
     venue: book
     type: book-chapter
     github_repository_link: https://github.com/FergusonAJ/gptp-2019-subsampled-lexicase
+    pdf: /pubs/Ferguson_et_al_2020_Characterizing_the_Effects_of_Random_Subsampling_on_Lexicase_Selection.pdf
     bibtex_id: Ferguson-GPTP-2020
     bibtex: |
       ```bibtex
