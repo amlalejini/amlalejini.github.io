@@ -36,6 +36,31 @@ publication_types:
 publications:
 
   - citation: |
+      Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria. (2021).
+      [Adaptive phenotypic plasticity stabilizes evolution in fluctuating environments](https://doi.org/10.1101/2021.05.25.445672).
+      bioRxiv. <https://doi.org/10.1101/2021.05.25.445672>
+    year: 2021
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/amlalejini/evolutionary-consequences-of-plasticity
+    bibtex_id: lalejini_adaptive_2021
+    bibtex: |
+      ```
+      @techreport{lalejini_adaptive_2021,
+        type = {preprint},
+        title = {Adaptive phenotypic plasticity stabilizes evolution in fluctuating environments},
+        url = {http://biorxiv.org/lookup/doi/10.1101/2021.05.25.445672},
+        language = {en},
+        urldate = {2021-05-27},
+        author = {Lalejini, Alexander M and Ferguson, Austin J and Grant, Nkrumah A and Ofria, Charles},
+        month = may,
+        year = {2021},
+        doi = {10.1101/2021.05.25.445672}
+      }
+      ```
+
+
+  - citation: |
       Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria, C. (2020).
       [Tag-based Genetic Regulation for Genetic Programming.](https://arxiv.org/abs/2012.09229)
       preprint, arXiv:2012.09229.
