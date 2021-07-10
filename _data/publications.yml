@@ -61,24 +61,31 @@ publications:
 
 
   - citation: |
-      Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria, C. (2020).
-      [Tag-based Genetic Regulation for Genetic Programming.](https://arxiv.org/abs/2012.09229)
-      preprint, arXiv:2012.09229.
-    year: 2020
-    type: pre-pub
-    venue: preprint
+      Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria.
+      Tag-based regulation of modules in genetic programming improves context-dependent problem solving.
+      Genet Program Evolvable Mach (2021).
+      <https://doi.org/10.1007/s10710-021-09406-8>
+    year: 2021
+    venue: journal
+    type: peer-reviewed-paper
+    pdf: /pubs/lalejini-et-al-2021-tag-based-genetic-regulation.pdf
     github_repository_link: https://github.com/amlalejini/Tag-based-Genetic-Regulation-for-LinearGP
-    bibtex_id: lalejini2020tagbased
+    bibtex_id: lalejini_tag-based_2021
     bibtex: |
       ```bibtex
-      @misc{lalejini2020tagbased,
-            title={Tag-based Genetic Regulation for Genetic Programming},
-            author={Alexander Lalejini and Matthew Andres Moreno and Charles Ofria},
-            year={2020},
-            eprint={2012.09229},
-            archivePrefix={arXiv},
-            primaryClass={cs.NE}
-      }
+        @article{lalejini_tag-based_2021,
+          title = {Tag-based regulation of modules in genetic programming improves context-dependent problem solving},
+          copyright = {All rights reserved},
+          issn = {1389-2576, 1573-7632},
+          url = {https://link.springer.com/10.1007/s10710-021-09406-8},
+          doi = {10.1007/s10710-021-09406-8},
+          language = {en},
+          urldate = {2021-07-10},
+          journal = {Genetic Programming and Evolvable Machines},
+          author = {Lalejini, Alexander and Moreno, Matthew Andres and Ofria, Charles},
+          month = jul,
+          year = {2021},
+        }
       ```
 
   - citation: |
