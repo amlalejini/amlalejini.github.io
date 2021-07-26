@@ -36,6 +36,27 @@ publication_types:
 publications:
 
   - citation: |
+      Jose Guadalupe Hernandez, Alexander Lalejini, and Charles Ofria (2021).
+      [An exploration of exploration: measuring the ability of lexicase selection to find obscure pathways to optimality](https://arxiv.org/abs/2107.09760)
+      arXiv. [arXiv:2107.09760](https://arxiv.org/abs/2107.09760)
+    year: 2021
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/jgh9094/GPTP-2021-Exploration-Of-Exploration
+    bibtex_id: hernandez2021exploration
+    bibtex: |
+      ```
+      @misc{hernandez2021exploration,
+            title={An Exploration of Exploration: Measuring the ability of lexicase selection to find obscure pathways to optimality},
+            author={Jose Guadalupe Hernandez and Alexander Lalejini and Charles Ofria},
+            year={2021},
+            eprint={2107.09760},
+            archivePrefix={arXiv},
+            primaryClass={cs.NE}
+      }
+      ```
+
+  - citation: |
       Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria. (2021).
       [Adaptive phenotypic plasticity stabilizes evolution in fluctuating environments](https://doi.org/10.1101/2021.05.25.445672).
       bioRxiv. <https://doi.org/10.1101/2021.05.25.445672>
@@ -58,7 +79,6 @@ publications:
         doi = {10.1101/2021.05.25.445672}
       }
       ```
-
 
   - citation: |
       Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria.
