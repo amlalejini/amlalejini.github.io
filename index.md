@@ -4,6 +4,7 @@ layout: about
 
 about_me: |
   **My research intersects computer science and evolution, applying the principles of each field to advance the other.**
+
   Broadly, my research is driven by two questions:
   (1) How does evolution produce the complex traits and behaviors we see in natural organisms?
   And, (2) how can we harness our understanding of evolutionary processes to solve challenging problems?
