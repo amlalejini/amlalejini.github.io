@@ -36,6 +36,27 @@ publication_types:
 publications:
 
   - citation: |
+      Matthew Andres Moreno, Alexander Lalejini, and Charles Ofria (2021).
+      Matchmaker, Matchmaker, Make Me a Match: Geometric, Variational, and Evolutionary Implications of Criteria for Tag Affinity
+      arXiv. [arXiv:2108.04507](https://arxiv.org/abs/2108.04507)
+    year: 2021
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/mmore500/tag-olympics
+    bibtex_id: moreno2021matchmaker
+    bibtex: |
+      ```
+      @misc{moreno2021matchmaker,
+        title={Matchmaker, Matchmaker, Make Me a Match: Geometric, Variational, and Evolutionary Implications of Criteria for Tag Affinity},
+        author={Matthew Andres Moreno and Alexander Lalejini and Charles Ofria},
+        year={2021},
+        eprint={2108.04507},
+        archivePrefix={arXiv},
+        primaryClass={cs.NE}
+      }
+      ```
+
+  - citation: |
       Jose Guadalupe Hernandez, Alexander Lalejini, and Charles Ofria (2021).
       [An exploration of exploration: measuring the ability of lexicase selection to find obscure pathways to optimality](https://arxiv.org/abs/2107.09760)
       arXiv. [arXiv:2107.09760](https://arxiv.org/abs/2107.09760)
@@ -58,25 +79,26 @@ publications:
 
   - citation: |
       Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria. (2021).
-      [Adaptive phenotypic plasticity stabilizes evolution in fluctuating environments](https://doi.org/10.1101/2021.05.25.445672).
-      bioRxiv. <https://doi.org/10.1101/2021.05.25.445672>
+      Adaptive Phenotypic Plasticity Stabilizes Evolution in Fluctuating Environments.
+      Front. Ecol. Evol. 9:715381. doi: [10.3389/fevo.2021.715381](https://doi.org/10.3389/fevo.2021.715381)
     year: 2021
-    type: pre-pub
-    venue: preprint
+    type: peer-reviewed-paper
+    venue: journal
     github_repository_link: https://github.com/amlalejini/evolutionary-consequences-of-plasticity
     bibtex_id: lalejini_adaptive_2021
     bibtex: |
       ```
-      @techreport{lalejini_adaptive_2021,
-        type = {preprint},
-        title = {Adaptive phenotypic plasticity stabilizes evolution in fluctuating environments},
-        url = {http://biorxiv.org/lookup/doi/10.1101/2021.05.25.445672},
-        language = {en},
-        urldate = {2021-05-27},
-        author = {Lalejini, Alexander M and Ferguson, Austin J and Grant, Nkrumah A and Ofria, Charles},
-        month = may,
-        year = {2021},
-        doi = {10.1101/2021.05.25.445672}
+      @ARTICLE{lalejini_adaptive_2021,
+        AUTHOR={Lalejini, Alexander and Ferguson, Austin J. and Grant, Nkrumah A. and Ofria, Charles},
+        TITLE={Adaptive Phenotypic Plasticity Stabilizes Evolution in Fluctuating Environments},
+        JOURNAL={Frontiers in Ecology and Evolution},
+        VOLUME={9},
+        PAGES={550},
+        YEAR={2021},
+        URL={https://www.frontiersin.org/article/10.3389/fevo.2021.715381},
+        DOI={10.3389/fevo.2021.715381},
+        ISSN={2296-701X},
+        ABSTRACT={Fluctuating environmental conditions are ubiquitous in natural systems, and populations have evolved various strategies to cope with such fluctuations. The particular mechanisms that evolve profoundly influence subsequent evolutionary dynamics. One such mechanism is phenotypic plasticity, which is the ability of a single genotype to produce alternate phenotypes in an environmentally dependent context. Here, we use digital organisms (self-replicating computer programs) to investigate how adaptive phenotypic plasticity alters evolutionary dynamics and influences evolutionary outcomes in cyclically changing environments. Specifically, we examined the evolutionary histories of both plastic populations and non-plastic populations to ask: (1) Does adaptive plasticity promote or constrain evolutionary change? (2) Are plastic populations better able to evolve and then maintain novel traits? And (3), how does adaptive plasticity affect the potential for maladaptive alleles to accumulate in evolving genomes? We find that populations with adaptive phenotypic plasticity undergo less evolutionary change than non-plastic populations, which must rely on genetic variation from de novo mutations to continuously readapt to environmental fluctuations. Indeed, the non-plastic populations undergo more frequent selective sweeps and accumulate many more genetic changes. We find that the repeated selective sweeps in non-plastic populations drive the loss of beneficial traits and accumulation of maladaptive alleles, whereas phenotypic plasticity can stabilize populations against environmental fluctuations. This stabilization allows plastic populations to more easily retain novel adaptive traits than their non-plastic counterparts. In general, the evolution of adaptive phenotypic plasticity shifted evolutionary dynamics to be more similar to that of populations evolving in a static environment than to non-plastic populations evolving in an identical fluctuating environment. All natural environments subject populations to some form of change; our findings suggest that the stabilizing effect of phenotypic plasticity plays an important role in subsequent adaptive evolution.}
       }
       ```
 
