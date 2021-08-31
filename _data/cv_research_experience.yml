@@ -1,9 +1,15 @@
 # cv_research_experience.yml gives a listing of my research experiences for my CV
 
+- institution: Engineered and Experimental Evolution Laboratory, University of Michigan
+  location: Ann Arbor, MI
+  position: Postdoc
+  dates: Fall 2021 - present
+  advisors: Luis Zaman
+
 - institution: Digital Evolution Laboratory, Michigan State University
   location: East Lansing, MI
   position: Graduate student
-  dates: Fall 2015 - present
+  dates: Fall 2015 - Spring 2021
   advisors: Charles Ofria
 
 - institution: Center for Advanced Vehicular Systems (CAVS), Mississippi State University
@@ -24,7 +30,7 @@
   advisors: Cindy Bethel
   description: |
     I worked as a project lead on the Robot Intent and Control Project where we
-    studied the effectiveness of different human-robot interfaces for allowing 
+    studied the effectiveness of different human-robot interfaces for allowing
     autonomous robots to communicate behavioral intentions to supervisory human
     operators who could optionally override the robot's behavior when necessary.
     Additionally, I assisted with other human-participant studies being run in the
@@ -48,8 +54,8 @@
   advisors: William R. Johnson
   description: |
     I developed software for a team of optics engineers and geoscientists.
-    I focused on modernizing their instrument calibration software for their 
-    Near-Nulling Radiometers, enabling the team to perform more efficient and 
+    I focused on modernizing their instrument calibration software for their
+    Near-Nulling Radiometers, enabling the team to perform more efficient and
     reliable calibrations.
 
 - institution: Physics Department, Mississippi State University
@@ -60,5 +66,3 @@
   description: |
     I developed tools to automate data retrieval from the NASA Star and Exoplanet
     Database.
-
-  
