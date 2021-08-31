@@ -36,6 +36,27 @@ publication_types:
 publications:
 
   - citation: |
+      Jose Guadalupe Hernandez, Alexander Lalejini, and Emily Dolson (2021).
+      What can phylogenetic metrics tell us about useful diversity in evolutionary algorithms?
+      arXiv. [arXiv:2108.12586](https://arxiv.org/abs/2108.12586)
+    year: 2021
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/emilydolson/ecology_in_EC_parameter_sweep
+    bibtex_id: hernandez2021phylogenetic
+    bibtex: |
+      ```
+      @misc{hernandez2021phylogenetic,
+        title={What can phylogenetic metrics tell us about useful diversity in evolutionary algorithms?},
+        author={Jose Guadalupe Hernandez and Alexander Lalejini and Emily Dolson},
+        year={2021},
+        eprint={2108.12586},
+        archivePrefix={arXiv},
+        primaryClass={cs.NE}
+      }
+      ```
+
+  - citation: |
       Matthew Andres Moreno, Alexander Lalejini, and Charles Ofria (2021).
       Matchmaker, Matchmaker, Make Me a Match: Geometric, Variational, and Evolutionary Implications of Criteria for Tag Affinity
       arXiv. [arXiv:2108.04507](https://arxiv.org/abs/2108.04507)
