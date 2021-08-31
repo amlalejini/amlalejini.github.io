@@ -1,6 +1,14 @@
 # cv_teaching.yml lists my teaching experience for my CV
 
 - workshop: |
+    Organizer, Citable and web-enabled supplemental material
+  date: August 19, 2021
+  for: 2021 BEACON Congress
+  description: |
+    This workshop overviewed ways of composing citable and web-enabled supplemental material for publications.
+    [Slides](bit.ly/beacon-citable-supp).
+
+- workshop: |
     Co-organizer, <a href="https://lalejini.com/ALife-2020--Emerging-Researchers-in-ALife-Workshop/">Emerging Researchers in Artificial Life Workshop</a>
   date: July 2020
   for: 2020 Conference on Artificial Life (ALIFE)

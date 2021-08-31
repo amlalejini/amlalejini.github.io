@@ -1,6 +1,13 @@
 # cv_presentations.yml gives a listing of presentations for my CV
 
 - type: talk
+  title: What are the evolutionary consequences of adaptive phenotypic plasticity?
+  venue: 2021 BEACON Congress
+  year: 2021
+  date: August 20, 2021
+  location: Virtual
+
+- type: talk
   title: Environmental change, mutation rate, and the evolution of gene overlap
   authors: Lauren Gillespie (speaker), Alexander Lalejini (speaker), Emily Dolson, and Charles Ofria
   venue: 2020 BEACON Congress
