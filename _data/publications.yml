@@ -42,7 +42,7 @@ publications:
     year: 2021
     type: pre-pub
     venue: preprint
-    github_repository_link: https://github.com/emilydolson/ecology_in_EC_parameter_sweep
+    github_repository_link: https://github.com/emilydolson/phylodiversity-metrics-in-EC-GPTP-2021
     bibtex_id: hernandez2021phylogenetic
     bibtex: |
       ```
