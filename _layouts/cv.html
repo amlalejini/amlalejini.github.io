@@ -3,19 +3,13 @@ layout: default
 ---
 
 <!-- CV header and quick nav (via pretty icon links) -->
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid py-4">
   <div class="container">
     <h1 class="display-4">Curriculum Vitae</h1>
-    <a href="#cv-education">{{ site.data.icons.cv_edu_icon }}</a> |
-    <a href="#cv-research">{{ site.data.icons.cv_research_icon }}</a> |
-    <a href="#cv-publications">{{ site.data.icons.cv_publications_icon }}</a> |
-    <a href="#cv-presentations">{{ site.data.icons.cv_presentations_icons }}</a> |
-    <a href="#cv-workshops">{{ site.data.icons.cv_workshop_icon }}</a> |
-    <a href="#cv-teaching">{{ site.data.icons.cv_teaching_icon }}</a> |
-    <a href="#cv-awards">{{ site.data.icons.cv_awards_icons }}</a> |
-    <a href="#cv-service">{{ site.data.icons.cv_service_icons }}</a>
   </div>
 </div>
+
+    <!-- TODO - outreach -->
 
 <!-- Actual CV content, organized by category. -->
 <div class="container">
@@ -27,11 +21,13 @@ layout: default
       <ul>
         {% for edu in site.data.cv_education %}
           <li><p>
-            {% if edu.institution %}
-              <b>{{ edu.institution }}</b> {% if edu.location %} - {{ edu.location }} {% endif %} <br/>
+            {% if edu.degree %}
+              {{ edu.degree }} ({% if edu.dates %}{{ edu.dates }}{% endif %}) <br/>
             {% endif %}
-            {% if edu.dates %} {{ edu.dates }} <br/> {% endif %}
-            {% if edu.degree %} {{ edu.degree }} <br/> {% endif %}
+            {% if edu.institution %}
+              {{ edu.institution }}{% if edu.location %}, {{ edu.location }} {% endif %} <br/>
+            {% endif %}
+            {% if edu.thesis %} Thesis: {{ edu.thesis }} <br/> {% endif %}
             {% if edu.advisor %} Advisor: {{ edu.advisor }} <br/> {% endif %}
           </p></li>
         {% endfor %}
@@ -39,15 +35,15 @@ layout: default
     </div>
   </div>
 
-  <!-- Category - research -->
-  <div class="row" id="cv-research">
+  <!-- Category - professional appointments -->
+  <div class="row" id="cv-professional-appointments">
     <div class="col">
-      <h3>{{ site.data.icons.cv_research_icon }} Research Experience</h3>
+      <h3>{{ site.data.icons.cv_professional_appointments_icon }} Professional Appointments</h3>
       <ul>
-        {% for exp in site.data.cv_research_experience %}
+        {% for exp in site.data.cv_professional_appointments %}
           <li><p>
               {% if exp.institution %}
-                <b> {{ exp.institution }}</b> {% if exp.location %} - {{ exp.location }} {% endif %} <br/>
+                {{ exp.institution }} {% if exp.location %} - {{ exp.location }} {% endif %} <br/>
               {% endif %}
               {% if exp.position %}
                 {{ exp.position }}{% if exp.advisors %}, advisor(s): {{ exp.advisors }} {% endif %}
@@ -65,15 +61,16 @@ layout: default
   <div class="row" id="cv-publications">
     <div class="col">
       <h3>{{ site.data.icons.cv_publications_icon }} Publications</h3>
-        <!-- List publications with a lovely parameterized include. -->
-        {% include list_publications.html header_level="5" %}
+      <h6 class="py-2" style="font-weight:normal;">
+        &emsp; See <a href="{{ "/publications/" | relative_url }}">publications page</a>.
+      </h6>
     </div>
   </div>
 
   <!-- Category - presentations (posters and talks) -->
   <div class="row" id="cv-presentations">
     <div class="col">
-      <h3>{{ site.data.icons.cv_presentations_icons }} Presentations</h3>
+      <h3>{{ site.data.icons.cv_presentations_icon }} Presentations</h3>
         <h5>Talks</h5>
         <ul>
           {% assign presentations_sorted = site.data.cv_presentations| sort: 'year' | reverse %}
@@ -117,8 +114,9 @@ layout: default
         <ul>
           {% for workshop in site.data.cv_workshops %}
           <li><p>
-            <b>{{ workshop.workshop }}</b> - {{ workshop.date }} <br/>
+            <b>{{ workshop.workshop }}</b> <br/>
             <i>{{ workshop.for }}</i> <br/>
+            {% if workshop.date %} Date(s): {{ workshop.date }} <br/> {% endif %}
             {% if workshop.description %} {{ workshop.description }} {% endif %}
           </p></li>
           {% endfor %}
@@ -134,7 +132,7 @@ layout: default
         {% for teaching_exp in site.data.cv_teaching %}
         <li>
           <b>{{ teaching_exp.exp }}</b> - {{ teaching_exp.date }} <br/>
-          <i>{{ teaching_exp.for }}</i> <br/>
+          {{ teaching_exp.for }} <br/>
           {% if teaching_exp.description %} {{ teaching_exp.description | markdownify | remove: '<p>' | remove: '</p>' }} {% endif %}
           <p></p>
         </li>
@@ -143,34 +141,60 @@ layout: default
     </div>
   </div>
 
-  <!-- Category - awards/honors/fellowships -->
-  <div class="row" id="cv-awards">
+  <!-- Category - grants/fellowships -->
+  <div class="row" id="cv-grants">
     <div class="col">
-      <h3>{{ site.data.icons.cv_awards_icons }} Awards, Honors, and Fellowships</h3>
-      {% assign awards_sorted = site.data.cv_awards| sort: 'year' | reverse %}
+      <h3>{{ site.data.icons.cv_grants_icon }} Grants & Fellowships</h3>
+      {% assign grants_sorted = site.data.cv_grants| sort: 'year' | reverse %}
       <ul>
-          {% for award in awards_sorted %}
+          {% for grant in grants_sorted %}
             <li><p>
-                <b>{{ award.award }}</b><br/>
-                <i>{{ award.date }}</i><br/>
-                {% if award.description %} {{ award.description }} {% endif %}
+                <b>{{ grant.award }}</b> ({{ grant.year }}) <br/>
+                {% if grant.description %} {{ grant.description }} {% endif %}
             </p></li>
           {% endfor %}
         </ul>
     </div>
   </div>
 
-  <!-- Category - service/outreach -->
-  <div class="row" id="cv-service">
+  <!-- Category - professional service -->
+  <div class="row" id="cv-professional-service">
     <div class="col">
-      <h3>{{ site.data.icons.cv_service_icons }} Service and Outreach</h3>
-      {% assign service_sorted = site.data.cv_service | sort: 'year' | reverse %}
+      <h3>{{ site.data.icons.cv_professional_service_icon }} Professional Service</h3>
+      {% assign service_sorted = site.data.cv_professional_service | sort: 'year' | reverse %}
       <ul>
           {% for service in service_sorted %}
             <li><p>
                 <b> {{ service.service }}</b> <br/>
                 {% if service.date %} <i>{{ service.date }}</i> <br/> {% endif %}
                 {% if service.description %} {{ service.description }} {% endif %}
+            </p></li>
+          {% endfor %}
+          <li>
+            <b>Reviewed for:</b>
+            <ul>
+              {% for entry in site.data.cv_reviewed_for %}
+                <li>
+                  {{ entry.venue }}
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+  <!-- Category - outreach -->
+  <div class="row" id="cv-outreach">
+    <div class="col">
+      <h3>{{ site.data.icons.cv_outreach_icon }} Outreach</h3>
+      {% assign outreach_sorted = site.data.cv_outreach | sort: 'year' | reverse %}
+      <ul>
+          {% for outreach in outreach_sorted %}
+            <li><p>
+                <b> {{ outreach.outreach }}</b> <br/>
+                {% if outreach.date %} <i>{{ outreach.date }}</i> <br/> {% endif %}
+                {% if outreach.description %} {{ outreach.description }} {% endif %}
             </p></li>
           {% endfor %}
         </ul>

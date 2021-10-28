@@ -2,25 +2,22 @@
 
 - workshop: |
     Organizer, Citable and web-enabled supplemental material
-  date: August 19, 2021
-  for: 2021 BEACON Congress
+  date: June 2021; August 2021
+  for: 2021 BEACON Congress, 2021 Computing Science Research Skills Workshops
   description: |
-    This workshop overviewed ways of composing citable and web-enabled supplemental material for publications.
-    [Slides](bit.ly/beacon-citable-supp).
+    <a href="https://bit.ly/beacon-citable-supp">Slides</a>.
 
 - workshop: |
-    Co-organizer, <a href="https://lalejini.com/ALife-2020--Emerging-Researchers-in-ALife-Workshop/">Emerging Researchers in Artificial Life Workshop</a>
+    Co-organizer, <a href="https://lalejini.com/ALife-2021--ERA-workshop/">2021 Emerging Researchers in Artificial Life Workshop</a>
+  date: July 2021
+  for: 2020 Conference on Artificial Life (ALIFE)
+
+- workshop: |
+    Co-organizer, <a href="https://lalejini.com/ALife-2020--Emerging-Researchers-in-ALife-Workshop/">2020 Emerging Researchers in Artificial Life Workshop</a>
   date: July 2020
   for: 2020 Conference on Artificial Life (ALIFE)
-  description: |
-    This workshop offered students, post-docs, and junior researchers in the Artificial Life community
-    a space to present research (via 5 minute lightning talks) and network.
+
 - workshop: |
     Co-organizer, <a href="https://github.com/alife-data-standards/ALIFE2018-Standards-Workshop">Developing Software Standards for the Artificial Life Community</a>
   date: July, 2018; August, 2018
   for: 2018 Conference on Artificial Life (ALIFE); 2018 BEACON Congress
-  description: |
-    These workshops started a conversation about identifying best practices for standardizing data storage
-    in Artificial Life. We began developing data and tool standards for individuals who design, develop,
-    and use a wide range of artificial life systems, including artificial chemistries,
-    abstract ecologies, and evolutionary systems. We published <a href="https://doi.org/10.1162/isal_a_00213">a summary of the workshop outcomes</a>.

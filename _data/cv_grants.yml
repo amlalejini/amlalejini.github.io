@@ -1,0 +1,24 @@
+
+- award: BEACON Science and Technology Center Research Grant
+  type: grant
+  year: 2016
+  description: |
+    Proposal: Does phenotypic plasticity promote evolvability? <br/> Amount awarded: $59,525
+
+- award: University Distinguished Fellowship
+  type: fellowship
+  # description: |
+  #   Awarded by Michigan State University to 20 out of approximately 500 incoming Ph.D. students.
+  year: 2015
+
+- award: BEACON Top-up Fellowship
+  type: fellowship
+  # description: |
+  #   Awarded by BEACON Center for Evolution in Action to incoming graduate students.
+  year: 2015
+
+- award: National Science Foundation (NSF) Graduate Research Fellowship
+  type: fellowship
+  description: |
+    Proposal: Biologically-inspired distributed control algorithms
+  year: 2017

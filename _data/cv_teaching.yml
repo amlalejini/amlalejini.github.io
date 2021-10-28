@@ -1,26 +1,25 @@
 # cv_teaching.yml lists my teaching experience for my CV
 
 - exp: |
-    Co-instructor for CSE 491: Algorithms Engineering
+    Co-instructor, Algorithms Engineering
   date: Fall 2019
-  for: Michigan State University Computer Science and Engineering Department, East Lansing, MI
-  description: |
-    My responsibilities included preparing and giving lectures, preparing homework assignments and exams,
-    and holding regular office hours. I led an effort to shift our course's programming assignments
-    to the [Mimir Classroom platform](https://www.mimirhq.com/).
+  for: Michigan State University, Computer Science and Engineering Department, East Lansing, MI
 
 - exp: |
     Co-instructor for the 'Making a Game of It' summer camp for high school students
   date: Summer 2019
-  for: Michigan State University College of Engineering Summer Programs, East Lansing, MI
+  for: Michigan State University, College of Engineering Summer Programs, East Lansing, MI
   description: |
-    I helped to prepare and co-instructed a one week intensive introduction to Python and video game design for high school students.
-    [Summer camp materials (lesson plans, examples, resources) can be found here](https://lalejini.com/2019-msu-pygame/).
+    [Summer camp materials (lesson plans, examples, resources).](https://lalejini.com/2019-msu-pygame/).
 
 - exp: |
-    Teaching Assistant for CSE 491: Algorithms Engineering
-  date: Spring 2017
-  for: Michigan State University Computer Science and Engineering Department, East Lansing, MI
+    Invited guest lecturer, Evolutionary Computation
+  date: Fall 2018, Fall 2019
+  for: Michigan State University, Computer Science and Engineering Department, East Lansing, MI
   description: |
-    My responsibilities included holding regular office hours, meeting one-on-one with students,
-    and grading homework assignments (written and programming) and exams.
+    Topic: Digital evolution
+
+- exp: |
+    Teaching Assistant, Algorithms Engineering
+  date: Spring 2017
+  for: Michigan State University, Computer Science and Engineering Department, East Lansing, MI

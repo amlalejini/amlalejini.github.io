@@ -1,13 +1,14 @@
 # cv_education.yml describes my collegiate education/degrees for my CV
 
-- degree: Dual Ph.D. in Computer Science and Ecology, Evolution, & Behavior
+- degree: <b>Dual Ph.D.</b>, Computer Science and Ecology, Evolutionary Biology, & Behavior
   institution: Michigan State University
   location: East Lansing, MI
-  dates: Fall 2015 - Spring 2021
+  dates: 2021
   advisor: Charles Ofria
+  thesis: <a href="https://github.com/amlalejini/DISSERTATION---EVOLVING-PHENOTYPICALLY-PLASTIC-DIGITAL-ORGANISMS">Evolving phenotypically plastic digital organisms</a>
 
-- degree: B.S. in Computer Science (Summa Cum Laude)
+- degree: <b>B.S.</b>, Computer Science
   institution: Mississippi State University
   location: Starkville, MS
-  dates: Graduated Fall 2015
+  dates: 2015
   advisor: Cindy Bethel
