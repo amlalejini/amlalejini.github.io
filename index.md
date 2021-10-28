@@ -19,7 +19,7 @@ about_me: |
 
 about_me_img: "/imgs/me/2021-08-31-masked.jpg"
 about_me_img_caption: |
-  Mask up!
+  Mask up! (photo credit Dale Austin)
 #   At the Studio Ghibli museum in Tokyo, Japan (Summer 2018)!
 
 ---
