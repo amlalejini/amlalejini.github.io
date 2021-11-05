@@ -36,6 +36,30 @@ publication_types:
 publications:
 
   - citation: |
+      Anya E. Vostinar, Katherine G. Skocelas, Alexander Lalejini, and Luis Zaman (2021).
+      Symbiosis in Digital Evolution: Past, Present, and Future.
+      Front. Ecol. Evol. 9:739047. doi: [10.3389/fevo.2021.739047](https://doi.org/10.3389/fevo.2021.739047)
+    year: 2021
+    type: peer-reviewed-paper
+    venue: journal
+    bibtex_id: vostinar_symbiosis_2021
+    bibtex: |
+      ```
+      @ARTICLE{vostinar_symbiosis_2021,
+        AUTHOR={Vostinar, Anya E. and Skocelas, Katherine G. and Lalejini, Alexander and Zaman, Luis},
+        TITLE={Symbiosis in Digital Evolution: Past, Present, and Future},
+        JOURNAL={Frontiers in Ecology and Evolution},
+        VOLUME={9},
+        PAGES={748},
+        YEAR={2021},
+        URL={https://www.frontiersin.org/article/10.3389/fevo.2021.739047},
+        DOI={10.3389/fevo.2021.739047},
+        ISSN={2296-701X},
+        ABSTRACT={Symbiosis, the living together of unlike organisms as symbionts, is ubiquitous in the natural world. Symbioses occur within and across all scales of life, from microbial to macro-faunal systems. Further, the interactions between symbionts are multimodal in both strength and type, can span from parasitic to mutualistic within one partnership, and persist over generations. Studying the ecological and evolutionary dynamics of symbiosis in natural or laboratory systems poses a wide range of challenges, including the long time scales at which symbioses evolve de novo, the limited capacity to experimentally control symbiotic interactions, the weak resolution at which we can quantify interactions, and the idiosyncrasies of current model systems. These issues are especially challenging when seeking to understand the ecological effects and evolutionary pressures on and of a symbiosis, such as how a symbiosis may shift between parasitic and mutualistic modes and how that shift impacts the dynamics of the partner population. In digital evolution, populations of computational organisms compete, mutate, and evolve in a virtual environment. Digital evolution features perfect data tracking and allows for experimental manipulations that are impractical or impossible in natural systems. Furthermore, modern computational power allows experimenters to observe thousands of generations of evolution in minutes (as opposed to several months or years), which greatly expands the range of possible studies. As such, digital evolution is poised to become a keystone technique in our methodological repertoire for studying the ecological and evolutionary dynamics of symbioses. Here, we review how digital evolution has been used to study symbiosis, and we propose a series of open questions that digital evolution is well-positioned to answer.}
+      }
+      ```
+
+  - citation: |
       Jose Guadalupe Hernandez, Alexander Lalejini, and Emily Dolson (2021).
       What can phylogenetic metrics tell us about useful diversity in evolutionary algorithms?
       arXiv. [arXiv:2108.12586](https://arxiv.org/abs/2108.12586)
