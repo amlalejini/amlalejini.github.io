@@ -60,23 +60,35 @@ publications:
       ```
 
   - citation: |
-      Jose Guadalupe Hernandez, Alexander Lalejini, and Emily Dolson (2021).
-      What can phylogenetic metrics tell us about useful diversity in evolutionary algorithms?
-      arXiv. [arXiv:2108.12586](https://arxiv.org/abs/2108.12586)
-    year: 2021
-    type: pre-pub
-    venue: preprint
+      Jose Guadalupe Hernandez, Alexander Lalejini, and Emily Dolson (2022)
+      What Can Phylogenetic Metrics Tell us About Useful Diversity in Evolutionary Algorithms?.
+      In: Banzhaf W., Trujillo L., Winkler S., Worzel B. (eds) Genetic Programming Theory and Practice XVIII.
+      Genetic and Evolutionary Computation.
+      Springer, Singapore. <https://doi.org/10.1007/978-981-16-8113-4_4>
+    year: 2022
+    venue: book
+    type: book-chapter
     github_repository_link: https://github.com/emilydolson/phylodiversity-metrics-in-EC-GPTP-2021
     bibtex_id: hernandez2021phylogenetic
     bibtex: |
       ```
-      @misc{hernandez2021phylogenetic,
-        title={What can phylogenetic metrics tell us about useful diversity in evolutionary algorithms?},
-        author={Jose Guadalupe Hernandez and Alexander Lalejini and Emily Dolson},
-        year={2021},
-        eprint={2108.12586},
-        archivePrefix={arXiv},
-        primaryClass={cs.NE}
+      @Inbook{hernandez2021phylogenetic,
+        author="Hernandez, Jose Guadalupe
+        and Lalejini, Alexander
+        and Dolson, Emily",
+        editor="Banzhaf, Wolfgang
+        and Trujillo, Leonardo
+        and Winkler, Stephan
+        and Worzel, Bill",
+        title="What Can Phylogenetic Metrics Tell us About Useful Diversity in Evolutionary Algorithms?",
+        bookTitle="Genetic Programming Theory and Practice XVIII",
+        year="2022",
+        publisher="Springer Singapore",
+        address="Singapore",
+        pages="63--82",
+        isbn="978-981-16-8113-4",
+        doi="10.1007/978-981-16-8113-4_4",
+        url="https://doi.org/10.1007/978-981-16-8113-4_4"
       }
       ```
 
@@ -102,23 +114,35 @@ publications:
       ```
 
   - citation: |
-      Jose Guadalupe Hernandez, Alexander Lalejini, and Charles Ofria (2021).
-      [An exploration of exploration: measuring the ability of lexicase selection to find obscure pathways to optimality](https://arxiv.org/abs/2107.09760)
-      arXiv. [arXiv:2107.09760](https://arxiv.org/abs/2107.09760)
-    year: 2021
-    type: pre-pub
-    venue: preprint
+      Jose Guadalupe Hernandez, Alexander Lalejini, and Charles Ofria (2022)
+      An Exploration of Exploration: Measuring the Ability of Lexicase Selection to Find Obscure Pathways to Optimality.
+      In: Banzhaf W., Trujillo L., Winkler S., Worzel B. (eds)
+      Genetic Programming Theory and Practice XVIII. Genetic and Evolutionary Computation.
+      Springer, Singapore. <https://doi.org/10.1007/978-981-16-8113-4_5>
+    year: 2022
+    venue: book
+    type: book-chapter
     github_repository_link: https://github.com/jgh9094/GPTP-2021-Exploration-Of-Exploration
     bibtex_id: hernandez2021exploration
     bibtex: |
       ```
-      @misc{hernandez2021exploration,
-            title={An Exploration of Exploration: Measuring the ability of lexicase selection to find obscure pathways to optimality},
-            author={Jose Guadalupe Hernandez and Alexander Lalejini and Charles Ofria},
-            year={2021},
-            eprint={2107.09760},
-            archivePrefix={arXiv},
-            primaryClass={cs.NE}
+      @Inbook{hernandez2022exploration,
+        author="Hernandez, Jose Guadalupe
+        and Lalejini, Alexander
+        and Ofria, Charles",
+        editor="Banzhaf, Wolfgang
+        and Trujillo, Leonardo
+        and Winkler, Stephan
+        and Worzel, Bill",
+        title="An Exploration of Exploration: Measuring the Ability of Lexicase Selection to Find Obscure Pathways to Optimality",
+        bookTitle="Genetic Programming Theory and Practice XVIII",
+        year="2022",
+        publisher="Springer Singapore",
+        address="Singapore",
+        pages="83--107",
+        isbn="978-981-16-8113-4",
+        doi="10.1007/978-981-16-8113-4_5",
+        url="https://doi.org/10.1007/978-981-16-8113-4_5"
       }
       ```
 
