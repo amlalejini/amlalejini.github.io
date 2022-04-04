@@ -34,6 +34,30 @@ publication_types:
 # - bibtex
 
 publications:
+  - citation: |
+      Alexander Lalejini, Emily Dolson, Anya E. Vostinar, and Luis Zaman (2022).
+      Artificial selection methods from evolutionary computing show promise for directed evolution of microbes.
+      BioRxiv. <https://doi.org/10.1101/2022.04.01.486727>
+    year: 2022
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/amlalejini/directed-digital-evolution
+    bibtex_id: lalejini_selection_2022
+    bibtex: |
+      ```
+      @article {lalejini_selection_2022,
+        author = {Lalejini, Alexander and Dolson, Emily and Vostinar, Anya E. and Zaman, Luis},
+        title = {Artificial selection methods from evolutionary computing show promise for directed evolution of microbes},
+        elocation-id = {2022.04.01.486727},
+        year = {2022},
+        doi = {10.1101/2022.04.01.486727},
+        publisher = {Cold Spring Harbor Laboratory},
+        abstract = {Directed microbial evolution harnesses evolutionary processes in the laboratory to construct microorganisms with enhanced or novel functional traits. Attempting to direct evolutionary processes for applied goals is fundamental to evolutionary computation, which harnesses the principles of Darwinian evolution as a general purpose search engine for solutions to challenging computational problems. Despite their overlapping approaches, artificial selection methods from evolutionary computing are not commonly applied to living systems in the laboratory. In this work, we ask if parent selection algorithms---procedures for choosing promising progenitors---from evolutionary computation might be useful for directing the evolution of microbial populations when selecting for multiple functional traits. To do so, we introduce an agent-based model of directed microbial evolution, which we used to evaluate how well three selection algorithms from evolutionary computing (tournament selection, lexicase selection, and non-dominated elite selection) performed relative to methods commonly used in the laboratory (elite and top-10\% selection). We found that multi-objective selection techniques from evolutionary computing (lexicase and non-dominated elite) generally outperformed the commonly used directed evolution approaches when selecting for multiple traits of interest. Our results motivate ongoing work transferring these multi-objective selection procedures into the laboratory. Additionally, our findings suggest that more sophisticated artificial selection methods from evolutionary computation should also be evaluated for use in directed microbial evolution.Competing Interest StatementThe authors have declared no competing interest.},
+        URL = {https://www.biorxiv.org/content/early/2022/04/02/2022.04.01.486727},
+        eprint = {https://www.biorxiv.org/content/early/2022/04/02/2022.04.01.486727.full.pdf},
+        journal = {bioRxiv}
+      }
+      ```
 
   - citation: |
       Anya E. Vostinar, Katherine G. Skocelas, Alexander Lalejini, and Luis Zaman (2021).
