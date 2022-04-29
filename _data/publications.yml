@@ -33,7 +33,20 @@ publication_types:
 # - bibtex_id
 # - bibtex
 
+
 publications:
+
+  - citation: |
+      Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria (to appear).
+      The evolution of adaptive phenotypic plasticity stabilizes populations against environmental fluctuations.
+      In Proceedings of the 2022 Conference on Artificial Life (ALIFE).
+    year: 2022
+    venue: conference
+    type: peer-reviewed-abstract
+    pdf: /pubs/2022-04-28-consequences-of-plasticity-extended-abstract.pdf
+    badges:
+      - article summary
+
   - citation: |
       Alexander Lalejini, Emily Dolson, Anya E. Vostinar, and Luis Zaman (2022).
       Artificial selection methods from evolutionary computing show promise for directed evolution of microbes.
@@ -449,6 +462,8 @@ publications:
     presentation_link: https://docs.google.com/presentation/d/1iMp2ndNikf_VMVkdxW3WUCtuaE2mmGr16p8Z-RixenQ/edit?usp=sharing
     github_repository_link: https://github.com/amlalejini/GECCO-2018-Evolving-Event-driven-Programs-with-SignalGP
     pdf: /pubs/evolving-reactive-agents-with-signalgp.pdf
+    badges:
+      - article summary
     bibtex_id: Lalejini2018-ALIFE
     bibtex: |
       ```bibtex
