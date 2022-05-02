@@ -37,6 +37,28 @@ publication_types:
 publications:
 
   - citation: |
+      Jose Guadalupe Hernandez, Alexander Lalejini, Charles Ofria (2022).
+      A suite of diagnostic metrics for characterizing selection schemes.
+      arXiv. <https://doi.org/10.48550/arXiv.2204.13839>
+    year: 2022
+    type: pre-pub
+    venue: preprint
+    github_repository_link: https://github.com/jgh9094/Selection-Scheme-Diagnotics-Part-I
+    bibtex_id: hernandez_diagnostics_2022
+    bibtex: |
+      ```
+      @misc{https://doi.org/10.48550/arxiv.2204.13839,
+        doi = {10.48550/ARXIV.2204.13839},
+        url = {https://arxiv.org/abs/2204.13839},
+        author = {Hernandez, Jose Guadalupe and Lalejini, Alexander and Ofria, Charles},
+        title = {A suite of diagnostic metrics for characterizing selection schemes},
+        publisher = {arXiv},
+        year = {2022},
+        copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International}
+      }
+      ```
+
+  - citation: |
       Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria (to appear).
       The evolution of adaptive phenotypic plasticity stabilizes populations against environmental fluctuations.
       In Proceedings of the 2022 Conference on Artificial Life (ALIFE).
