@@ -37,6 +37,223 @@ publication_types:
 publications:
 
   - citation: |
+      Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria. 2022.
+      Tag-based module regulation for genetic programming.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '22).
+      Association for Computing Machinery, New York, NY, USA, 25–26.
+      <https://doi.org/10.1145/3520304.3534060>
+    year: 2022
+    venue: conference
+    type: peer-reviewed-abstract
+    pdf: /pubs/2022-07-tag-based-regulation-ext-abstract.pdf
+    badges:
+      - article summary
+    bibtex: |
+      ```
+      @inproceedings{10.1145/3520304.3534060,
+        author = {Lalejini, Alexander and Moreno, Matthew Andres and Ofria, Charles},
+        title = {Tag-Based Module Regulation for Genetic Programming},
+        year = {2022},
+        isbn = {9781450392686},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3520304.3534060},
+        doi = {10.1145/3520304.3534060},
+        abstract = {This Hot-off-the-Press paper summarizes our recently published work, "Tag-based regulation of modules in genetic programming improves context-dependent problem solving," published in Genetic Programming and Evolvable Machines [1]. We introduce and experimentally demonstrate tag-based genetic regulation, a genetic programming (GP) technique that allows programs to dynamically adjust which code modules to express. Tags are evolvable labels that provide a flexible naming scheme for referencing code modules. Tag-based regulation extends tag-based naming schemes to allow programs to "promote" and "repress" code modules to alter module execution patterns. We find that tag-based regulation improves problem-solving success on problems where programs must adjust how they respond to current inputs based on prior inputs; indeed, some of these problems could not be solved until regulation was added. We also identify scenarios where the correct response to an input does not change over time, rendering tag-based regulation an unnecessary functionality that can sometimes impede evolution. Broadly, tag-based regulation adds to our repertoire of techniques for evolving more dynamic computer programs and can easily be incorporated into existing tag-enabled GP systems.},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        pages = {25–26},
+        numpages = {2},
+        keywords = {SignalGP, gene regulation, automatic program synthesis, tag-based referencing, genetic programming},
+        location = {Boston, Massachusetts},
+        series = {GECCO '22}
+      }
+      ```
+
+  - citation: |
+      Jose Guadalupe Hernandez, Alexander Lalejini, and Emily Dolson. 2022.
+      Phylogenetic diversity predicts future success in evolutionary computation.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '22). Association for Computing Machinery, New York, NY, USA, 23–24.
+      <https://doi.org/10.1145/3520304.3534079>
+    year: 2022
+    venue: conference
+    type: peer-reviewed-abstract
+    # pdf: TODO
+    badges:
+      - article summary
+    bibtex_id: 10.1145/3520304.3534079
+    bibtex: |
+      ```
+      @inproceedings{10.1145/3520304.3534079,
+        author = {Hernandez, Jose Guadalupe and Lalejini, Alexander and Dolson, Emily},
+        title = {Phylogenetic Diversity Predicts Future Success in Evolutionary Computation},
+        year = {2022},
+        isbn = {9781450392686},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3520304.3534079},
+        doi = {10.1145/3520304.3534079},
+        abstract = {In our recent paper, "What can phylogenetic metrics tell us about useful diversity in evolutionary algorithms" [3], we explore the relationship between metrics of diversity based on phylogenetic topology and fitness. Our contribution is two-fold. First, we identify a technique for quantifying the relationship between diversity and fitness. Previous efforts to draw hard conclusions about this relationship had been stymied by the fact that these two properties are locked in a tight feedback loop. Second, we use this technique to assess the extent to which phylogenetic diversity leads to high-fitness solutions. We find that phylogenetic diversity is often more informative of future success in evolutionary algorithms than more commonly used diversity metrics, suggesting that is an underutilized tool in evolutionary computation research.},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        pages = {23–24},
+        numpages = {2},
+        keywords = {transfer entropy, causality analysis, diversity, phylogenetic diversity},
+        location = {Boston, Massachusetts},
+        series = {GECCO '22}
+      }
+      ```
+
+  - citation: |
+      Jose Guadalupe Hernandez, Alexander Lalejini, and Charles Ofria. 2022.
+      Measuring the ability of lexicase selection to find obscure pathways to optimality.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '22). Association for Computing Machinery, New York, NY, USA, 21–22.
+      <https://doi.org/10.1145/3520304.3534061>
+    year: 2022
+    venue: conference
+    type: peer-reviewed-abstract
+    # pdf: TODO
+    badges:
+      - article summary
+    bibtex_id: 10.1145/3520304.3534061
+    bibtex: |
+      ```
+      @inproceedings{10.1145/3520304.3534061,
+        author = {Hernandez, Jose Guadalupe and Lalejini, Alexander and Ofria, Charles},
+        title = {Measuring the Ability of Lexicase Selection to Find Obscure Pathways to Optimality},
+        year = {2022},
+        isbn = {9781450392686},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3520304.3534061},
+        doi = {10.1145/3520304.3534061},
+        abstract = {This Hot-off-the-Press paper summarizes our recently published work, "An Exploration of Exploration: Measuring the Ability of Lexicase Selection to Find Obscure Pathways to Optimality," published as a chapter in Genetic Programming Theory and Practice XVIII [3]. In evolutionary search, selection schemes drive populations through a problem's search space, often trading off exploitation with exploration. Indeed, problem-solving success depends on how a selection scheme balances search space exploitation with exploration. In [3], we introduce an "exploration diagnostic" that measures a selection scheme's ability to explore different pathways in a search space. We use our exploration diagnostic to investigate the exploratory capacity of lexicase selection and several of its variants: epsilon lexicase, down-sampled lexicase, cohort lexicase, and novelty lexicase. We verify that lexicase selection out-explores tournament selection, and we demonstrate that lexicase selection's ability to explore a search space is sensitive to the ratio between population size and the number of test cases used for evaluating candidate solutions. We find that relaxing lexicase selection's elitism with epsilon lexicase can further improve search space exploration. Additionally, we find that both down-sampled and cohort lexicase---two methods of applying random subsampling to test cases---substantially degrade lexicase's exploratory capacity; however, cohort partitioning better preserves exploration than down-sampling. Finally, we find evidence that the addition of novelty-based test cases can degrade lexicase selection's exploratory capacity.},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        pages = {21–22},
+        numpages = {2},
+        keywords = {fitness landscapes, diagnostics, selection schemes, lexicase selection},
+        location = {Boston, Massachusetts},
+        series = {GECCO '22}
+      }
+      ```
+
+  - citation: |
+      Alexander Lalejini, Emily Dolson, Anya E. Vostinar, and Luis Zaman. 2022.
+      Selection schemes from evolutionary computing show promise for directed evolution of microbes.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '22).
+      Association for Computing Machinery, New York, NY, USA, 723–726.
+      <https://doi.org/10.1145/3520304.3528900>
+    year: 2022
+    venue: conference
+    type: peer-reviewed-abstract
+    # pdf: TODO
+    badges:
+      - article summary
+    bibtex_id: 10.1145/3520304.35289
+    bibtex: |
+      ```
+      @inproceedings{10.1145/3520304.3528900,
+        author = {Lalejini, Alexander and Dolson, Emily and Vostinar, Anya E. and Zaman, Luis},
+        title = {Selection Schemes from Evolutionary Computing Show Promise for Directed Evolution of Microbes},
+        year = {2022},
+        isbn = {9781450392686},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3520304.3528900},
+        doi = {10.1145/3520304.3528900},
+        abstract = {Directed microbial evolution harnesses evolutionary processes in the laboratory to construct microorganisms with enhanced or novel functional traits. Directing evolutionary processes for applied goals is fundamental to evolutionary computation, which harnesses the principles of Darwinian evolution as a general purpose search engine for solutions to computational problems. Despite overlapping aims, artificial selection methods from evolutionary computing are not commonly applied to living systems in the laboratory. Here, we summarize recent work wherein we ask if parent selection algorithms from evolutionary computation might be useful for directing the evolution of microbial populations when selecting for multiple functional traits. To do so, we developed an agent-based model of directed microbial evolution, which we used to evaluate how well three selection schemes from evolutionary computing (tournament selection, lexicase selection, and non-dominated elite selection) performed relative to schemes used in the laboratory (elite and top-10% selection). We found that lexicase selection and non-dominated elite selection generally outperformed the commonly used directed evolution approaches. Our results are informing ongoing work to transfer these techniques into the laboratory and motivate future work testing more sophisticated selection schemes from evolutionary computation in a directed evolution context.},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        pages = {723–726},
+        numpages = {4},
+        keywords = {selection schemes, agent-based modeling, directed evolution, artificial selection, digital organisms},
+        location = {Boston, Massachusetts},
+        series = {GECCO '22}
+      }
+      ```
+
+  - citation: |
+      Anya E. Vostinar, Katherine G. Skocelas, Alexander Lalejini, and Luis Zaman (2022).
+      Symbiosis in Digital Evolution: A Review and Future Directions.
+      In Proceedings of the 2022 Conference on Artificial Life (ALIFE).
+      <https://doi.org/10.1162/isal_a_00481>
+    year: 2022
+    venue: conference
+    type: peer-reviewed-abstract
+    # pdf: TODO
+    badges:
+      - article summary
+    bibtex_id: 10.1162/isal_a_00481
+    bibtex: |
+      ```
+        @proceedings{10.1162/isal_a_00481,
+            author = {Vostinar, Anya E. and Skocelas, Katherine G. and Lalejini, Alexander and Zaman, Luis},
+            title = "{Symbiosis in Digital Evolution: A Review and Future Directions}",
+            volume = {ALIFE 2022: The 2022 Conference on Artificial Life},
+            series = {ALIFE 2022: The 2022 Conference on Artificial Life},
+            year = {2022},
+            month = {07},
+            doi = {10.1162/isal_a_00481},
+            url = {https://doi.org/10.1162/isal\_a\_00481},
+            note = {4},
+            eprint = {https://direct.mit.edu/isal/proceedings-pdf/isal/34/4/2035391/isal\_a\_00481.pdf},
+        }
+      ```
+
+  - citation: |
+      Matthew Andres Moreno, Santiago Rodriguez Papa, Alexander Lalejini, and Charles Ofria (2021).
+      SignalGP-Lite: Event-driven Genetic Programming Library for Large-Scale Artificial Life Applications.
+      arXiv. <https://doi.org/10.48550/arXiv.2108.00382>
+    year: 2021
+    type: pre-pub
+    venue: preprint
+    bibtex_id: moreno_sgplite_2021
+    github_repository_link: https://github.com/mmore500/signalgp-lite
+    bibtex: |
+      ```
+        misc{moreno_sgplite_2021,
+          doi = {10.48550/ARXIV.2108.00382},
+          url = {https://arxiv.org/abs/2108.00382},
+          author = {Moreno, Matthew Andres and Papa, Santiago Rodriguez and Lalejini, Alexander and Ofria, Charles},
+          keywords = {Neural and Evolutionary Computing (cs.NE), FOS: Computer and information sciences, FOS: Computer and information sciences},
+          title = {SignalGP-Lite: Event Driven Genetic Programming Library for Large-Scale Artificial Life Applications},
+          publisher = {arXiv},
+          year = {2021},
+          copyright = {arXiv.org perpetual, non-exclusive license}
+        }
+      ```
+
+  - citation: |
+      Shakiba Shahbandegan, Jose Guadalupe Hernandez, Alexander Lalejini, and Emily Dolson (2022).
+      Untangling phylogenetic diversity's role in evolutionary computation using a suite of diagnostic fitness landscapes.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '22).
+      Association for Computing Machinery, New York, NY, USA, 2322–2325.
+      <https://doi.org/10.1145/3520304.3534028>
+    year: 2022
+    type: peer-reviewed-paper
+    venue: workshop
+    badges:
+      - Awarded best student paper
+    bibtex_id: 10.1145/3520304.3534028
+    bibtex: |
+      ```
+      @inproceedings{10.1145/3520304.3534028,
+        author = {Shahbandegan, Shakiba and Hernandez, Jose Guadalupe and Lalejini, Alexander and Dolson, Emily},
+        title = {Untangling Phylogenetic Diversity's Role in Evolutionary Computation Using a Suite of Diagnostic Fitness Landscapes},
+        year = {2022},
+        isbn = {9781450392686},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3520304.3534028},
+        doi = {10.1145/3520304.3534028},
+        abstract = {Diversity is associated with success in evolutionary algorithms. To date, diversity in evolutionary computation research has mostly been measured by counting the number of distinct candidate solutions in the population at a given time point. Here, we aim to investigate the value of phylogenetic diversity, which takes into account the evolutionary history of a population. To understand how informative phylogenetic diversity is, we run experiments on a set of diagnostic fitness landscapes under a range of different selection schemes. We find that phylogenetic diversity can be more predictive of future success than traditional diversity metrics under some conditions, particularly for fitness landscapes with a single, challenging-to-find global optimum. Our results suggest that phylogenetic diversity metrics should be more widely incorporated into research on diversity in evolutionary computation.},
+        booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+        pages = {2322–2325},
+        numpages = {4},
+        keywords = {transfer entropy, phylogenetic diversity, causality analysis, diversity},
+        location = {Boston, Massachusetts},
+        series = {GECCO '22}
+      }
+      ```
+
+  - citation: |
       Jose Guadalupe Hernandez, Alexander Lalejini, Charles Ofria (2022).
       A suite of diagnostic metrics for characterizing selection schemes.
       arXiv. <https://doi.org/10.48550/arXiv.2204.13839>
@@ -59,38 +276,61 @@ publications:
       ```
 
   - citation: |
-      Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria (to appear).
+      Alexander Lalejini, Austin J. Ferguson, Nkrumah A. Grant, and Charles Ofria (2022).
       The evolution of adaptive phenotypic plasticity stabilizes populations against environmental fluctuations.
       In Proceedings of the 2022 Conference on Artificial Life (ALIFE).
+      <https://doi.org/10.1162/isal_a_00499>
     year: 2022
     venue: conference
     type: peer-reviewed-abstract
     pdf: /pubs/2022-04-28-consequences-of-plasticity-extended-abstract.pdf
     badges:
       - article summary
+    bibtex_id: 10.1162/isal_a_00499
+    bibtex: |
+      ```
+      @proceedings{10.1162/isal_a_00499,
+        author = {Lalejini, Alexander and Ferguson, Austin J. and Grant, Nkrumah A. and Ofria, Charles},
+        title = "{The evolution of adaptive phenotypic plasticity stabilizes populations against environmental fluctuations}",
+        volume = {ALIFE 2022: The 2022 Conference on Artificial Life},
+        series = {ALIFE 2022: The 2022 Conference on Artificial Life},
+        year = {2022},
+        month = {07},
+        doi = {10.1162/isal_a_00499},
+        url = {https://doi.org/10.1162/isal\_a\_00499},
+        note = {21},
+        eprint = {https://direct.mit.edu/isal/proceedings-pdf/isal/34/21/2035429/isal\_a\_00499.pdf},
+      }
+      ```
 
   - citation: |
-      Alexander Lalejini, Emily Dolson, Anya E. Vostinar, and Luis Zaman (2022).
-      Artificial selection methods from evolutionary computing show promise for directed evolution of microbes.
-      BioRxiv. <https://doi.org/10.1101/2022.04.01.486727>
+      Alexander Lalejini Emily Dolson Anya E Vostinar Luis Zaman (2022).
+      Artificial selection methods from evolutionary computing show promise for directed evolution of microbes
+      eLife 11:e79665. <https://doi.org/10.7554/eLife.79665>
     year: 2022
-    type: pre-pub
-    venue: preprint
+    type: peer-reviewed-paper
+    venue: journal
     github_repository_link: https://github.com/amlalejini/directed-digital-evolution
     bibtex_id: lalejini_selection_2022
     bibtex: |
       ```
-      @article {lalejini_selection_2022,
-        author = {Lalejini, Alexander and Dolson, Emily and Vostinar, Anya E. and Zaman, Luis},
+      @article {10.7554/eLife.79665,
+        article_type = {journal},
         title = {Artificial selection methods from evolutionary computing show promise for directed evolution of microbes},
-        elocation-id = {2022.04.01.486727},
-        year = {2022},
-        doi = {10.1101/2022.04.01.486727},
-        publisher = {Cold Spring Harbor Laboratory},
-        abstract = {Directed microbial evolution harnesses evolutionary processes in the laboratory to construct microorganisms with enhanced or novel functional traits. Attempting to direct evolutionary processes for applied goals is fundamental to evolutionary computation, which harnesses the principles of Darwinian evolution as a general purpose search engine for solutions to challenging computational problems. Despite their overlapping approaches, artificial selection methods from evolutionary computing are not commonly applied to living systems in the laboratory. In this work, we ask if parent selection algorithms---procedures for choosing promising progenitors---from evolutionary computation might be useful for directing the evolution of microbial populations when selecting for multiple functional traits. To do so, we introduce an agent-based model of directed microbial evolution, which we used to evaluate how well three selection algorithms from evolutionary computing (tournament selection, lexicase selection, and non-dominated elite selection) performed relative to methods commonly used in the laboratory (elite and top-10\% selection). We found that multi-objective selection techniques from evolutionary computing (lexicase and non-dominated elite) generally outperformed the commonly used directed evolution approaches when selecting for multiple traits of interest. Our results motivate ongoing work transferring these multi-objective selection procedures into the laboratory. Additionally, our findings suggest that more sophisticated artificial selection methods from evolutionary computation should also be evaluated for use in directed microbial evolution.Competing Interest StatementThe authors have declared no competing interest.},
-        URL = {https://www.biorxiv.org/content/early/2022/04/02/2022.04.01.486727},
-        eprint = {https://www.biorxiv.org/content/early/2022/04/02/2022.04.01.486727.full.pdf},
-        journal = {bioRxiv}
+        author = {Lalejini, Alexander and Dolson, Emily and Vostinar, Anya E and Zaman, Luis},
+        editor = {Ogbunugafor, C Brandon},
+        volume = 11,
+        year = 2022,
+        month = {aug},
+        pub_date = {2022-08-02},
+        pages = {e79665},
+        citation = {eLife 2022;11:e79665},
+        doi = {10.7554/eLife.79665},
+        url = {https://doi.org/10.7554/eLife.79665},
+        abstract = {Directed microbial evolution harnesses evolutionary processes in the laboratory to construct microorganisms with enhanced or novel functional traits. Attempting to direct evolutionary processes for applied goals is fundamental to evolutionary computation, which harnesses the principles of Darwinian evolution as a general purpose search engine for solutions to challenging computational problems. Despite their overlapping approaches, artificial selection methods from evolutionary computing are not commonly applied to living systems in the laboratory. In this work, we ask if parent selection algorithms-procedures for choosing promising progenitors-from evolutionary computation might be useful for directing the evolution of microbial populations when selecting for multiple functional traits. To do so, we introduce an agent-based model of directed microbial evolution, which we used to evaluate how well three selection algorithms from evolutionary computing (tournament selection, lexicase selection, and non-dominated elite selection) performed relative to methods commonly used in the laboratory (elite and top-10\% selection). We found that multi-objective selection techniques from evolutionary computing (lexicase and non-dominated elite) generally outperformed the commonly used directed evolution approaches when selecting for multiple traits of interest. Our results motivate ongoing work transferring these multi-objective selection procedures into the laboratory and a continued evaluation of more sophisticated artificial selection methods.},
+        journal = {eLife},
+        issn = {2050-084X},
+        publisher = {eLife Sciences Publications, Ltd},
       }
       ```
 
@@ -229,6 +469,8 @@ publications:
         ABSTRACT={Fluctuating environmental conditions are ubiquitous in natural systems, and populations have evolved various strategies to cope with such fluctuations. The particular mechanisms that evolve profoundly influence subsequent evolutionary dynamics. One such mechanism is phenotypic plasticity, which is the ability of a single genotype to produce alternate phenotypes in an environmentally dependent context. Here, we use digital organisms (self-replicating computer programs) to investigate how adaptive phenotypic plasticity alters evolutionary dynamics and influences evolutionary outcomes in cyclically changing environments. Specifically, we examined the evolutionary histories of both plastic populations and non-plastic populations to ask: (1) Does adaptive plasticity promote or constrain evolutionary change? (2) Are plastic populations better able to evolve and then maintain novel traits? And (3), how does adaptive plasticity affect the potential for maladaptive alleles to accumulate in evolving genomes? We find that populations with adaptive phenotypic plasticity undergo less evolutionary change than non-plastic populations, which must rely on genetic variation from de novo mutations to continuously readapt to environmental fluctuations. Indeed, the non-plastic populations undergo more frequent selective sweeps and accumulate many more genetic changes. We find that the repeated selective sweeps in non-plastic populations drive the loss of beneficial traits and accumulation of maladaptive alleles, whereas phenotypic plasticity can stabilize populations against environmental fluctuations. This stabilization allows plastic populations to more easily retain novel adaptive traits than their non-plastic counterparts. In general, the evolution of adaptive phenotypic plasticity shifted evolutionary dynamics to be more similar to that of populations evolving in a static environment than to non-plastic populations evolving in an identical fluctuating environment. All natural environments subject populations to some form of change; our findings suggest that the stabilizing effect of phenotypic plasticity plays an important role in subsequent adaptive evolution.}
       }
       ```
+    badges:
+      - 2022 ISAL Award for Outstanding Student Publication
 
   - citation: |
       Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria.

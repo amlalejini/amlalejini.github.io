@@ -1,6 +1,24 @@
 # cv_presentations.yml gives a listing of presentations for my CV
 
 - type: talk
+  title: Tag-based regulation of modules in genetic programming
+  authors: Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria
+  venue: The Genetic and Evolutionary Computation Conference (GECCO)
+  year: 2022
+  date: July, 2022
+  location: Boston, MA
+  slides_link: https://docs.google.com/presentation/d/1vZUgXKVcB4H4aWK-tF8kyhDR5Ae8RMg0RR2ixRjL8yw/edit?usp=sharing
+
+- type: poster
+  title: Artificial selectio nmethods from evolutionary computing show promise for directed evolution of microbes
+  authors: Alexander Lalejini, Emily Dolson, Anya Vostinar, and Luis Zaman
+  venue: The Genetic and Evolutionary Computation Conference (GECCO)
+  date: July, 2022
+  location: Boston, MA
+  year: 2022
+  poster_link: https://docs.google.com/presentation/d/1l01Y0njThJxrqWNfNttpBPGQZefM9NlgHj-0t64ZvgQ/edit?usp=sharing
+
+- type: talk
   title: What are the evolutionary consequences of adaptive phenotypic plasticity?
   venue: 2021 BEACON Congress
   year: 2021
