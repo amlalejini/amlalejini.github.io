@@ -9,8 +9,8 @@ about_me: |
   To learn more, check out my [publications](https://lalejini.com/publications) or feel free to reach out!
   Code for all of my projects is open source and available on [GitHub (@amlalejini)](https://github.com/amlalejini), and the slides for many of my past talks can be found [here](https://lalejini.com/cv/).
 
-about_me_img: "/imgs/me/2021-08-31-masked.jpg"
+about_me_img: "/imgs/me/2022-07-dolson-nahum-wedding.png"
 about_me_img_caption: |
-  Mask up! (photo credit Dale Austin)
+  (photo credit Arrae Photography)
 
 ---
