@@ -37,6 +37,51 @@ publication_types:
 publications:
 
   - citation: |
+      Bhaskar Kumawat, Alexander Lalejini, Monica Acosta, and Luis Zaman. 2023.
+      Fluctuating environments promote evolvability by shaping adaptive variation accessible to populations.
+      bioRxiv. <https://doi.org/10.1101/2023.01.04.520634>
+    year: 2023
+    type: pre-pub
+    venue: preprint
+    bibtex_id: kumawat_fluctuating_2023
+    bibtex: |
+      ```
+      @article {kumawat_fluctuating_2023,
+        author = {Kumawat, Bhaskar and Lalejini, Alexander and Acosta, Monica and Zaman, Luis},
+        title = {Fluctuating environments promote evolvability by shaping adaptive variation accessible to populations},
+        elocation-id = {2023.01.04.520634},
+        year = {2023},
+        doi = {10.1101/2023.01.04.520634},
+        publisher = {Cold Spring Harbor Laboratory},
+        URL = {https://www.biorxiv.org/content/early/2023/01/04/2023.01.04.520634},
+        eprint = {https://www.biorxiv.org/content/early/2023/01/04/2023.01.04.520634.full.pdf},
+        journal = {bioRxiv}
+      }
+      ```
+
+  - citation: |
+      Ryan Boldi, Martin Briesch, Dominik Sobania, Alexander Lalejini, Thomas Helmuth, Franz Rothlauf, Charles Ofria, and Lee Spector. 2023.
+      Informed Down-Sampled Lexicase Selection: Identifying productive training cases for efficient problem solving
+      arXiv. <https://doi.org/10.48550/arXiv.2301.01488>
+    year: 2023
+    type: pre-pub
+    venue: preprint
+    bibtex_id: boldi_informed_2023
+    bibtex: |
+      ```
+      @misc{bold_informed_2023,
+        doi = {10.48550/ARXIV.2301.01488},
+        url = {https://arxiv.org/abs/2301.01488},
+        author = {Boldi, Ryan and Briesch, Martin and Sobania, Dominik and Lalejini, Alexander and Helmuth, Thomas and Rothlauf, Franz and Ofria, Charles and Spector, Lee},
+        keywords = {Neural and Evolutionary Computing (cs.NE), FOS: Computer and information sciences, FOS: Computer and information sciences},
+        title = {Informed Down-Sampled Lexicase Selection: Identifying productive training cases for efficient problem solving},
+        publisher = {arXiv},
+        year = {2023},
+        copyright = {arXiv.org perpetual, non-exclusive license}
+      }
+      ```
+
+  - citation: |
       Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria. 2022.
       Tag-based module regulation for genetic programming.
       In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '22).
