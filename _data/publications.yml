@@ -37,7 +37,31 @@ publication_types:
 publications:
 
   - citation: |
-      Bhaskar Kumawat, Alexander Lalejini, Monica Acosta, and Luis Zaman. 2023.
+      Ryan Boldi, Alexander Lalejini, Thomas Helmuth,and Lee Spector (2023).
+      A Static Analysis of Informed Down-Samples.
+      arXiv. [arXiv:2304.01978](https://doi.org/10.48550/arXiv.2304.01978).
+    year: 2023
+    type: pre-pub
+    venue: preprint
+    bibtex_id: boldi_static_2023
+    bibtex: |
+      ```
+      @article{boldi_static_2023,
+        title = {A {Static} {Analysis} of {Informed} {Down}-{Samples}},
+        copyright = {arXiv.org perpetual, non-exclusive license},
+        url = {https://arxiv.org/abs/2304.01978},
+        doi = {10.48550/ARXIV.2304.01978},
+        abstract = {We present an analysis of the loss of population-level test coverage induced by different down-sampling strategies when combined with lexicase selection. We study recorded populations from the first generation of genetic programming runs, as well as entirely synthetic populations. Our findings verify the hypothesis that informed down-sampling better maintains population-level test coverage when compared to random down-sampling. Additionally, we show that both forms of down-sampling cause greater test coverage loss than standard lexicase selection with no down-sampling. However, given more information about the population, we found that informed down-sampling can further reduce its test coverage loss. We also recommend wider adoption of the static population analyses we present in this work.},
+        urldate = {2023-04-14},
+        author = {Boldi, Ryan and Lalejini, Alexander and Helmuth, Thomas and Spector, Lee},
+        year = {2023},
+        keywords = {FOS: Computer and information sciences, Neural and Evolutionary Computing (cs.NE)},
+        annote = {Other Accepted to the Genetic and Evolutionary Computation Conference 2023}
+      }
+      ```
+
+  - citation: |
+      Bhaskar Kumawat, Alexander Lalejini, Monica Acosta, and Luis Zaman. (2023).
       Fluctuating environments promote evolvability by shaping adaptive variation accessible to populations.
       bioRxiv. <https://doi.org/10.1101/2023.01.04.520634>
     year: 2023
@@ -60,7 +84,7 @@ publications:
       ```
 
   - citation: |
-      Ryan Boldi, Martin Briesch, Dominik Sobania, Alexander Lalejini, Thomas Helmuth, Franz Rothlauf, Charles Ofria, and Lee Spector. 2023.
+      Ryan Boldi, Martin Briesch, Dominik Sobania, Alexander Lalejini, Thomas Helmuth, Franz Rothlauf, Charles Ofria, and Lee Spector (2023).
       Informed Down-Sampled Lexicase Selection: Identifying productive training cases for efficient problem solving
       arXiv. <https://doi.org/10.48550/arXiv.2301.01488>
     year: 2023
@@ -437,23 +461,31 @@ publications:
       ```
 
   - citation: |
-      Matthew Andres Moreno, Alexander Lalejini, and Charles Ofria (2021).
+      Matthew Andres Moreno, Alexander Lalejini, and Charles Ofria (2023).
       Matchmaker, Matchmaker, Make Me a Match: Geometric, Variational, and Evolutionary Implications of Criteria for Tag Affinity
-      arXiv. [arXiv:2108.04507](https://arxiv.org/abs/2108.04507)
-    year: 2021
-    type: pre-pub
-    venue: preprint
+      Genetic Programming and Evolvable Machines 24, 4. <https://doi.org/10.1007/s10710-023-09448-0>
+    year: 2023
+    type: peer-reviewed-paper
+    venue: journal
     github_repository_link: https://github.com/mmore500/tag-olympics
-    bibtex_id: moreno2021matchmaker
+    bibtex_id: moreno2023matchmaker
     bibtex: |
       ```
-      @misc{moreno2021matchmaker,
-        title={Matchmaker, Matchmaker, Make Me a Match: Geometric, Variational, and Evolutionary Implications of Criteria for Tag Affinity},
-        author={Matthew Andres Moreno and Alexander Lalejini and Charles Ofria},
-        year={2021},
-        eprint={2108.04507},
-        archivePrefix={arXiv},
-        primaryClass={cs.NE}
+      @article{moreno2023matchmaker,
+        title = {Matchmaker, matchmaker, make me a match: geometric, variational, and evolutionary implications of criteria for tag affinity},
+        volume = {24},
+        issn = {1389-2576, 1573-7632},
+        shorttitle = {Matchmaker, matchmaker, make me a match},
+        url = {https://link.springer.com/10.1007/s10710-023-09448-0},
+        doi = {10.1007/s10710-023-09448-0},
+        language = {en},
+        number = {1},
+        urldate = {2023-04-14},
+        journal = {Genetic Programming and Evolvable Machines},
+        author = {Moreno, Matthew Andres and Lalejini, Alexander and Ofria, Charles},
+        month = jun,
+        year = {2023},
+        pages = {4}
       }
       ```
 
