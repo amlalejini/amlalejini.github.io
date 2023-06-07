@@ -217,6 +217,7 @@ to generate listing of publications.
 
 - [Publications iconography](https://lalejini.com/publications/) idea from [Emily Dolson](emilyldolson.com/)
 - [Blog layout/configuration](https://lalejini.com/blog/) from [Matthew Andres Moreno](https://mmore500.com/)
+- Letter of recommendation information adapted from [Charles Ofria](ofria.com) and [Josh Nahum](http://www.nahum.us)
 
 ## License
 
