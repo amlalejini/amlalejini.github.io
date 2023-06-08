@@ -37,6 +37,26 @@ publication_types:
 publications:
 
   - citation: |
+      Alexander Lalejini, Matthew Andres Moreno, Jose Guadalupe Hernandez, and Emily Dolson (2023).
+      Phylogeny-informed fitness evaluation.
+      arXiv. [arXiv:2306.03970](https://doi.org/10.48550/arXiv.2306.03970).
+    year: 2023
+    type: pre-pub
+    venue: preprint
+    bibtex_id: lalejini_phylogeny_informed_2023
+    bibtex: |
+      ```
+      @misc{lalejini_phylogeny_informed_2023,
+        title={Phylogeny-informed fitness estimation},
+        author={Alexander Lalejini and Matthew Andres Moreno and Jose Guadalupe Hernandez and Emily Dolson},
+        year={2023},
+        eprint={2306.03970},
+        archivePrefix={arXiv},
+        primaryClass={cs.NE}
+      }
+      ```
+
+  - citation: |
       Ryan Boldi, Alexander Lalejini, Thomas Helmuth,and Lee Spector (2023).
       A Static Analysis of Informed Down-Samples.
       arXiv. [arXiv:2304.01978](https://doi.org/10.48550/arXiv.2304.01978).
