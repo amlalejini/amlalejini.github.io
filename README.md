@@ -13,18 +13,19 @@ Guide navigation:
 
 <!-- TOC -->
 
-- [Dependencies](#dependencies)
-- [Running this site locally](#running-this-site-locally)
-- [Source companion guide](#source-companion-guide)
-  - [The technology](#the-technology)
-  - [The components](#the-components)
-    - [data](#data)
-    - [pages](#pages)
-    - [includes](#includes)
-    - [layouts](#layouts)
-    - [miscellaneous](#miscellaneous)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+- [Implementation guide to my personal website](#implementation-guide-to-my-personal-website)
+  - [Dependencies](#dependencies)
+  - [Running this site locally](#running-this-site-locally)
+  - [Source companion guide](#source-companion-guide)
+    - [The technology](#the-technology)
+    - [The components](#the-components)
+      - [data](#data)
+      - [pages](#pages)
+      - [includes](#includes)
+      - [layouts](#layouts)
+      - [miscellaneous](#miscellaneous)
+  - [Acknowledgements](#acknowledgements)
+  - [License](#license)
 
 <!-- /TOC -->
 
@@ -33,14 +34,14 @@ Guide navigation:
 This website is hosted by [GitHub pages](https://pages.github.com/) and is otherwise
 powered by the following dependencies:
 
-- [Jekyll](https://jekyllrb.com/) is the static site generater used to power GitHub
+- [Jekyll](https://jekyllrb.com/) is the static site generator used to power GitHub
   pages
   - This site can be generated and served locally [just as with any Jekyll site](https://jekyllrb.com/docs/).
 - [Bootstrap](https://getbootstrap.com/) is an open source toolkit for developing
   with HTML, CSS, and JS, providing sleek and (fairly) easy to use front-end components.
 - [Font Awesome](https://fontawesome.com/) provides an awesome collection of really
-  nice icons. As one of Font Awesome's kickstarter backers, I have a Pro license
-  for this, giving me access to a more icons than the free version. However,
+  nice icons. As one of Font Awesome's Kickstarter backers, I have a Pro license
+  for this, giving me access to more icons than the free version. However,
   [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) is open source
   and still has a huge number of awesome icons.
 

@@ -23,7 +23,7 @@ I do get asked to write many letters, so I apologize in advance if I must declin
 
 If I am going to write a letter, I will want a lot of information from you to help me write the strongest letter than I can. Specifically:
 
-- Give me at least three weeks warning, if at all poissible.
+- Give me at least three weeks warning, if at all possible.
   Less time decreases the chance of me agreeing to write the letter, but I understand that sometimes you find out about an opportunity at the last moment.
   When you ask me, be clear about the earliest due dates for the letter, and send me a reminder a few days before it is due.
 - Remind me of the major types of interactions we have had, including what courses you have taken with me, what projects you have worked on for me, what events you may have helped to organize with me, or anything else relevant.
@@ -36,13 +36,13 @@ If I am going to write a letter, I will want a lot of information from you to he
 - Tell me about what you are applying for and, if possible, why you are applying.
   This information will help me know how to best position your letter.
 
-So, if you would like a letter of recommendation from me, please send me an email with the following information:
+So, if you would like a letter of recommendation from me, please email me with the following information:
 
 1. Include your name and preferred pronouns
 2. Include the instructions to submit the letter (the website, email, contact information, etc.)
 3. Include the date the letter is due!
 4. Give me a list of at least three attributes you would like me to emphasize in the letter (more is better!).
-5. Give me a list of at least three events / interactions / etc that you would like me to include in the letter. For example,
+5. Give me a list of at least three events / interactions / etc. that you would like me to include in the letter. For example,
   - Challenges overcome
   - Specific conversations we've had
   - Demonstrated strengths
