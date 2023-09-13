@@ -37,6 +37,39 @@ publication_types:
 publications:
 
   - citation: |
+      Matthew Andres Moreno, Alexander Lalejini, and Charles Ofria. (2023).
+      Tag Affinity Criteria Influence Adaptive Evolution.
+      In Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO '23 Companion).
+      Association for Computing Machinery, New York, NY, USA, 35–36.
+      <https://doi.org/10.1145/3583133.3595834>
+    year: 2023
+    type: peer-reviewed-abstract
+    venue: conference
+    badges:
+      - article summary
+    bibtex_id: moreno_tag_2023
+    bibtex: |
+      ```
+      @inproceedings{moreno_tag_2023,
+          author = {Moreno, Matthew Andres and Lalejini, Alexander and Ofria, Charles},
+          title = {Tag Affinity Criteria Influence Adaptive Evolution},
+          year = {2023},
+          isbn = {9798400701207},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3583133.3595834},
+          doi = {10.1145/3583133.3595834},
+          abstract = {This Hot-off-the-Press paper summarizes our recently published work, "Matchmaker, Matchmaker, Make Me a Match: Geometric, Variational, and Evolutionary Implications of Criteria for Tag Affinity" [8]. This work appeared in Genetic Programming and Evolvable Machines. Genetic programming systems commonly use tag matching to decide interactions between system components. However, the implications of criteria used to determine affinity between tags with respect evolutionary dynamics have not been directly studied. We investigate differences between tag-matching criteria with respect to geometric constraint and variation generated under mutation. In experiments, we find that tag-matching criteria can influence the rate of adaptive evolution and the quality of evolved solutions. Better understanding of the geometric, variational, and evolutionary properties of tag-matching criteria will facilitate more effective incorporation of tag matching into genetic programming systems. By showing that tag-matching criteria influence connectivity patterns and evolutionary dynamics, our findings also raise fundamental questions about the properties of tag-matching systems in nature.},
+          booktitle = {Proceedings of the Companion Conference on Genetic and Evolutionary Computation},
+          pages = {35–36},
+          numpages = {2},
+          keywords = {tag-based referencing, genetic programming, artificial gene regulatory networks, module-based genetic programming, event-driven genetic programming},
+          location = {Lisbon, Portugal},
+          series = {GECCO '23 Companion}
+        }
+      ```
+
+  - citation: |
       Alexander Lalejini, Matthew Andres Moreno, Jose Guadalupe Hernandez, and Emily Dolson (2023).
       Phylogeny-informed fitness evaluation.
       arXiv. [arXiv:2306.03970](https://doi.org/10.48550/arXiv.2306.03970).
@@ -57,26 +90,63 @@ publications:
       ```
 
   - citation: |
+      Ryan Boldi, Ashley Bao, Martin Briesch, Thomas Helmuth, Dominik Sobania, Lee Spector, and Alexander Lalejini. (2023).
+      The Problem Solving Benefits of Down-sampling Vary by Selection Scheme.
+      In Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO '23 Companion).
+      Association for Computing Machinery, New York, NY, USA, 527–530.
+      <https://doi.org/10.1145/3583133.3590713>
+    year: 2023
+    type: peer-reviewed-paper
+    venue: conference
+    bibtex_id: boldi_problem_2023
+    bibtex: |
+      ```
+      @inproceedings{boldi_problem_2023,
+        author = {Boldi, Ryan and Bao, Ashley and Briesch, Martin and Helmuth, Thomas and Sobania, Dominik and Spector, Lee and Lalejini, Alexander},
+        title = {The Problem Solving Benefits of Down-Sampling Vary by Selection Scheme},
+        year = {2023},
+        isbn = {9798400701207},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3583133.3590713},
+        doi = {10.1145/3583133.3590713},
+        abstract = {Genetic programming systems often use large training sets to evaluate candidate solutions, which can be computationally expensive. Down-sampling training sets has long been used to decrease the computational cost of evaluation in a wide range of application domains. Indeed, recent studies have shown that both random and informed down-sampling can substantially improve problem-solving success for GP systems that use lexicase parent selection. We use the PushGP framework to experimentally test whether these down-sampling techniques can also improve problem-solving success in the context of two other commonly used selection methods, fitness-proportionate and tournament selection, across eight GP problems (four program synthesis and four symbolic regression). We verified that down-sampling can benefit the problem-solving success of both fitness-proportionate and tournament selection. However, the number of problems wherein down-sampling improved problem-solving success varied by selection scheme, suggesting that the impact of down-sampling depends both on the problem and choice of selection scheme. Surprisingly, we found that down-sampling was most consistently beneficial when combined with lexicase selection as compared to tournament and fitness-proportionate selection. Overall, our results suggest that down-sampling should be considered more often when solving test-based GP problems.},
+        booktitle = {Proceedings of the Companion Conference on Genetic and Evolutionary Computation},
+        pages = {527–530},
+        numpages = {4},
+        keywords = {genetic programming, regression, program synthesis, down-sampling, selection},
+        location = {Lisbon, Portugal},
+        series = {GECCO '23 Companion}
+      }
+      ```
+
+  - citation: |
       Ryan Boldi, Alexander Lalejini, Thomas Helmuth,and Lee Spector (2023).
       A Static Analysis of Informed Down-Samples.
-      arXiv. [arXiv:2304.01978](https://doi.org/10.48550/arXiv.2304.01978).
+      In Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO '23 Companion).
+      Association for Computing Machinery, New York, NY, USA, 531–534.
+      <https://doi.org/10.1145/3583133.3590751>
     year: 2023
-    type: pre-pub
-    venue: preprint
+    type: peer-reviewed-paper
+    venue: conference
     bibtex_id: boldi_static_2023
     bibtex: |
       ```
-      @article{boldi_static_2023,
+      @inproceedings{boldi_static_2023,
+        address = {Lisbon Portugal},
         title = {A {Static} {Analysis} of {Informed} {Down}-{Samples}},
-        copyright = {arXiv.org perpetual, non-exclusive license},
-        url = {https://arxiv.org/abs/2304.01978},
-        doi = {10.48550/ARXIV.2304.01978},
-        abstract = {We present an analysis of the loss of population-level test coverage induced by different down-sampling strategies when combined with lexicase selection. We study recorded populations from the first generation of genetic programming runs, as well as entirely synthetic populations. Our findings verify the hypothesis that informed down-sampling better maintains population-level test coverage when compared to random down-sampling. Additionally, we show that both forms of down-sampling cause greater test coverage loss than standard lexicase selection with no down-sampling. However, given more information about the population, we found that informed down-sampling can further reduce its test coverage loss. We also recommend wider adoption of the static population analyses we present in this work.},
-        urldate = {2023-04-14},
+        copyright = {All rights reserved},
+        isbn = {9798400701207},
+        url = {https://dl.acm.org/doi/10.1145/3583133.3590751},
+        doi = {10.1145/3583133.3590751},
+        language = {en},
+        urldate = {2023-09-12},
+        booktitle = {Proceedings of the {Companion} {Conference} on {Genetic} and {Evolutionary} {Computation}},
+        publisher = {ACM},
         author = {Boldi, Ryan and Lalejini, Alexander and Helmuth, Thomas and Spector, Lee},
+        month = jul,
         year = {2023},
-        keywords = {FOS: Computer and information sciences, Neural and Evolutionary Computing (cs.NE)},
-        annote = {Other Accepted to the Genetic and Evolutionary Computation Conference 2023}
+        pages = {531--534}
       }
       ```
 
@@ -166,7 +236,6 @@ publications:
     year: 2022
     venue: conference
     type: peer-reviewed-abstract
-    # pdf: TODO
     badges:
       - article summary
     bibtex_id: 10.1145/3520304.3534079
