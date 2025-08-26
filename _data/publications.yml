@@ -37,6 +37,110 @@ publication_types:
 publications:
 
   - citation: |
+      Ryan Boldi, Ashley Bao, Martin Briesch, Thomas Helmuth, Dominik Sobania, Lee Spector, Alexander Lalejini (2024).
+      Untangling the Effects of Down-Sampling and Selection in Genetic Programming.
+      Proceedings of the 2024 Artificial Life Conference. (pp. 88). ASME.
+      <https://doi.org/10.1162/isal_a_00832>
+    year: 2024
+    venue: conference
+    type: peer-reviewed-paper
+
+  - citation: |
+      John Shea, Sydney Leither, Max Foreback, Emily Dolson, Alexander Lalejini (2024).
+      Environmental connectivity influences the origination of adaptive processes.
+      Proceedings of the 2024 Artificial Life Conference. (pp. 31). ASME.
+      <https://doi.org/10.1162/isal_a_00749>
+    year: 2024
+    venue: conference
+    type: peer-reviewed-paper
+
+  - citation: |
+      Jack Garbus, Thomas Willkens, Alexander Lalejini, Jordan Pollack (2024).
+      Phylogeny-Informed Interaction Estimation Accelerates Co-Evolutionary Learning.
+      Proceedings of the 2024 Artificial Life Conference. (pp. 66). ASME.
+      <https://doi.org/10.1162/isal_a_00796>
+    year: 2024
+    venue: conference
+    type: peer-reviewed-paper
+
+  - citation: |
+      Jack Garbus, Thomas Willkens, Alexander Lalejini, and Jordan Pollack (2024).
+      Accelerating Co-Evolutionary Learning Through Phylogeny-Informed Interaction Estimation.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '24 Companion).
+      Association for Computing Machinery, New York, NY, USA, 427–430. <https://doi.org/10.1145/3638530.3654250>
+    year: 2024
+    type: peer-reviewed-paper
+    venue: conference
+
+  - citation: |
+      Ryan Boldi, Ashley Bao, Martin Briesch, Thomas Helmuth, Dominik Sobania, Lee Spector, and Alexander Lalejini (2024).
+      A Comprehensive Analysis of Down-sampling for Genetic Programming-based Program Synthesis.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '24 Companion). Association for Computing Machinery, New York, NY, USA, 487–490.
+      <https://doi.org/10.1145/3638530.3654134>
+    type: peer-reviewed-paper
+    venue: conference
+    year: 2024
+
+  - citation: |
+      Martin Briesch, Ryan Boldi, Dominik Sobania, Alexander Lalejini, Thomas Helmuth, Franz Rothlauf, Charles Ofria, and Lee Spector (2024).
+      Improving Lexicase Selection with Informed Down-Sampling.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '24 Companion).
+      Association for Computing Machinery, New York, NY, USA, 25–26. <https://doi.org/10.1145/3638530.3664068>
+    year: 2024
+    type: peer-reviewed-abstract
+    venue: conference
+
+  - citation: |
+      Alexander Lalejini, Marcos Sanson, Jack Garbus, Matthew Andres Moreno, and Emily Dolson (2024).
+      Runtime phylogenetic analysis enables extreme subsampling for test-based problems.
+      In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '24 Companion). Association for Computing Machinery, New York, NY, USA, 511–514.
+      <https://doi.org/10.1145/3638530.3654208>
+    year: 2024
+    venue: conference
+    type: peer-reviewed-paper
+
+  - citation: |
+      Anya Vostinar, Alexander Lalejini, Charles Ofria, Emily Dolson, and Matthew Andres Moreno (2024).
+      Empirical: A scientific software library for research, education, and public engagement.
+      Journal of Open Source Software, 9(98), 6617, <https://doi.org/10.21105/joss.06617>
+    year: 2024
+    type: peer-reviewed-paper
+    venue: journal
+
+  - citation: |
+      Alexander Lalejini, Matthew Andres Moreno, Jose G. Hernandez, and Emily Dolson (2024).
+      Phylogeny-Informed Fitness Estimation for Test-Based Parent Selection.
+      In: Winkler, S., Trujillo, L., Ofria, C., Hu, T. (eds)
+      Genetic Programming Theory and Practice XX.
+      Genetic and Evolutionary Computation.
+      Springer, Singapore. <https://doi.org/10.1007/978-981-99-8413-8_13>
+    year: 2024
+    type: book-chapter
+    venue: book
+
+  - citation: |
+      Emily Dolson and Alexander Lalejini (2024).
+      Reachability Analysis for Lexicase Selection via Community Assembly Graphs.
+      In: Winkler, S., Trujillo, L., Ofria, C., Hu, T. (eds)
+      Genetic Programming Theory and Practice XX.
+      Genetic and Evolutionary Computation.
+      Springer, Singapore. <https://doi.org/10.1007/978-981-99-8413-8_15>
+    year: 2024
+    type: book-chapter
+    venue: book
+
+  - citation: |
+      Karen Suzue, Charles Ofria, and Alexander Lalejini (2025).
+      Using Lineage Age to Augment Search Space Exploration in Lexicase Selection.
+      In: Winkler, S.M., Banzhaf, W., Hu, T., Lalejini, A. (eds)
+      Genetic Programming Theory and Practice XXI. Genetic and Evolutionary Computation.
+      Springer, Singapore.
+      <https://doi.org/10.1007/978-981-96-0077-9_20>
+    year: 2025
+    type: book-chapter
+    venue: book
+
+  - citation: |
       Matthew Andres Moreno, Alexander Lalejini, and Charles Ofria. (2023).
       Tag Affinity Criteria Influence Adaptive Evolution.
       In Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO '23 Companion).
@@ -69,25 +173,25 @@ publications:
         }
       ```
 
-  - citation: |
-      Alexander Lalejini, Matthew Andres Moreno, Jose Guadalupe Hernandez, and Emily Dolson (2023).
-      Phylogeny-informed fitness evaluation.
-      arXiv. [arXiv:2306.03970](https://doi.org/10.48550/arXiv.2306.03970).
-    year: 2023
-    type: pre-pub
-    venue: preprint
-    bibtex_id: lalejini_phylogeny_informed_2023
-    bibtex: |
-      ```
-      @misc{lalejini_phylogeny_informed_2023,
-        title={Phylogeny-informed fitness estimation},
-        author={Alexander Lalejini and Matthew Andres Moreno and Jose Guadalupe Hernandez and Emily Dolson},
-        year={2023},
-        eprint={2306.03970},
-        archivePrefix={arXiv},
-        primaryClass={cs.NE}
-      }
-      ```
+  # - citation: |
+  #     Alexander Lalejini, Matthew Andres Moreno, Jose Guadalupe Hernandez, and Emily Dolson (2023).
+  #     Phylogeny-informed fitness evaluation.
+  #     arXiv. [arXiv:2306.03970](https://doi.org/10.48550/arXiv.2306.03970).
+  #   year: 2023
+  #   type: pre-pub
+  #   venue: preprint
+  #   bibtex_id: lalejini_phylogeny_informed_2023
+  #   bibtex: |
+  #     ```
+  #     @misc{lalejini_phylogeny_informed_2023,
+  #       title={Phylogeny-informed fitness estimation},
+  #       author={Alexander Lalejini and Matthew Andres Moreno and Jose Guadalupe Hernandez and Emily Dolson},
+  #       year={2023},
+  #       eprint={2306.03970},
+  #       archivePrefix={arXiv},
+  #       primaryClass={cs.NE}
+  #     }
+  #     ```
 
   - citation: |
       Ryan Boldi, Ashley Bao, Martin Briesch, Thomas Helmuth, Dominik Sobania, Lee Spector, and Alexander Lalejini. (2023).
@@ -151,49 +255,21 @@ publications:
       ```
 
   - citation: |
-      Bhaskar Kumawat, Alexander Lalejini, Monica Acosta, and Luis Zaman. (2023).
-      Fluctuating environments promote evolvability by shaping adaptive variation accessible to populations.
-      bioRxiv. <https://doi.org/10.1101/2023.01.04.520634>
-    year: 2023
-    type: pre-pub
-    venue: preprint
-    bibtex_id: kumawat_fluctuating_2023
-    bibtex: |
-      ```
-      @article {kumawat_fluctuating_2023,
-        author = {Kumawat, Bhaskar and Lalejini, Alexander and Acosta, Monica and Zaman, Luis},
-        title = {Fluctuating environments promote evolvability by shaping adaptive variation accessible to populations},
-        elocation-id = {2023.01.04.520634},
-        year = {2023},
-        doi = {10.1101/2023.01.04.520634},
-        publisher = {Cold Spring Harbor Laboratory},
-        URL = {https://www.biorxiv.org/content/early/2023/01/04/2023.01.04.520634},
-        eprint = {https://www.biorxiv.org/content/early/2023/01/04/2023.01.04.520634.full.pdf},
-        journal = {bioRxiv}
-      }
-      ```
+      Bhaskar Kumawat, Alexander Lalejini, Monica M. Acosta, and Luis Zaman (2025).
+      Evolution takes multiple paths to evolvability when facing environmental change,
+      Proc. Natl. Acad. Sci. U.S.A. 122 (1) e2413930121,
+      <https://doi.org/10.1073/pnas.2413930121>.
+    year: 2025
+    type: peer-reviewed-paper
+    venue: journal
 
   - citation: |
-      Ryan Boldi, Martin Briesch, Dominik Sobania, Alexander Lalejini, Thomas Helmuth, Franz Rothlauf, Charles Ofria, and Lee Spector (2023).
-      Informed Down-Sampled Lexicase Selection: Identifying productive training cases for efficient problem solving
-      arXiv. <https://doi.org/10.48550/arXiv.2301.01488>
-    year: 2023
-    type: pre-pub
-    venue: preprint
-    bibtex_id: boldi_informed_2023
-    bibtex: |
-      ```
-      @misc{bold_informed_2023,
-        doi = {10.48550/ARXIV.2301.01488},
-        url = {https://arxiv.org/abs/2301.01488},
-        author = {Boldi, Ryan and Briesch, Martin and Sobania, Dominik and Lalejini, Alexander and Helmuth, Thomas and Rothlauf, Franz and Ofria, Charles and Spector, Lee},
-        keywords = {Neural and Evolutionary Computing (cs.NE), FOS: Computer and information sciences, FOS: Computer and information sciences},
-        title = {Informed Down-Sampled Lexicase Selection: Identifying productive training cases for efficient problem solving},
-        publisher = {arXiv},
-        year = {2023},
-        copyright = {arXiv.org perpetual, non-exclusive license}
-      }
-      ```
+      Ryan Boldi, Martin Briesch, Dominik Sobania, Alexander Lalejini, Thomas Helmuth, Franz Rothlauf, Charles Ofria, Lee Spector (2024).
+      Informed Down-Sampled Lexicase Selection: Identifying Productive Training Cases for Efficient Problem Solving.
+      Evol Comput 2024; 32 (4): 307–337. doi: <https://doi.org/10.1162/evco_a_00346>
+    year: 2024
+    type: peer-reviewed-paper
+    venue: journal
 
   - citation: |
       Alexander Lalejini, Matthew Andres Moreno, and Charles Ofria. 2022.
