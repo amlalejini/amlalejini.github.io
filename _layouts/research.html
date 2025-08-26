@@ -30,10 +30,10 @@ layout: default
     <div class="row">
       <div class="col"> <!-- each card has its own column in row column -->
         <div class="card mb-3">
-          
+
           <!-- We do different stuff depending on where exactly the image is positioned in the card (top/left/bottom/right). -->
           {% case research.image_pos %}
-            
+
             {% when "left" %} <!-- When the image should be on the left -->
               <div class="row no-gutters">
                   <div class="col-4 mb-1 ml-1 mt-1">
@@ -44,7 +44,7 @@ layout: default
                       </figure>
                     {% else %}
                       <img src="{{ research.image | relative_url }}" class="img-fluid" alt="">
-                    {% endif %}                  
+                    {% endif %}
                   </div>
                   <div class="col">
                     <div class="card-block px-2">
@@ -70,7 +70,7 @@ layout: default
                     </figure>
                   {% else %}
                     <img src="{{ research.image | relative_url }}" class="img-fluid" alt="">
-                  {% endif %}   
+                  {% endif %}
                 </div>
               </div>
 
@@ -86,8 +86,8 @@ layout: default
                 </figure>
               {% else %}
                 <img class="card-img-bottom" src="{{ research.image | relative_url }}" alt="Card image cap">
-              {% endif %}   
-            
+              {% endif %}
+
             {% else %} <!-- The default behavior is that the image is on the top of the card. -->
               {% if research.image_is_figure %}
                 <figure class="figure">
@@ -96,14 +96,14 @@ layout: default
                 </figure>
               {% else %}
                 <img class="card-img-top" src="{{ research.image | relative_url }}" alt="Card image cap">
-              {% endif %} 
+              {% endif %}
               <div class="card-body">
                 <h4 class="card-title">{{ research.project }}</h4>
                 <div class="card-text"> {{ research.description | markdownify }} </div>
               </div>
 
           {% endcase %}
-          
+
         </div>
       </div> <!-- end column -->
     </div>

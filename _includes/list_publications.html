@@ -36,7 +36,7 @@
           {% endif %}
           <p>
             <!-- | remove: '<p>' | remove: '</p>' | is a hacky solution to remove <p></p> tags that markdownify surrounds things with. -->
-            {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | replace: "Alexander Lalejini", "<b>Alexander Lalejini</b>" }}
+            {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}
             <br/>
             {% for badge in pub.badges %}
               <span class="badge badge-primary"> {{ badge }} </span>
